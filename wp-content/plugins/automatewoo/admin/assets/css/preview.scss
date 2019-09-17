@@ -1,0 +1,103 @@
+@import 'loader';
+
+// reset UI
+#wpadminbar,
+#adminmenuwrap,
+#adminmenuback,
+#adminmenu,
+#wpfooter {
+	display: none !important;
+}
+
+html.wp-toolbar {
+	padding: 0 !important;
+}
+
+#wpcontent {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+
+
+.aw-preview {
+	position: relative;
+	height: 100%;
+
+	overflow: hidden;
+
+	iframe {
+		height: 100%;
+	}
+
+
+	&__header {
+		position: relative;
+		z-index: 5;
+		padding: 19px 50px 24px;
+		box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 1px;
+		border-bottom: 1px solid #E4E4E4;
+		background: #ffffff;
+	}
+
+
+	&__header-left {
+		font-size: 13px;
+		color: #787878;
+		display: inline-block;
+	}
+
+	&__header-right {
+		margin: 10px 0 0;
+
+		@media (min-width: 800px) {
+			margin: 4px 0 0;
+			float: right;
+		}
+	}
+
+
+	&__send-test-form {
+		margin: 0;
+		float: left;
+
+		.email-input {
+			font-size: 13.5px;
+			margin-top: 0;
+			padding: 5px 8px 4px;
+			vertical-align: top;
+			width: 220px;
+			margin-right: -6px;
+			height: 29px;
+		}
+
+		&.aw-loading {
+			opacity: 0.4;
+		}
+	}
+
+	.from {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 430px;
+	}
+
+}
+
+
+.aw-preview__loader-container {
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+
+.wp-core-ui a.aw-preview-options-button {
+	text-decoration: none;
+	float: right;
+	margin-left: 9px;
+}

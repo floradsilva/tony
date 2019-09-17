@@ -1,0 +1,76 @@
+$mobile-bp: 900px;
+
+
+.aw-communication-page {
+	max-width: 700px;
+}
+
+.aw-communication-page .aw-communication-form {
+
+	&__email-field {
+		max-width: 480px;
+		margin: 25px 0 0;
+
+		@media ( min-width: $mobile-bp ) {
+			margin: 27px 30px 0;
+		}
+	}
+
+	&__preference-list {
+		margin: 20px 0 20px;
+
+		@media ( min-width: $mobile-bp ) {
+			margin: 20px 15px 20px;
+		}
+	}
+
+	&__preference {
+		padding: 17px 18px;
+	}
+
+	&__preference--highlighted {
+		background: hsla(0, 0%, 50%, 0.07);
+		border-radius: 5px;
+	}
+
+	&__preference-inner {
+		position: relative;
+	}
+
+	&__preference-checkbox {
+		position: absolute;
+		top: 4px;
+		left: 0;
+	}
+
+	&__preference-text {
+		padding-left: 30px;
+	}
+
+	&__preference-title {
+		display: inline-block;
+		font-size: 1.31575em;
+		line-height: 1.1;
+		margin: 0 0 .2em;
+	}
+
+	&__preference-description {
+		margin: 0;
+		font-style: italic;
+	}
+
+	hr {
+		margin: 25px 0;
+	}
+
+	&__preference--all &__preference-title {
+		font-size: 1em;
+	}
+
+
+	&__terms-text {
+		margin: 20px 0 30px;
+	}
+
+
+}

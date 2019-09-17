@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Spinners';
+    src:  url('../fonts/spinners.eot?dlptjj');
+    src:  url('../fonts/spinners.eot?dlptjj#iefix') format('embedded-opentype'),
+      url('../fonts/spinners.ttf?dlptjj') format('truetype'),
+      url('../fonts/spinners.woff?dlptjj') format('woff'),
+      url('../fonts/spinners.svg?dlptjj#spinners') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); } }
+
+  @keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); } }
+
+
+.wcpbc-price.loading {
+    visibility: hidden;
+    position: relative;
+}
+.wcpbc-price.loading::after {
+    font-family: 'Spinners';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-transform: none;
+    content: '\e980';
+    display: inline-block;
+    visibility: visible;
+    vertical-align: baseline;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-animation: spinner 1s linear infinite;
+    animation: spinner 1s linear infinite;
+    color: #6d6d6d;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wcpbc-content {
+	display: none;
+}

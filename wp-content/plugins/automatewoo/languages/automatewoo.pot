@@ -1,0 +1,5000 @@
+# Copyright (C) 2019 AutomateWoo
+# This file is distributed under the same license as the AutomateWoo package.
+msgid ""
+msgstr ""
+"Project-Id-Version: AutomateWoo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"Language-Team: Prospress Translations <translations@prospress.com>\n"
+"POT-Creation-Date: 2019-08-26 1:58:29+00:00\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: automatewoo.php:35, admin/admin.php:109, admin/admin.php:109, admin/admin.php:485, admin/coupons-list.php:30, admin/licenses-table.php:47, includes/installer.php:223, includes/privacy.php:18, admin/controllers/licenses.php:74, includes/actions/change-workflow-status.php:18, includes/actions/clear-queued-events.php:17
+msgid "AutomateWoo"
+msgstr ""
+
+#: automatewoo.php:93
+msgid "%s is inactive."
+msgstr ""
+
+#: automatewoo.php:96
+msgid "%1$s The plugin requires PHP version %2$s or newer."
+msgstr ""
+
+#: automatewoo.php:99
+msgid "%1$s The plugin requires WooCommerce version %2$s or newer."
+msgstr ""
+
+#: automatewoo.php:102
+msgid "%1$s The plugin requires WordPress version %2$s or newer."
+msgstr ""
+
+#: admin/admin.php:112, admin/views/page-dashboard.php:26
+msgid "Dashboard"
+msgstr ""
+
+#: admin/admin.php:117, includes/post-types.php:22, admin/reports-tabs/runs-by-date.php:15, includes/actions/clear-queued-events.php:26, includes/triggers/workflow-times-run-reaches.php:18
+msgid "Workflows"
+msgstr ""
+
+#: admin/admin.php:122, admin/reports/email-tracking.php:332, admin/reports/logs.php:19
+msgid "Logs"
+msgstr ""
+
+#: admin/admin.php:127
+msgid "Queue"
+msgstr ""
+
+#: admin/admin.php:133, includes/privacy-policy-guide.php:34, admin/reports/carts.php:21, admin/settings-tabs/carts.php:16, includes/triggers/abstracts/abstract-abandoned-cart.php:21
+msgid "Carts"
+msgstr ""
+
+#: admin/admin.php:138, admin/reports/guests.php:23, includes/triggers/guest-created.php:19
+msgid "Guests"
+msgstr ""
+
+#: admin/admin.php:144, admin/reports/opt-ins.php:21
+msgid "Opt-ins"
+msgstr ""
+
+#: admin/admin.php:144, admin/reports/opt-ins.php:21
+msgid "Opt-outs"
+msgstr ""
+
+#: admin/admin.php:149
+msgid "Reports"
+msgstr ""
+
+#: admin/admin.php:154
+msgid "Tools"
+msgstr ""
+
+#: admin/admin.php:159, includes/installer.php:246
+msgid "Settings"
+msgstr ""
+
+#: admin/admin.php:164, admin/reports/events.php:23, admin/reports/queue.php:19
+msgid "Events"
+msgstr ""
+
+#: admin/admin.php:169, admin/views/action.php:29
+msgid "Preview"
+msgstr ""
+
+#: admin/admin.php:174
+msgid "License"
+msgid_plural "Licenses"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/admin.php:179
+msgid "AutomateWoo Data Update"
+msgstr ""
+
+#: admin/admin.php:246
+msgid "This field does not support variables."
+msgstr ""
+
+#: admin/admin.php:247
+msgid "Variable '%s' is not available with the selected trigger. Please only use variables listed in the the variables box."
+msgstr ""
+
+#: admin/admin.php:248
+msgid "Variable '%s' is not a valid. Please only use variables listed in the the variables box."
+msgstr ""
+
+#: admin/admin.php:507
+msgid "Your AutomateWoo license has expired."
+msgstr ""
+
+#: admin/admin.php:509
+msgid "<a href=\"%s\" target=\"_blank\">Renew your license</a> to receive updates and support."
+msgstr ""
+
+#: admin/admin.php:520
+msgid "AutomateWoo - You have unactivated products."
+msgstr ""
+
+#: admin/admin.php:522
+msgid "AutomateWoo is not activated."
+msgstr ""
+
+#: admin/admin.php:526
+msgid "Please <a href=\"%s\">enter your license key</a> to receive plugin updates."
+msgstr ""
+
+#: admin/ajax.php:271, admin/ajax.php:319
+msgid "Sorry, this action can not be previewed."
+msgstr ""
+
+#: admin/ajax.php:337
+msgid "Error: "
+msgstr ""
+
+#: admin/ajax.php:343
+msgid "Success! %s email%s sent."
+msgstr ""
+
+#: admin/ajax.php:371
+msgid "Message sent."
+msgstr ""
+
+#: admin/ajax.php:388
+msgid "Permission error."
+msgstr ""
+
+#: admin/ajax.php:409, admin/views/page-data-upgrade.php:21
+msgid "Add-on could not be updated"
+msgstr ""
+
+#: admin/ajax.php:544
+msgid "No log found."
+msgstr ""
+
+#: admin/ajax.php:558
+msgid "No queued event found."
+msgstr ""
+
+#: admin/ajax.php:576
+msgid "Variable not found."
+msgstr ""
+
+#: admin/ajax.php:590
+msgid "No cart found."
+msgstr ""
+
+#: admin/data-layer-formatter.php:33, includes/privacy-exporters.php:330, admin/reports/conversions-list.php:137, includes/actions/order-add-note.php:19, includes/actions/order-change-status.php:19, includes/actions/order-resend-email.php:19, includes/actions/order-trigger-action.php:19, includes/actions/order-update-customer-shipping-note.php:18, includes/actions/order-update-meta.php:18
+msgid "Order"
+msgstr ""
+
+#: admin/data-layer-formatter.php:40, admin/reports/carts.php:33, admin/reports/conversions-list.php:138, admin/reports/logs.php:110, admin/reports/opt-ins.php:59, admin/reports/queue.php:135, includes/actions/customer-add-tags.php:18, includes/actions/customer-change-role.php:18, includes/actions/customer-update-meta.php:18, includes/actions/order-resend-email.php:48, includes/actions/abstracts/points-rewards-edit-points-abstract.php:30
+msgid "Customer"
+msgstr ""
+
+#: admin/data-layer-formatter.php:49, admin/reports/guests.php:22, admin/reports/guests.php:41, includes/rules/customer-role.php:34
+msgid "Guest"
+msgstr ""
+
+#: admin/data-layer-formatter.php:58, includes/privacy-exporters.php:338, admin/reports/carts.php:20, admin/reports/carts.php:31, includes/variables/cart-link.php:17
+msgid "Cart"
+msgstr ""
+
+#: admin/data-layer-formatter.php:67, includes/privacy-exporters.php:346, templates/email/review-grid-3-col.php:46
+msgid "Review"
+msgstr ""
+
+#: admin/data-layer-formatter.php:76, admin/licenses-table.php:70, includes/privacy-exporters.php:354, admin/views/modal-cart-info.php:29, includes/actions/update-product-meta.php:18, includes/fields/product.php:40
+msgid "Product"
+msgstr ""
+
+#: admin/data-layer-formatter.php:85, includes/privacy-exporters.php:362, includes/actions/subscription-add-note.php:29, includes/actions/subscription-change-status.php:19, includes/actions/subscription-send-invoice.php:20, includes/actions/subscription-update-meta.php:19, includes/actions/abstracts/subscription-edit-item-abstract.php:69
+msgid "Subscription"
+msgstr ""
+
+#: admin/data-layer-formatter.php:94, includes/privacy-exporters.php:370
+msgid "Membership"
+msgstr ""
+
+#: admin/data-layer-formatter.php:102, includes/privacy-exporters.php:377
+msgid "Wishlist"
+msgstr ""
+
+#: admin/json-search.php:170
+msgid "%1$s &ndash; %2$s"
+msgstr ""
+
+#: admin/json-search.php:171, admin/list-table.php:96, includes/format.php:256
+msgid "[Guest]"
+msgstr ""
+
+#: admin/licenses-table.php:69
+msgid "Product ID"
+msgstr ""
+
+#: admin/licenses-table.php:71
+msgid "Version"
+msgstr ""
+
+#: admin/licenses-table.php:72
+msgid "License Key"
+msgstr ""
+
+#: admin/licenses-table.php:73
+msgid "License Status"
+msgstr ""
+
+#: admin/licenses-table.php:107
+msgid "Deactivate"
+msgstr ""
+
+#: admin/licenses-table.php:110
+msgid "Place license key here"
+msgstr ""
+
+#: admin/licenses-table.php:122, includes/carts.php:100, admin/views/meta-box-save.php:48, includes/actions/change-workflow-status.php:27
+msgid "Active"
+msgstr ""
+
+#: admin/licenses-table.php:123
+msgid "Expired"
+msgstr ""
+
+#: admin/licenses-table.php:134
+msgid "(Renew)"
+msgstr ""
+
+#: admin/list-table.php:47
+msgid "Search"
+msgstr ""
+
+#: admin/list-table.php:80, includes/customer.php:350, includes/data-layer.php:403, includes/guest.php:200
+msgctxt "full name"
+msgid "%1$s %2$s"
+msgstr ""
+
+#: admin/list-table.php:230, admin/reports/abstract-graph.php:89
+msgid "Search for a workflow&hellip;"
+msgstr ""
+
+#: admin/list-table.php:258
+msgid "Search for a customer&hellip;"
+msgstr ""
+
+#: admin/user-tags-export.php:60, admin/controllers/tools.php:131
+msgid "Security check failed."
+msgstr ""
+
+#: admin/user-tags-export.php:64
+msgid "There are no users with that tag."
+msgstr ""
+
+#: admin/workflow-edit.php:218
+msgid "Save"
+msgstr ""
+
+#: admin/workflow-edit.php:223, admin/views/meta-box-trigger.php:28
+msgid "Trigger"
+msgstr ""
+
+#: admin/workflow-edit.php:228
+msgid "Rules <small>(optional)</small>"
+msgstr ""
+
+#: admin/workflow-edit.php:233, admin/reports/guests.php:45
+msgid "Actions"
+msgstr ""
+
+#: admin/workflow-edit.php:238, admin/workflow-list.php:37, admin/views/meta-box-timing.php:21
+msgid "Timing"
+msgstr ""
+
+#: admin/workflow-edit.php:243
+msgid "Options"
+msgstr ""
+
+#: admin/workflow-edit.php:248, admin/views/meta-box-variables.php:16
+msgid "Variables"
+msgstr ""
+
+#: admin/workflow-list.php:38
+msgid "Run Count"
+msgstr ""
+
+#: admin/workflow-list.php:39
+msgid "Queue Count"
+msgstr ""
+
+#: admin/workflow-list.php:84
+msgid "Toggle Status"
+msgstr ""
+
+#: admin/workflow-list.php:99
+msgid "Active <span class=\"count\">(%s)</span>"
+msgid_plural "Active <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/workflow-list.php:142
+msgctxt "timing option"
+msgid "midnight"
+msgstr ""
+
+#: admin/workflow-list.php:145
+msgctxt "timing option"
+msgid "Daily at %s"
+msgstr ""
+
+#: admin/workflow-list.php:149
+msgctxt "timing option"
+msgid "Custom"
+msgstr ""
+
+#: admin/workflow-list.php:157
+msgctxt "timing option"
+msgid "Immediate"
+msgstr ""
+
+#: admin/workflow-list.php:160
+msgctxt "timing option"
+msgid "Wait for <b>%s</b>"
+msgstr ""
+
+#: admin/workflow-list.php:167
+msgctxt "timing option"
+msgid "Schedule for <b>%s</b>"
+msgstr ""
+
+#: admin/workflow-list.php:170
+msgctxt "timing option"
+msgid " on  <b>%s</b>"
+msgstr ""
+
+#: admin/workflow-list.php:174
+msgctxt "timing option"
+msgid " after waiting <b>%s</b>"
+msgstr ""
+
+#: admin/workflow-list.php:182
+msgctxt "timing option"
+msgid "Fixed at %s"
+msgstr ""
+
+#: admin/workflow-list.php:186, admin/views/meta-box-timing.php:33
+msgid "Schedule with a variable"
+msgstr ""
+
+#: admin/workflow-list.php:204
+msgid "Weekdays"
+msgstr ""
+
+#: admin/workflow-list.php:207
+msgid "Weekends"
+msgstr ""
+
+#: admin/workflow-list.php:215
+msgctxt "day"
+msgid " or "
+msgstr ""
+
+#: admin/workflow-list.php:238
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/workflow-list.php:241
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/workflow-list.php:244
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/workflow-list.php:247
+msgid "%s week"
+msgid_plural "%s weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/cart.php:235
+msgid "Free!"
+msgstr ""
+
+#: includes/carts.php:101
+msgid "Abandoned"
+msgstr ""
+
+#: includes/communication-account-tab.php:36, includes/privacy-policy-guide.php:37
+msgid "Communication preferences"
+msgstr ""
+
+#: includes/communication-account-tab.php:44
+msgid "Communication"
+msgstr ""
+
+#: includes/coupon-generator.php:45
+msgid "Generated by AutomateWoo"
+msgstr ""
+
+#: includes/cron.php:158
+msgid "One minute"
+msgstr ""
+
+#: includes/cron.php:163
+msgid "Two minutes"
+msgstr ""
+
+#: includes/cron.php:168
+msgid "Five minutes"
+msgstr ""
+
+#: includes/cron.php:173
+msgid "Fifteen minutes"
+msgstr ""
+
+#: includes/cron.php:178
+msgid "Thirty minutes"
+msgstr ""
+
+#: includes/cron.php:183
+msgid "Two days"
+msgstr ""
+
+#: includes/cron.php:188
+msgid "Four hours"
+msgstr ""
+
+#: includes/cron.php:193
+msgid "Once weekly"
+msgstr ""
+
+#: includes/database-tables.php:80
+msgid "Failed to load the '%s' database table."
+msgstr ""
+
+#: includes/factories.php:59
+msgid "Factory class must be registered."
+msgstr ""
+
+#: includes/format.php:107
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/format.php:114
+msgid "%s from now"
+msgstr ""
+
+#: includes/format.php:117
+msgid "%s ago"
+msgstr ""
+
+#: includes/format.php:282, includes/rules/abstracts/abstract-bool.php:20
+msgid "Yes"
+msgstr ""
+
+#: includes/format.php:282, admin/views/modal-log-info.php:39, admin/views/modal-log-info.php:40, includes/rules/abstracts/abstract-bool.php:21
+msgid "No"
+msgstr ""
+
+#: includes/frontend-endpoints.php:92
+msgid "Your cart has been restored."
+msgstr ""
+
+#: includes/frontend-endpoints.php:97
+msgid "Your cart could not be restored, it may have expired."
+msgstr ""
+
+#: includes/frontend-endpoints.php:115
+msgid "The previous order could not be found."
+msgstr ""
+
+#: includes/frontend-endpoints.php:160
+msgid "%d item from your previous order is currently unavailable and could not be added to your cart."
+msgid_plural "%d items from your previous order are currently unavailable and could not be added to your cart."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/frontend-endpoints.php:171
+msgid "The cart has been filled with the items from your previous order."
+msgstr ""
+
+#: includes/frontend-form-handler.php:37
+msgid "The form could not be submitted. Error code: %s"
+msgstr ""
+
+#: includes/frontend-form-handler.php:60
+msgid "Your communication preferences were updated."
+msgstr ""
+
+#: includes/frontend-form-handler.php:69
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: includes/frontend-form-handler.php:76
+msgid "Thanks! Your signup was successful."
+msgstr ""
+
+#: includes/frontend-form-handler.php:79
+msgid "Saved successfully! You won't receive marketing communications from us."
+msgstr ""
+
+#: includes/installer.php:246
+msgid "View AutomateWoo Settings"
+msgstr ""
+
+#: includes/installer.php:268
+msgctxt "Page slug"
+msgid "communication-preferences"
+msgstr ""
+
+#: includes/installer.php:269
+msgctxt "Page title"
+msgid "Communication preferences"
+msgstr ""
+
+#: includes/licenses.php:350
+msgid "No response received from server."
+msgstr ""
+
+#: includes/licenses.php:364
+msgid "Invalid response received from server."
+msgstr ""
+
+#: includes/licenses.php:437
+msgid "Could not connect to remote server to check domain status."
+msgstr ""
+
+#: includes/log.php:520
+msgid "This log was created from manual workflow re-run."
+msgstr ""
+
+#: includes/mailer-abstract.php:138
+msgid "Email address is blank."
+msgstr ""
+
+#: includes/mailer-abstract.php:142
+msgid "Email address is not valid."
+msgstr ""
+
+#: includes/mailer-abstract.php:146
+msgid "Email address appears to be anonymized."
+msgstr ""
+
+#: includes/mailer-abstract.php:158
+msgid "Email address is blacklisted."
+msgstr ""
+
+#: includes/mailer-abstract.php:217
+msgid "PHP Mailer - %s"
+msgstr ""
+
+#: includes/mailer-abstract.php:221
+msgid "The wp_mail() function returned false."
+msgstr ""
+
+#: includes/options.php:55
+msgid "I want to receive updates about products and promotions."
+msgstr ""
+
+#: includes/options.php:60
+msgid "You can update these options at any time by clicking the unsubscribe link in the footer of any email you receive from us, or in your account area. By clicking below, you agree that we may process your information in accordance with our %s and %s."
+msgstr ""
+
+#: includes/points-rewards-integration.php:35
+msgid "%s modified by AutomateWoo"
+msgstr ""
+
+#: includes/points-rewards-integration.php:59
+msgid " (Workflow ID: <a href=\"%1$s\">%2$s</a>)"
+msgstr ""
+
+#: includes/post-types.php:23, admin/reports/conversions-list.php:139, admin/reports/logs.php:109, admin/reports/queue.php:134, admin/views/modal-log-info.php:28, admin/views/modal-queued-event-info.php:29, includes/fields/workflow.php:26
+msgid "Workflow"
+msgstr ""
+
+#: includes/post-types.php:24
+msgctxt "Admin menu name"
+msgid "Workflows"
+msgstr ""
+
+#: includes/post-types.php:25
+msgid "Add Workflow"
+msgstr ""
+
+#: includes/post-types.php:26
+msgid "Add New Workflow"
+msgstr ""
+
+#: includes/post-types.php:27, admin/views/action.php:30
+msgid "Edit"
+msgstr ""
+
+#: includes/post-types.php:28
+msgid "Edit Workflow"
+msgstr ""
+
+#: includes/post-types.php:29
+msgid "New Workflow"
+msgstr ""
+
+#: includes/post-types.php:30, includes/post-types.php:31
+msgid "View Workflow"
+msgstr ""
+
+#: includes/post-types.php:32
+msgid "Search Workflows"
+msgstr ""
+
+#: includes/post-types.php:33
+msgid "No Workflows found"
+msgstr ""
+
+#: includes/post-types.php:34
+msgid "No Workflows found in trash"
+msgstr ""
+
+#: includes/post-types.php:62, admin/views/meta-box-save.php:49, includes/actions/change-workflow-status.php:28
+msgid "Disabled"
+msgstr ""
+
+#: includes/post-types.php:67
+msgid "Disabled <span class=\"count\">(%s)</span>"
+msgid_plural "Disabled <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/privacy-erasers.php:48
+msgid "Anonymized customer workflow logs."
+msgstr ""
+
+#: includes/privacy-erasers.php:115
+msgid "Removed workflow queued events."
+msgstr ""
+
+#: includes/privacy-erasers.php:165
+msgid "Removed saved cart."
+msgstr ""
+
+#: includes/privacy-erasers.php:201
+msgid "Removed AutomateWoo user meta."
+msgstr ""
+
+#: includes/privacy-erasers.php:229
+msgid "Removed user tags."
+msgstr ""
+
+#: includes/privacy-exporters.php:36
+msgid "Customer Data"
+msgstr ""
+
+#: includes/privacy-exporters.php:158
+msgid "Saved Cart Data"
+msgstr ""
+
+#: includes/privacy-exporters.php:196
+msgid "Workflow logs"
+msgstr ""
+
+#: includes/privacy-exporters.php:266
+msgid "Workflow queued events"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:22
+msgid "How we use your data"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:23
+msgid "AutomateWoo uses personal data in many of its features and stores personal data in your WordPress database. We do not store any personal data from your website on our servers. You may need to adjust the suggested text below based on your settings and which workflows are in use."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:24
+msgid "If you opt-in to receive marketing updates we may use your personal information to provide you with product updates or marketing communications that we believe may be of interest to you. Personal data may also be used by our internal system to automate processes of our store."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:25
+msgid "What we collect and store"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:26
+msgid "Cookies"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:27
+msgid "AutomateWoo uses three cookies to enable the session and cart tracking features of the plugin. If you have these features enabled you should include these cookies in your policy. You should also mention whether the user must give consent before these cookies are set."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:28
+msgid "We use cookies to remember who you are when browsing our site and to store the contents of your cart for the purpose of reminding you. These cookies will only be set when you consent to allowing additional cookies on our website."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:30
+msgid "%s - Used to store a secure key that is unique to you - Expires after 2 years"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:31
+msgid "%s - Used to flag when you begin interacting with our website - Expires when you end the browser session"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:32
+msgid "%s - Used to store flag when your stored cart needs to be updated - Expires when you end the browser session"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:35
+msgid "If you are using AutomateWoo's cart tracking feature user carts will be stored for 60 days, depending on your settings."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:36
+msgid "We store a copy of your cart in our database for 60 days for the purpose of reminding you when your cart is abandoned."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:38
+msgid "AutomateWoo keeps a record of when a user or guest chooses to opt-in or opt-out."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:39
+msgid "We store your communication preferences such as whether you have opted in to receive marketing communication. This data is retained until you request the removal of your data."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:40
+msgid "Communication logs"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:41
+msgid "AutomateWoo keeps a record of all workflow logs which includes open, click and conversion tracking."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:42
+msgid "We keep a log of some of the communication that we have with you which may include marketing and transactional emails and/or SMS messages. These are kept for the purpose of improving our marketing and communication with you and other customers. These logs are retained until you request removal of your data."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:43
+msgid "Pre-submit data capture"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:44
+msgid "AutomateWoo has the option to capture customer data before forms are submitted which usually means that consent has not been given. Using this feature may not be legal in some regions depending on your legal basis for capturing that data. If you choose to use this feature we recommend including some reasoning behind it."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:45
+msgid "What we share with others"
+msgstr ""
+
+#: includes/privacy-policy-guide.php:46
+msgid "AutomateWoo integrates with third party services which means personal data may be shared depending on what integrations you have enabled and which workflows you are using."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:47
+msgid "We use Twilio as our SMS delivery service. Your data may be transferred to Twilio for processing in accordance with their <%s>Privacy Policy<%s>."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:48
+msgid "We use MailChimp for email marketing. Your data may be transferred to MailChimp for processing in accordance with their <%s>Privacy Policy<%s>."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:49
+msgid "We use Active Campaign for email marketing. Your data may be transferred to Active Campaign for processing in accordance with their <%s>Privacy Policy<%s>."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:50
+msgid "We use Campaign Monitor for email marketing. Your data may be transferred to Campaign Monitor for processing in accordance with their <%s>Privacy Policy<%s>."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:51
+msgid "We use Bitly for link shortening. Your data may be transferred to Bitly for processing in accordance with their <%s>Privacy Policy<%s>."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:52
+msgid "We use AgileCRM as our CRM. Your data may be transferred to AgileCRM for processing in accordance with their <%s>Privacy Policy<%s>."
+msgstr ""
+
+#: includes/privacy-policy-guide.php:61
+msgid "Suggested text:"
+msgstr ""
+
+#: includes/privacy.php:21, includes/privacy.php:32
+msgid "Workflow Logs"
+msgstr ""
+
+#: includes/privacy.php:22, includes/privacy.php:33
+msgid "Queued Events"
+msgstr ""
+
+#: includes/privacy.php:23, includes/privacy.php:31
+msgid "Saved Cart"
+msgstr ""
+
+#: includes/privacy.php:24
+msgid "User Meta"
+msgstr ""
+
+#: includes/privacy.php:25
+msgid "User Tags"
+msgstr ""
+
+#: includes/privacy.php:27
+msgid "AutomateWoo Customer Object"
+msgstr ""
+
+#: includes/privacy.php:30
+msgid "Customer Object"
+msgstr ""
+
+#: includes/queue-manager.php:34
+msgid "The workflow was deleted or deactivated."
+msgstr ""
+
+#: includes/queue-manager.php:35
+msgid "Some of the required data was not found. For example, the order could have been deleted."
+msgstr ""
+
+#: includes/queue-manager.php:36
+msgid "A fatal error occurred while running the queued event."
+msgstr ""
+
+#: includes/queue-manager.php:43
+msgid "Cause of queued event failure is unknown."
+msgstr ""
+
+#: includes/subscription-workflow-helper.php:22
+msgid "Subscriptions"
+msgstr ""
+
+#: includes/subscription-workflow-helper.php:33, includes/fields/subscription-products.php:26
+msgid "Subscription products"
+msgstr ""
+
+#: includes/subscription-workflow-helper.php:34
+msgid "Select products here to make this workflow only run on subscriptions with matching products. Leave blank to run for all products."
+msgstr ""
+
+#: includes/subscription-workflow-helper.php:49
+msgid "Active subscriptions only"
+msgstr ""
+
+#: includes/subscription-workflow-helper.php:50
+msgid "Enable to ensure the subscription is still active when the workflow runs. This is useful if the workflow is not run immediately."
+msgstr ""
+
+#: includes/system-checks.php:89
+msgid "AutomateWoo status check has found issues."
+msgstr ""
+
+#: includes/system-checks.php:90
+msgid "<a href=\"%s\">View details</a>"
+msgstr ""
+
+#: includes/tool-background-processed-abstract.php:20
+msgid "If you are processing a large number of items they will be processed in the background."
+msgstr ""
+
+#: includes/updater.php:236
+msgid "To enable this update you must renew your expired license via the AutomateWoo account area."
+msgstr ""
+
+#: includes/updater.php:240
+msgid "<strong>Your license has expired.</strong> To enable this update please renew your license via the <%s>AutomateWoo account area<%s> then visit the <%s>licenses screen<%s> to refresh the status."
+msgstr ""
+
+#: includes/updater.php:250
+msgid "To enable this update you must enter your license key by visiting the the AutomateWoo > Settings > License screen."
+msgstr ""
+
+#: includes/updater.php:254
+msgid "To enable this update please enter your license key by visiting the <%s>AutomateWoo Licenses<%s> screen."
+msgstr ""
+
+#: includes/user-tags.php:79, includes/user-tags.php:81, includes/user-tags.php:294, includes/fields/user-tags.php:24, includes/actions/abstracts/active-campaign-abstract.php:76
+msgid "Tags"
+msgstr ""
+
+#: includes/user-tags.php:80
+msgid "Tag"
+msgstr ""
+
+#: includes/user-tags.php:82
+msgid "Search Tags"
+msgstr ""
+
+#: includes/user-tags.php:83
+msgid "Popular Tags"
+msgstr ""
+
+#: includes/user-tags.php:84
+msgid "All Tags"
+msgstr ""
+
+#: includes/user-tags.php:85
+msgid "Edit Tag"
+msgstr ""
+
+#: includes/user-tags.php:86
+msgid "Update Tag"
+msgstr ""
+
+#: includes/user-tags.php:87
+msgid "Add New Tag"
+msgstr ""
+
+#: includes/user-tags.php:88
+msgid "New Tag Name"
+msgstr ""
+
+#: includes/user-tags.php:89
+msgid "Separate Tags with commas"
+msgstr ""
+
+#: includes/user-tags.php:90
+msgid "Add or remove Tags"
+msgstr ""
+
+#: includes/user-tags.php:91
+msgid "Choose from the most popular tags"
+msgstr ""
+
+#: includes/user-tags.php:183
+msgid "Export"
+msgstr ""
+
+#: includes/user-tags.php:202
+msgid "Export to CSV"
+msgstr ""
+
+#: includes/user-tags.php:232
+msgid "Select %s"
+msgstr ""
+
+#: includes/user-tags.php:244
+msgid "There are no %s available."
+msgstr ""
+
+#: includes/user-tags.php:255
+msgid "Taxonomies"
+msgstr ""
+
+#: includes/user-tags.php:361, includes/user-tags.php:363
+msgid "Add tag&hellip;"
+msgstr ""
+
+#: includes/user-tags.php:368, includes/user-tags.php:370
+msgid "Remove tag&hellip;"
+msgstr ""
+
+#: includes/user-tags.php:430
+msgid "Tags updated."
+msgstr ""
+
+#: includes/workflow-email.php:241, includes/actions/campaign-monitor-remove-subscriber.php:27
+msgid "Unsubscribe"
+msgstr ""
+
+#: includes/workflow-email.php:306
+msgid "Workflow was not defined for email."
+msgstr ""
+
+#: includes/workflow-email.php:319, includes/actions/send-sms-twilio.php:103
+msgid "The recipient is not opted-in to this workflow."
+msgstr ""
+
+#: templates/honeypot-field.php:16, includes/actions/mailchimp-subscribe.php:23, includes/actions/abstracts/active-campaign-abstract.php:45
+msgid "First name"
+msgstr ""
+
+#: admin/controllers/carts.php:46
+msgid "Currently active carts are shown here which includes any cart that has not been cleared at purchase or emptied by its owner. Carts are automatically deleted %s days after their last update."
+msgstr ""
+
+#: admin/controllers/carts.php:68
+msgid "Please select some carts to bulk edit."
+msgstr ""
+
+#: admin/controllers/carts.php:91, admin/controllers/guests.php:115, admin/controllers/logs.php:112, admin/controllers/opt-ins.php:100, admin/controllers/queue.php:115, admin/reports-tabs/conversions-list.php:56
+msgid "Bulk edit completed."
+msgstr ""
+
+#: admin/controllers/dashboard.php:57
+msgid "90 days"
+msgstr ""
+
+#: admin/controllers/dashboard.php:58
+msgid "30 days"
+msgstr ""
+
+#: admin/controllers/dashboard.php:59
+msgid "14 days"
+msgstr ""
+
+#: admin/controllers/dashboard.php:60
+msgid "7 days"
+msgstr ""
+
+#: admin/controllers/guests.php:27
+msgid "Guest details"
+msgstr ""
+
+#: admin/controllers/guests.php:64
+msgid "Missing guest data."
+msgstr ""
+
+#: admin/controllers/guests.php:77, includes/abstracts/trigger.php:439, includes/tools/manual-orders-trigger.php:181, includes/tools/manual-orders-trigger.php:185, includes/tools/manual-subscriptions-trigger.php:146, includes/tools/manual-subscriptions-trigger.php:150, includes/triggers/user-purchases-product-variation-with-attribute.php:20, includes/triggers/wishlist-item-goes-on-sale.php:21
+msgstr ""
+
+#: admin/controllers/guests.php:98
+msgid "Please select some guests to bulk edit."
+msgstr ""
+
+#: admin/controllers/guests.php:132
+msgid "Guest successfully deleted."
+msgstr ""
+
+#: admin/controllers/licenses.php:85
+msgid "View getting started guide"
+msgstr ""
+
+#: admin/controllers/licenses.php:92
+msgid "%s activated successfully."
+msgstr ""
+
+#: admin/controllers/licenses.php:115
+msgid "Your license was successfully deactivated."
+msgstr ""
+
+#: admin/controllers/logs.php:49
+msgid "Every time a workflow runs a log entry is created. Logs are used by some triggers to determine when they should and should not fire. For this reason deleting logs should generally be avoided."
+msgstr ""
+
+#: admin/controllers/logs.php:69
+msgid "Workflow was successfully re-run."
+msgstr ""
+
+#: admin/controllers/logs.php:70
+msgid "Created log #%d."
+msgstr ""
+
+#: admin/controllers/logs.php:74
+msgid "Workflow could not be re-run."
+msgstr ""
+
+#: admin/controllers/logs.php:78
+msgid "Log not found."
+msgstr ""
+
+#: admin/controllers/logs.php:95
+msgid "Please select some logs to bulk edit."
+msgstr ""
+
+#: admin/controllers/opt-ins.php:48
+msgid "Import"
+msgstr ""
+
+#: admin/controllers/opt-ins.php:52
+msgid "Your store is set to require customers to opt-in before non-transactional workflows will run for them."
+msgstr ""
+
+#: admin/controllers/opt-ins.php:55
+msgid "Your store is set to automatically opt-in customers for workflows but they can opt-out with the unsubscribe link in emails and SMS."
+msgstr ""
+
+#: admin/controllers/opt-ins.php:59
+msgid "More information on opt-ins and opt-outs is available <%s>in the documentation.<%s>"
+msgstr ""
+
+#: admin/controllers/opt-ins.php:81
+msgid "Please select some items to bulk edit."
+msgstr ""
+
+#: admin/controllers/preview.php:53
+msgid "Error generating preview."
+msgstr ""
+
+#: admin/controllers/queue.php:51
+msgid "Workflows that are not set to run immediately will be added to this queue. The queue processes %s items every 5 minutes so actual run times may vary. <%s>Read more&hellip;<%s>"
+msgstr ""
+
+#: admin/controllers/queue.php:78
+msgid "Queued event run successfully."
+msgstr ""
+
+#: admin/controllers/queue.php:82
+msgid "Queued event failed to run."
+msgstr ""
+
+#: admin/controllers/queue.php:97, admin/reports-tabs/conversions-list.php:42
+msgid "Please select some queued events to bulk edit."
+msgstr ""
+
+#: admin/controllers/settings.php:20
+msgid "WARNING: After switching to 'Opt-in mode' current customers will not be automatically opted in. Non-transactional workflows will stop sending emails and SMS until customers choose to opt-in. You can import opt-ins via AutomateWoo > Tools."
+msgstr ""
+
+#: admin/controllers/settings.php:40
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: admin/controllers/tools.php:103
+msgid "Invalid tool."
+msgstr ""
+
+#: admin/controllers/tools.php:109
+msgid "Failed to init process."
+msgstr ""
+
+#: admin/controllers/tools.php:136
+msgid "Process could not be validated."
+msgstr ""
+
+#: admin/controllers/tools.php:145
+msgid "Process failed."
+msgstr ""
+
+#: admin/controllers/tools.php:151
+msgid "Success - Items may be still be processing in the background."
+msgstr ""
+
+#: admin/dashboard-widgets/chart-conversions.php:61
+msgid "conversion revenue"
+msgstr ""
+
+#: admin/dashboard-widgets/chart-conversions.php:67
+msgid "conversions"
+msgstr ""
+
+#: admin/dashboard-widgets/chart-email.php:88
+msgid "messages sent"
+msgstr ""
+
+#: admin/dashboard-widgets/chart-email.php:96
+msgid "opens"
+msgstr ""
+
+#: admin/dashboard-widgets/chart-email.php:104
+msgid "clicks"
+msgstr ""
+
+#: admin/dashboard-widgets/chart-workflows-run.php:52
+msgid "workflows run"
+msgstr ""
+
+#: admin/dashboard-widgets/key-figures.php:34
+msgid "workflows queued"
+msgstr ""
+
+#: admin/dashboard-widgets/key-figures.php:40
+msgid "active carts"
+msgstr ""
+
+#: admin/dashboard-widgets/key-figures.php:46
+msgid "guests captured"
+msgstr ""
+
+#: admin/dashboard-widgets/key-figures.php:52
+msgid "unsubscribes"
+msgstr ""
+
+#: admin/dashboard-widgets/logs.php:38
+msgid "Recent logs"
+msgstr ""
+
+#: admin/dashboard-widgets/logs.php:64, admin/reports/guests.php:168, admin/reports/queue.php:93
+msgid "View"
+msgstr ""
+
+#: admin/dashboard-widgets/logs.php:80
+msgid "No workflows have been run yet&hellip;"
+msgstr ""
+
+#: admin/dashboard-widgets/queue.php:39
+msgid "Upcoming queued events"
+msgstr ""
+
+#: admin/dashboard-widgets/queue.php:71
+msgid "There are no events currently queued&hellip;"
+msgstr ""
+
+#: admin/dashboard-widgets/workflows.php:45
+msgid "most run workflow"
+msgstr ""
+
+#: admin/dashboard-widgets/workflows.php:71
+msgid "highest converting workflow"
+msgstr ""
+
+#: admin/reports/abstract-graph.php:24
+msgid "Year"
+msgstr ""
+
+#: admin/reports/abstract-graph.php:25
+msgid "Last Month"
+msgstr ""
+
+#: admin/reports/abstract-graph.php:26
+msgid "This Month"
+msgstr ""
+
+#: admin/reports/abstract-graph.php:27
+msgid "Last 7 Days"
+msgstr ""
+
+#: admin/reports/abstract-graph.php:54, admin/reports/opt-ins.php:60, admin/views/meta-box-timing.php:171, includes/fields/date.php:16
+msgid "Date"
+msgstr ""
+
+#: admin/reports/abstract-graph.php:57
+msgid "Export CSV"
+msgstr ""
+
+#: admin/reports/abstract-graph.php:85
+msgid "Workflow Search"
+msgstr ""
+
+#: admin/reports/abstract-graph.php:90
+msgid "Show"
+msgstr ""
+
+#: admin/reports/carts.php:32, admin/reports/events.php:74, admin/settings-tabs/status.php:15, includes/actions/change-workflow-status.php:25
+msgid "Status"
+msgstr ""
+
+#: admin/reports/carts.php:34, admin/views/page-guest-details.php:59
+msgid "Last active"
+msgstr ""
+
+#: admin/reports/carts.php:35
+msgid "Items"
+msgstr ""
+
+#: admin/reports/carts.php:36, admin/views/modal-cart-info.php:110, templates/email/cart-table.php:114
+msgid "Total"
+msgstr ""
+
+#: admin/reports/carts.php:41, admin/reports/guests.php:49
+msgid "Language"
+msgstr ""
+
+#: admin/reports/carts.php:168
+msgid "Change status to active"
+msgstr ""
+
+#: admin/reports/carts.php:169
+msgid "Change status to abandoned"
+msgstr ""
+
+#: admin/reports/carts.php:170, admin/reports/guests.php:171, admin/reports/guests.php:182, admin/reports/logs.php:168, admin/reports/queue.php:195, admin/views/action.php:31, includes/actions/campaign-monitor-remove-subscriber.php:28
+msgid "Delete"
+msgstr ""
+
+#: admin/reports/conversions-list.php:19
+msgid "Conversion"
+msgstr ""
+
+#: admin/reports/conversions-list.php:20, admin/reports-tabs/conversions.php:13
+msgid "Conversions"
+msgstr ""
+
+#: admin/reports/conversions-list.php:27
+msgid "No conversions found."
+msgstr ""
+
+#: admin/reports/conversions-list.php:36
+msgid "Unmark As Conversion"
+msgstr ""
+
+#: admin/reports/conversions-list.php:140, admin/reports/logs.php:18, admin/reports/logs.php:108
+msgid "Log"
+msgstr ""
+
+#: admin/reports/conversions-list.php:141
+msgid "First Interacted"
+msgstr ""
+
+#: admin/reports/conversions-list.php:142
+msgid "Order Placed"
+msgstr ""
+
+#: admin/reports/conversions-list.php:143
+msgid "Order Total"
+msgstr ""
+
+#: admin/reports/conversions.php:109
+msgid "%s converted order value"
+msgstr ""
+
+#: admin/reports/conversions.php:115
+msgid "%s converted orders"
+msgstr ""
+
+#: admin/reports/conversions.php:134, admin/reports/email-tracking.php:187
+msgid "Showing reports for:"
+msgstr ""
+
+#: admin/reports/conversions.php:168, admin/reports/email-tracking.php:221
+msgid "Reset"
+msgstr ""
+
+#: admin/reports/conversions.php:207
+msgid "Conversion Number"
+msgstr ""
+
+#: admin/reports/conversions.php:216
+msgid "Conversion Value"
+msgstr ""
+
+#: admin/reports/email-tracking.php:141
+msgid "%s trackable messages sent"
+msgstr ""
+
+#: admin/reports/email-tracking.php:147
+msgid "%s unique opens"
+msgstr ""
+
+#: admin/reports/email-tracking.php:149
+msgid "This value represents unique opens."
+msgstr ""
+
+#: admin/reports/email-tracking.php:154
+msgid "%s unique clicks"
+msgstr ""
+
+#: admin/reports/email-tracking.php:160
+msgid "%s clicks"
+msgstr ""
+
+#: admin/reports/email-tracking.php:166
+msgid "%s unsubscribes"
+msgstr ""
+
+#: admin/reports/email-tracking.php:168
+msgid "Unsubscribes are recorded against each workflow so users can unsubscribe to individual workflows."
+msgstr ""
+
+#: admin/reports/email-tracking.php:323
+msgid "Unsubscribes"
+msgstr ""
+
+#: admin/reports/email-tracking.php:341
+msgid "Unique Clicks"
+msgstr ""
+
+#: admin/reports/email-tracking.php:350
+msgid "Clicks"
+msgstr ""
+
+#: admin/reports/email-tracking.php:359
+msgid "Opens"
+msgstr ""
+
+#: admin/reports/events.php:22, admin/reports/events.php:73, admin/reports/queue.php:18
+msgid "Event"
+msgstr ""
+
+#: admin/reports/events.php:75
+msgid "Hook"
+msgstr ""
+
+#: admin/reports/events.php:76
+msgid "Arguments"
+msgstr ""
+
+#: admin/reports/events.php:77
+msgid "Scheduled date"
+msgstr ""
+
+#: admin/reports/guests.php:26
+msgid "Search guests"
+msgstr ""
+
+#: admin/reports/guests.php:31
+msgid "No guests found."
+msgstr ""
+
+#: admin/reports/guests.php:42, admin/views/page-guest-details.php:44, includes/actions/order-resend-email.php:57, includes/actions/abstracts/send-email-abstract.php:33
+msgid "Email"
+msgstr ""
+
+#: admin/reports/guests.php:43
+msgid "Last Active"
+msgstr ""
+
+#: admin/reports/guests.php:44, admin/views/modal-queued-event-info.php:31, admin/views/page-guest-details.php:64
+msgid "Created"
+msgstr ""
+
+#: admin/reports/logs.php:32
+msgid "No logs found."
+msgstr ""
+
+#: admin/reports/logs.php:56
+msgid "Errors occurred when running this workflow. See log notes for more info."
+msgstr ""
+
+#: admin/reports/logs.php:59
+msgid "An email was blocked from sending. See log notes for more info."
+msgstr ""
+
+#: admin/reports/logs.php:111, admin/views/modal-log-info.php:29, includes/fields/time.php:30
+msgid "Time"
+msgstr ""
+
+#: admin/reports/opt-ins.php:20
+msgid "Opt-in"
+msgstr ""
+
+#: admin/reports/opt-ins.php:20, admin/settings-tabs/general.php:32
+msgid "Opt-out"
+msgstr ""
+
+#: admin/reports/opt-ins.php:24
+msgid "Search by email"
+msgstr ""
+
+#: admin/reports/opt-ins.php:74
+msgid "Set as opted-out"
+msgstr ""
+
+#: admin/reports/opt-ins.php:77
+msgid "Set as opted-in"
+msgstr ""
+
+#: admin/reports/queue.php:54, admin/views/modal-queued-event-info.php:26
+msgid "Failed"
+msgstr ""
+
+#: admin/reports/queue.php:72
+msgid "now"
+msgstr ""
+
+#: admin/reports/queue.php:94
+msgid "Retry"
+msgstr ""
+
+#: admin/reports/queue.php:94
+msgid "Run Now"
+msgstr ""
+
+#: admin/reports/queue.php:133
+msgid "Queued Event"
+msgstr ""
+
+#: admin/reports/queue.php:136
+msgid "Run Date"
+msgstr ""
+
+#: admin/reports/runs-by-date.php:68
+msgid "%s workflows have run for the selected period"
+msgstr ""
+
+#: admin/reports/runs-by-date.php:168
+msgid "Runs"
+msgstr ""
+
+#: admin/reports-tabs/conversions-list.php:15
+msgid "Conversions List"
+msgstr ""
+
+#: admin/reports-tabs/email-tracking.php:15
+msgid "Email & SMS Tracking"
+msgstr ""
+
+#: admin/settings-tabs/abstract.php:437
+msgid "Your settings have been saved."
+msgstr ""
+
+#: admin/settings-tabs/active-campaign.php:15, includes/actions/abstracts/active-campaign-abstract.php:14
+msgid "ActiveCampaign"
+msgstr ""
+
+#: admin/settings-tabs/active-campaign.php:31
+msgid "Enable ActiveCampaign Integration"
+msgstr ""
+
+#: admin/settings-tabs/active-campaign.php:37
+msgid "API URL"
+msgstr ""
+
+#: admin/settings-tabs/active-campaign.php:43, admin/settings-tabs/mailchimp.php:38
+msgid "API Key"
+msgstr ""
+
+#: admin/settings-tabs/bitly.php:16, admin/settings-tabs/bitly.php:23
+msgid "Bitly"
+msgstr ""
+
+#: admin/settings-tabs/bitly.php:25
+msgid "Integrating with Bitly allows you to shorten links in your SMS messages. Create a free account at <%s>bitly.com<%s>."
+msgstr ""
+
+#: admin/settings-tabs/bitly.php:33
+msgid "Generic Access Token"
+msgstr ""
+
+#: admin/settings-tabs/bitly.php:34
+msgid "Find your Generic Access Token in your Bitly account area under Your Account > Edit Profile."
+msgstr ""
+
+#: admin/settings-tabs/bitly.php:39
+msgid "Shorten all SMS links"
+msgstr ""
+
+#: admin/settings-tabs/campaign-monitor.php:15, includes/actions/abstracts/campaign-monitor-abstract.php:14
+msgid "Campaign Monitor"
+msgstr ""
+
+#: admin/settings-tabs/campaign-monitor.php:23
+msgid "To find your API key or client ID, sign in to your Campaign Monitor account and click your profile image at the top right, then select Account settings, then API keys."
+msgstr ""
+
+#: admin/settings-tabs/campaign-monitor.php:29
+msgid "Enabling the Campaign Monitor integration makes actions available for use when creating workflows. These actions can be used to automate adding and removing members from lists."
+msgstr ""
+
+#: admin/settings-tabs/campaign-monitor.php:38, includes/actions/add-to-campaign-monitor.php:28, includes/actions/add-to-mad-mimi-list.php:39
+msgid "API key"
+msgstr ""
+
+#: admin/settings-tabs/campaign-monitor.php:45
+msgid "Client ID"
+msgstr ""
+
+#: admin/settings-tabs/carts.php:26
+msgid "Enable cart tracking"
+msgstr ""
+
+#: admin/settings-tabs/carts.php:32
+msgid "Abandoned cart timeout"
+msgstr ""
+
+#: admin/settings-tabs/carts.php:33
+msgid "Set the number of minutes from when a cart is last active to when it is considered abandoned. Default value is 15."
+msgstr ""
+
+#: admin/settings-tabs/carts.php:38
+msgid "Include failed, cancelled and pending orders as abandoned carts"
+msgstr ""
+
+#: admin/settings-tabs/carts.php:39
+msgid "When disabled, carts that are converted to pending, cancelled or failed orders will not be included in abandoned cart workflows."
+msgstr ""
+
+#: admin/settings-tabs/carts.php:45
+msgid "Clear inactive carts after"
+msgstr ""
+
+#: admin/settings-tabs/carts.php:46
+msgid "Set the days after which an inactive cart will be deleted. Default value is 60."
+msgstr ""
+
+#: admin/settings-tabs/general.php:15
+msgid "General"
+msgstr ""
+
+#: admin/settings-tabs/general.php:23
+msgid "Marketing opt-in"
+msgstr ""
+
+#: admin/settings-tabs/general.php:24
+msgid "AutomateWoo can either be in opt-in mode or opt-out mode. Opt-in means customers must opt-in before email and SMS can be sent to them. Opt-out means email and SMS will be sent automatically until the customer chooses to opt-out. All transactional workflows are excluded from this."
+msgstr ""
+
+#: admin/settings-tabs/general.php:29
+msgid "Customer opt-in mode"
+msgstr ""
+
+#: admin/settings-tabs/general.php:31
+msgid "Opt-in (recommended)"
+msgstr ""
+
+#: admin/settings-tabs/general.php:41
+msgid "Opt-in checkbox locations"
+msgstr ""
+
+#: admin/settings-tabs/general.php:42
+msgid "Show on checkout page."
+msgstr ""
+
+#: admin/settings-tabs/general.php:51
+msgid "Show on account sign up page."
+msgstr ""
+
+#: admin/settings-tabs/general.php:59
+msgid "Opt-in checkbox text"
+msgstr ""
+
+#: admin/settings-tabs/general.php:72
+msgid "Session tracking"
+msgstr ""
+
+#: admin/settings-tabs/general.php:73
+msgid "Session tracking uses cookies to remember users when they are not signed in. This means carts can be tracked when the user is signed out. This is also used by the Refer A Friend add-on to reduce fraud. Since these cookies may not be considered 'essential' for the function of the website, users in some regions may need to give consent before these cookies are set."
+msgstr ""
+
+#: admin/settings-tabs/general.php:79
+msgid "Enable session tracking"
+msgstr ""
+
+#: admin/settings-tabs/general.php:80
+msgid " "
+msgstr ""
+
+#: admin/settings-tabs/general.php:89
+msgid "Require cookie consent"
+msgstr ""
+
+#: admin/settings-tabs/general.php:90
+msgid "Disable session tracking until consent is given. Requires a cookie consent plugin."
+msgstr ""
+
+#: admin/settings-tabs/general.php:91
+msgid "AutomateWoo does not add a notice asking for cookie consent. Please use a cookie consent plugin or custom code for this."
+msgstr ""
+
+#: admin/settings-tabs/general.php:102
+msgid "Consent cookie name"
+msgstr ""
+
+#: admin/settings-tabs/general.php:103
+msgid "Insert the name of the cookie added by your cookie consent solution when a user gives consent. Please note that this is case sensitive. If you are unsure what this is please contact your developer."
+msgstr ""
+
+#: admin/settings-tabs/general.php:113
+msgid "Enable pre-submit data capture"
+msgstr ""
+
+#: admin/settings-tabs/general.php:114
+msgid "Capture guest customer data before forms are submitted e.g. during checkout. We recommend leaving this disabled to comply with GDPR."
+msgstr ""
+
+#: admin/settings-tabs/general.php:126
+msgid "Where should pre-submit data capture be enabled?"
+msgstr ""
+
+#: admin/settings-tabs/general.php:127
+msgid "Determines which pages have javascript code inserted for email capture."
+msgstr ""
+
+#: admin/settings-tabs/general.php:128
+msgid "If set to All Pages you can add the CSS class 'automatewoo-capture-guest-email' to enable email capture on custom form fields."
+msgstr ""
+
+#: admin/settings-tabs/general.php:130
+msgid "Checkout Only"
+msgstr ""
+
+#: admin/settings-tabs/general.php:131
+msgid "All Pages"
+msgstr ""
+
+#: admin/settings-tabs/general.php:142, admin/settings-tabs/general.php:147
+msgid "Communication preferences page"
+msgstr ""
+
+#: admin/settings-tabs/general.php:143
+msgid "The communication preferences page is where customers can opt-in or opt-out of workflows. It must contain the shortcode %s. To set up a signup page use the shortcode %s and specify the page in the setting below."
+msgstr ""
+
+#: admin/settings-tabs/general.php:154
+msgid "Communication signup page (optional)"
+msgstr ""
+
+#: admin/settings-tabs/general.php:155
+msgid "The signup page is similar to the preferences page but allows customers to enter their email address."
+msgstr ""
+
+#: admin/settings-tabs/general.php:162
+msgid "Enable account tab"
+msgstr ""
+
+#: admin/settings-tabs/general.php:163
+msgid "Show Communication tab in My Account area"
+msgstr ""
+
+#: admin/settings-tabs/general.php:168
+msgid "Legal text"
+msgstr ""
+
+#: admin/settings-tabs/general.php:170
+msgid "WooCommerce 3.4 is required for the shortcodes below to work."
+msgstr ""
+
+#: admin/settings-tabs/general.php:172
+msgid "This text is shown above the form submit button. Use the following shortcodes to add dynamic content: %s"
+msgstr ""
+
+#: admin/settings-tabs/general.php:184
+msgid "Email sender options"
+msgstr ""
+
+#: admin/settings-tabs/general.php:187
+msgid "From name"
+msgstr ""
+
+#: admin/settings-tabs/general.php:188
+msgid "How the sender name appears in outgoing AutomateWoo emails. If blank the WooCommerce sender name will be used."
+msgstr ""
+
+#: admin/settings-tabs/general.php:195
+msgid "From email"
+msgstr ""
+
+#: admin/settings-tabs/general.php:196
+msgid "How the sender email appears in outgoing AutomateWoo emails. If blank the WooCommerce sender email will be used."
+msgstr ""
+
+#: admin/settings-tabs/general.php:204
+msgid "Misc"
+msgstr ""
+
+#: admin/settings-tabs/general.php:207
+msgid "Conversion tracking window"
+msgstr ""
+
+#: admin/settings-tabs/general.php:208
+msgid "Sets the number of days after a workflow runs that a new order can be considered a conversion. Default value is 14."
+msgstr ""
+
+#: admin/settings-tabs/general.php:213
+msgid "Automatically delete expired coupons"
+msgstr ""
+
+#: admin/settings-tabs/general.php:214
+msgid "Coupons generated by AutomateWoo will be deleted 14 days after they expire."
+msgstr ""
+
+#: admin/settings-tabs/mailchimp.php:15, includes/actions/abstracts/mailchimp-abstract.php:14
+msgid "MailChimp"
+msgstr ""
+
+#: admin/settings-tabs/mailchimp.php:26
+msgid "Enabling the MailChimp integration does not automatically sync your data but makes three actions available when creating workflows. These actions can be used to automate how you add and remove members from your MailChimp lists and update your custom fields."
+msgstr ""
+
+#: admin/settings-tabs/mailchimp.php:40
+msgid "You can get your API key when logged in to MailChimp under Account > Extras > API Keys."
+msgstr ""
+
+#: admin/settings-tabs/mailchimp.php:74
+msgid "The MailChimp API Key you entered is not valid."
+msgstr ""
+
+#: admin/settings-tabs/status.php:37
+msgid "Allow occasional background checks for major system issues. If an issue is detected an admin notice will appear."
+msgstr ""
+
+#: admin/settings-tabs/twilio.php:15
+msgid "Twilio"
+msgstr ""
+
+#: admin/settings-tabs/twilio.php:30
+msgid "Enable Twilio Integration"
+msgstr ""
+
+#: admin/settings-tabs/twilio.php:36, admin/views/email-preview-ui.php:27
+msgid "From"
+msgstr ""
+
+#: admin/settings-tabs/twilio.php:37
+msgid "Must be a Twilio phone number (in E.164 format) or alphanumeric sender ID."
+msgstr ""
+
+#: admin/settings-tabs/twilio.php:43
+msgid "Account SID"
+msgstr ""
+
+#: admin/settings-tabs/twilio.php:49
+msgid "Auth Token"
+msgstr ""
+
+#: admin/views/action.php:34
+msgid "New Action"
+msgstr ""
+
+#: admin/views/action.php:42
+msgid "Action"
+msgstr ""
+
+#: admin/views/data-upgrade-prompt.php:17
+msgid "%s database update required"
+msgstr ""
+
+#: admin/views/data-upgrade-prompt.php:18
+msgid "- Please run the updater as soon as possible. It is normal for this to take some time to complete."
+msgstr ""
+
+#: admin/views/data-upgrade-prompt.php:19
+msgid "Run the updater"
+msgstr ""
+
+#: admin/views/data-upgrade-prompt.php:34
+msgid "It is recommended that you backup your database before proceeding. Are you sure you wish to run the updater now?"
+msgstr ""
+
+#: admin/views/email-preview-ui.php:28
+msgid "Subject"
+msgstr ""
+
+#: admin/views/email-preview-ui.php:34
+msgid "Comma separate emails..."
+msgstr ""
+
+#: admin/views/email-preview-ui.php:38, admin/views/sms-test-twilio.php:56
+msgid "Send"
+msgstr ""
+
+#: admin/views/js-workflow-templates.php:14
+msgid "Confirm change trigger?"
+msgstr ""
+
+#: admin/views/js-workflow-templates.php:19
+msgid "Some of the rules or actions currently in use on this workflow are incompatible with the new trigger you have selected. If you continue they will be removed."
+msgstr ""
+
+#: admin/views/js-workflow-templates.php:21
+msgid "Incompatible Rules: "
+msgstr ""
+
+#: admin/views/js-workflow-templates.php:24
+msgid "Incompatible Actions: "
+msgstr ""
+
+#: admin/views/js-workflow-templates.php:30
+msgid "Cancel"
+msgstr ""
+
+#: admin/views/js-workflow-templates.php:31, admin/views/page-tools-form-confirm.php:36
+msgid "Confirm"
+msgstr ""
+
+#: admin/views/meta-box-actions.php:50
+msgid "No actions. Click the <strong>+ Add Action</strong> to create an action."
+msgstr ""
+
+#: admin/views/meta-box-actions.php:60
+msgid "+ Add Action"
+msgstr ""
+
+#: admin/views/meta-box-options.php:18
+msgid "Is transactional?"
+msgstr ""
+
+#: admin/views/meta-box-options.php:26
+msgid "Is this workflow used for transactional emails instead of marketing emails? Checking this removes the unsubscribe link in email."
+msgstr ""
+
+#: admin/views/meta-box-options.php:36
+msgid "Enable tracking"
+msgstr ""
+
+#: admin/views/meta-box-options.php:45
+msgid "Enables open and click tracking on emails sent from this workflow. SMS messages will also have click tracking but open tracking is not possible with SMS."
+msgstr ""
+
+#: admin/views/meta-box-options.php:54
+msgid "Enable conversion tracking"
+msgstr ""
+
+#: admin/views/meta-box-options.php:63
+msgid "Enables conversion tracking on purchases made as a result of this workflow."
+msgstr ""
+
+#: admin/views/meta-box-options.php:73
+msgid "Google Analytics link tracking"
+msgstr ""
+
+#: admin/views/meta-box-options.php:73
+msgid "This will be appended to every URL in the email content or SMS body."
+msgstr ""
+
+#: admin/views/meta-box-options.php:93
+msgid "Workflow order"
+msgstr ""
+
+#: admin/views/meta-box-options.php:93
+msgid "The order that workflows will run."
+msgstr ""
+
+#: admin/views/meta-box-save.php:34
+msgid "Status:"
+msgstr ""
+
+#: admin/views/meta-box-save.php:63
+msgid "Created: <b>%s</b>"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:29
+msgid "Run immediately"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:30
+msgid "Delayed"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:31
+msgid "Scheduled"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:32
+msgid "Fixed"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:46
+msgid "Variable"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:56
+msgid "e.g. {{ subscription.next_payment_date | modify: '-1 day' }}"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:67
+msgid "Scheduled time"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:67
+msgid "(24hr)"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:98
+msgid "Scheduled days"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:98, admin/views/meta-box-timing.php:130
+msgid "(optional)"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:111
+msgid "[Any day]"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:127
+msgid "Length of the delay"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:129
+msgid "Minimum wait"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:151, includes/rules/abstracts/abstract-date.php:169
+msgid "Hours"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:152
+msgid "Minutes"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:153, includes/rules/abstracts/abstract-date.php:170
+msgid "Days"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:154
+msgid "Weeks"
+msgstr ""
+
+#: admin/views/meta-box-timing.php:172, includes/fields/time.php:86
+msgid "(24 hour time)"
+msgstr ""
+
+#: admin/views/meta-box-trigger.php:20, includes/actions/add-to-campaign-monitor.php:19, includes/triggers/user-purchases-from-category.php:26, includes/triggers/user-purchases-from-tag.php:24, includes/triggers/user-purchases-specific-product.php:25
+msgid "DEPRECATED"
+msgstr ""
+
+#: admin/views/meta-box-trigger.php:33, includes/fields/category.php:23, includes/fields/select.php:37, includes/fields/tag.php:20
+msgid "[Select]"
+msgstr ""
+
+#: admin/views/meta-box-variables.php:16
+msgid "Click on a variable to see more info and copy it to the clipboard. Variables can be used in any action text field to add dynamic content. The available variables are set based on the selected trigger for this workflow."
+msgstr ""
+
+#: admin/views/modal-cart-info.php:18
+msgid "Cart #%s"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:30, includes/actions/abstracts/subscription-edit-item-abstract.php:129
+msgid "Quantity"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:31, includes/fields/price.php:23, includes/variables/abstracts/abstract-price.php:24
+msgid "Price"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:65, templates/email/cart-table.php:69
+msgid "Subtotal"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:67, templates/email/cart-table.php:71
+msgid "(incl. tax)"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:80, templates/email/cart-table.php:84
+msgid "Coupon: %s"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:87, templates/email/cart-table.php:91
+msgid "Shipping"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:103, templates/email/cart-table.php:107
+msgid "Tax"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:112, templates/email/cart-table.php:116
+msgid "(includes %s tax)"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:124
+msgid "Cart token"
+msgstr ""
+
+#: admin/views/modal-cart-info.php:125
+msgid "Cart created"
+msgstr ""
+
+#: admin/views/modal-log-info.php:21
+msgid "Log #%s"
+msgstr ""
+
+#: admin/views/modal-log-info.php:35
+msgid "Tracking enabled"
+msgstr ""
+
+#: admin/views/modal-log-info.php:36
+msgid "Conversion tracking enabled"
+msgstr ""
+
+#: admin/views/modal-log-info.php:39
+msgid "Opened"
+msgstr ""
+
+#: admin/views/modal-log-info.php:40
+msgid "Clicked"
+msgstr ""
+
+#: admin/views/modal-log-info.php:50
+msgid "Log notes:"
+msgstr ""
+
+#: admin/views/modal-log-info.php:60
+msgid "Log data has been anonymized."
+msgstr ""
+
+#: admin/views/modal-log-info.php:63
+msgid "Re-run workflow (skips validation)"
+msgstr ""
+
+#: admin/views/modal-queued-event-info.php:18
+msgid "Queued event #%s"
+msgstr ""
+
+#: admin/views/modal-queued-event-info.php:30
+msgid "Due to run"
+msgstr ""
+
+#: admin/views/modal-variable-info.php:51
+msgid "Displayed when there is no value found."
+msgstr ""
+
+#: admin/views/modal-variable-info.php:63
+msgid "Copy to clipboard"
+msgstr ""
+
+#: admin/views/page-data-upgrade.php:38
+msgid "%s - Database Update"
+msgstr ""
+
+#: admin/views/page-data-upgrade.php:42
+msgid "Reading update tasks..."
+msgstr ""
+
+#: admin/views/page-data-upgrade.php:45
+msgid "Upgrading data to version %s."
+msgstr ""
+
+#: admin/views/page-data-upgrade.php:47
+msgid "Approximately %s0%s items to process."
+msgstr ""
+
+#: admin/views/page-data-upgrade.php:50
+msgid "%s0%s items processed."
+msgstr ""
+
+#: admin/views/page-data-upgrade.php:55
+msgid "Database update complete"
+msgstr ""
+
+#: admin/views/page-data-upgrade.php:194
+msgid "No updates available"
+msgstr ""
+
+#: admin/views/page-guest-details.php:34
+msgid "Guest ID"
+msgstr ""
+
+#: admin/views/page-guest-details.php:39
+msgid "Name"
+msgstr ""
+
+#: admin/views/page-guest-details.php:49
+msgid "Address"
+msgstr ""
+
+#: admin/views/page-guest-details.php:54, includes/actions/abstracts/active-campaign-abstract.php:55
+msgid "Phone"
+msgstr ""
+
+#: admin/views/page-guest-details.php:69, includes/triggers/customer-order-count-reaches.php:26
+msgid "Order count"
+msgstr ""
+
+#: admin/views/page-guest-details.php:74
+msgid "Total spent"
+msgstr ""
+
+#: admin/views/page-licenses.php:25
+msgid "In order to receive plugin updates for AutomateWoo extensions you must enter a license key. If you do not have a license key please see <a href=\"%s\" target=\"_blank\">details & pricing</a>. If your license has expired you may still use it to activate this domain but you will not be able to receive updates."
+msgstr ""
+
+#: admin/views/page-licenses.php:37
+msgid "Development Install Detected"
+msgstr ""
+
+#: admin/views/page-licenses.php:39
+msgid "Activating this domain will not count against the activation limit of your license. For more info please see <a href=\"%s\" target=\"_blank\">our documentation</a>."
+msgstr ""
+
+#: admin/views/page-licenses.php:60
+msgid "Activate Licenses"
+msgstr ""
+
+#: admin/views/page-tools-form.php:58
+msgid "Next"
+msgstr ""
+
+#: admin/views/rules.php:23
+msgid "+ Add Rule Group"
+msgstr ""
+
+#: admin/views/rules.php:31
+msgid "Rules can be used to add conditional logic to workflows. Click the %s+ Add Rule Group%s button to create a rule."
+msgstr ""
+
+#: admin/views/rules.php:47
+msgid "[Select Rule]"
+msgstr ""
+
+#: admin/views/rules.php:112
+msgid "key"
+msgstr ""
+
+#: admin/views/rules.php:113
+msgid "value"
+msgstr ""
+
+#: admin/views/rules.php:176
+msgid "and"
+msgstr ""
+
+#: admin/views/rules.php:185
+msgid "This rule %1$s is no longer available and will be removed by saving this workflow."
+msgstr ""
+
+#: admin/views/rules.php:197
+msgid "or"
+msgstr ""
+
+#: admin/views/settings-form.php:20, templates/communication-preferences/communication-form.php:36, templates/communication-preferences/signup-form.php:34
+msgid "Save changes"
+msgstr ""
+
+#: admin/views/sms-test-twilio.php:13
+msgid "Send Test SMS"
+msgstr ""
+
+#: admin/views/sms-test-twilio.php:21, admin/views/sms-test-twilio.php:27
+msgid "Recipient"
+msgstr ""
+
+#: admin/views/sms-test-twilio.php:36, admin/views/sms-test-twilio.php:42
+msgid "Message"
+msgstr ""
+
+#: admin/views/sms-test-twilio.php:55
+msgid "Sending..."
+msgstr ""
+
+#: admin/views/welcome-notice.php:13
+msgid "Welcome to AutomateWoo!"
+msgstr ""
+
+#: admin/views/welcome-notice.php:16
+msgid "We're super excited you have decided to grow your store with AutomateWoo! If you haven't already, you should check out our <%s>Getting Started Guide<%s>, and for tutorials and tips, be sure to visit our <%s>blog<%s> and <%s>documentation<%s>. If you have any questions, don't hesitate to <%s>contact us<%s> for help."
+msgstr ""
+
+#: includes/abstracts/action.php:83, includes/abstracts/action.php:96, includes/abstracts/trigger.php:292, includes/actions/change-post-status.php:19, includes/rules/abstracts/rule.php:386
+msgid "Other"
+msgstr ""
+
+#: includes/abstracts/action.php:274
+msgid "THIS ACTION IS DEPRECATED AND SHOULD NOT BE USED."
+msgstr ""
+
+#: includes/abstracts/trigger.php:407, includes/abstracts/trigger.php:437, includes/triggers/subscription-status-changed.php:42
+msgid "Recheck status before run"
+msgstr ""
+
+#: includes/abstracts/trigger.php:410
+msgid "This is useful for Workflows that are not run immediately as it ensures the status of the order hasn't changed since initial trigger."
+msgstr ""
+
+#: includes/abstracts/trigger.php:425
+msgid "Can be used to ensure that this trigger will only send once in a set period to a user or guest."
+msgstr ""
+
+#: includes/abstracts/trigger.php:424
+msgid "Customer pause period (days)"
+msgstr ""
+
+#: includes/abstracts/trigger.php:578
+msgid "THIS TRIGGER IS DEPRECATED AND SHOULD NOT BE USED."
+msgstr ""
+
+#: includes/actions/active-campaign-add-tag.php:17
+msgid "Add Tags To Contact"
+msgstr ""
+
+#: includes/actions/active-campaign-add-tag.php:26
+msgid "The below fields will be used only if the contact needs to be created."
+msgstr ""
+
+#: includes/actions/active-campaign-add-tag.php:25
+msgid "Create contact if missing"
+msgstr ""
+
+#: includes/actions/active-campaign-create-contact.php:17
+msgid "Create / Update Contact"
+msgstr ""
+
+#: includes/actions/active-campaign-create-contact.php:18
+msgid "This trigger can be used to create or update contacts in ActiveCampaign. If an existing contact is found by email then an update will occur otherwise a new contact will be created. When updating a contact any fields left blank will not be updated."
+msgstr ""
+
+#: includes/actions/active-campaign-create-contact.php:28
+msgid "Leave blank to add a contact without assigning them to any lists."
+msgstr ""
+
+#: includes/actions/active-campaign-create-contact.php:25
+msgid "Add to list"
+msgstr ""
+
+#: includes/actions/active-campaign-create-contact.php:34
+msgid "Add tags"
+msgstr ""
+
+#: includes/actions/active-campaign-remove-tag.php:17
+msgid "Remove Tags From Contact"
+msgstr ""
+
+#: includes/actions/active-campaign-update-contact-field.php:16
+msgid "Update Contact Custom Field"
+msgstr ""
+
+#: includes/actions/active-campaign-update-contact-field.php:30, includes/actions/mailchimp-update-contact-field.php:25
+msgid "Field"
+msgstr ""
+
+#: includes/actions/active-campaign-update-contact-field.php:36, includes/actions/customer-update-meta.php:33, includes/actions/order-update-meta.php:32, includes/actions/update-product-meta.php:32
+msgid "Value"
+msgstr ""
+
+#: includes/actions/active-campaign-update-contact-field.php:56, includes/actions/mailchimp-update-contact-field.php:97
+msgid "Failed because contact did not exist."
+msgstr ""
+
+#: includes/actions/add-to-campaign-monitor.php:18
+msgid "Campaign Monitor Add Customer to List [DEPRECATED]"
+msgstr ""
+
+#: includes/actions/add-to-campaign-monitor.php:20
+msgid "Instead please enable the Campaign Monitor integration in settings and then use the new <b>Campaign Monitor - Add Subscriber To List</b> action."
+msgstr ""
+
+#: includes/actions/add-to-campaign-monitor.php:30
+msgid "You can get your API key from the Account Settings page when logged into your Campaign Monitor account."
+msgstr ""
+
+#: includes/actions/add-to-campaign-monitor.php:34
+msgid "List ID"
+msgstr ""
+
+#: includes/actions/add-to-campaign-monitor.php:36
+msgid "You find the List ID of a list by heading into any list in your account and clicking the 'change name/type' link below your list name."
+msgstr ""
+
+#: includes/actions/add-to-mad-mimi-list.php:17
+msgid "Add Customer to List"
+msgstr ""
+
+#: includes/actions/add-to-mad-mimi-list.php:18
+msgid "Mad Mimi"
+msgstr ""
+
+#: includes/actions/add-to-mad-mimi-list.php:24
+msgid "Server is missing CURL extension required to use the MadMimi API."
+msgstr ""
+
+#: includes/actions/add-to-mad-mimi-list.php:34
+msgid "Username (email)"
+msgstr ""
+
+#: includes/actions/add-to-mad-mimi-list.php:41
+msgid "You can get your API key from the account section of Mad Mimi."
+msgstr ""
+
+#: includes/actions/add-to-mad-mimi-list.php:45
+msgid "List name"
+msgstr ""
+
+#: includes/actions/campaign-monitor-add-subscriber.php:15
+msgid "Add Subscriber to List"
+msgstr ""
+
+#: includes/actions/campaign-monitor-remove-subscriber.php:15
+msgid "Remove Subscriber From List"
+msgstr ""
+
+#: includes/actions/campaign-monitor-remove-subscriber.php:25
+msgid "If delete is selected the subscriber's email will not be added to the suppression list."
+msgstr ""
+
+#: includes/actions/change-post-status.php:18
+msgid "Change Post Status"
+msgstr ""
+
+#: includes/actions/change-post-status.php:26
+msgid "Post status"
+msgstr ""
+
+#: includes/actions/change-workflow-status.php:17
+msgid "Change Workflow Status"
+msgstr ""
+
+#: includes/actions/clear-queued-events.php:16
+msgid "Clear Queued Events"
+msgstr ""
+
+#: includes/actions/clear-queued-events.php:18
+msgid "Clears a customer's currently queued events for selected workflows."
+msgstr ""
+
+#: includes/actions/clear-queued-events.php:31
+msgid "Customer email"
+msgstr ""
+
+#: includes/actions/custom-function.php:15
+msgid "Custom Function"
+msgstr ""
+
+#: includes/actions/custom-function.php:17
+msgid "This action can be used by developers to trigger custom code from a workflow. <%s>View documentation<%s>."
+msgstr ""
+
+#: includes/actions/custom-function.php:26
+msgid "Function name"
+msgstr ""
+
+#: includes/actions/customer-add-tags.php:17
+msgid "Add Tags"
+msgstr ""
+
+#: includes/actions/customer-add-tags.php:19
+msgid "Please note that tags are not supported on guest customers."
+msgstr ""
+
+#: includes/actions/customer-change-role.php:17
+msgid "Change Role"
+msgstr ""
+
+#: includes/actions/customer-change-role.php:19
+msgid "Please note that if the customer is a guest this action will do nothing."
+msgstr ""
+
+#: includes/actions/customer-remove-tags.php:15
+msgid "Remove Tags"
+msgstr ""
+
+#: includes/actions/customer-update-meta.php:17, includes/actions/order-update-meta.php:17, includes/actions/subscription-update-meta.php:18, includes/actions/update-product-meta.php:17
+msgid "Update Custom Field"
+msgstr ""
+
+#: includes/actions/customer-update-meta.php:19
+msgid "This action can add or update a customer's custom field. If the customer has an account, the user meta table is used. If the customer is a guest, the guest meta table is used."
+msgstr ""
+
+#: includes/actions/customer-update-meta.php:27, includes/actions/order-update-meta.php:26, includes/actions/update-product-meta.php:26
+msgid "Key"
+msgstr ""
+
+#: includes/actions/mailchimp-add-to-group.php:16
+msgid "Add Contact To Group"
+msgstr ""
+
+#: includes/actions/mailchimp-add-to-group.php:24
+msgid "Groups"
+msgstr ""
+
+#: includes/actions/mailchimp-add-to-group.php:31
+msgid "Add contact to list if missing?"
+msgstr ""
+
+#: includes/actions/mailchimp-remove-from-group.php:16
+msgid "Remove Contact From Group"
+msgstr ""
+
+#: includes/actions/mailchimp-subscribe.php:15
+msgid "Add Contact To List"
+msgstr ""
+
+#: includes/actions/mailchimp-subscribe.php:24, includes/actions/mailchimp-subscribe.php:30
+msgid "This field is optional."
+msgstr ""
+
+#: includes/actions/mailchimp-subscribe.php:29, includes/actions/abstracts/active-campaign-abstract.php:50
+msgid "Last name"
+msgstr ""
+
+#: includes/actions/mailchimp-subscribe.php:36
+msgid "Users will receive an email asking them to confirm their subscription."
+msgstr ""
+
+#: includes/actions/mailchimp-subscribe.php:35
+msgid "Double optin"
+msgstr ""
+
+#: includes/actions/mailchimp-unsubscribe.php:15
+msgid "Remove Contact From List"
+msgstr ""
+
+#: includes/actions/mailchimp-unsubscribe.php:22
+msgid "Unsubscribe only"
+msgstr ""
+
+#: includes/actions/mailchimp-unsubscribe.php:23
+msgid "If checked the user will be unsubscribed instead of deleted."
+msgstr ""
+
+#: includes/actions/mailchimp-update-contact-field.php:16
+msgid "Update List Contact Field"
+msgstr ""
+
+#: includes/actions/mailchimp-update-contact-field.php:17
+msgid "The contact must have been added to the list before updating any fields."
+msgstr ""
+
+#: includes/actions/mailchimp-update-contact-field.php:31
+msgid "Field Value"
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:19
+msgid "Create / Change Membership Plan For User"
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:20
+msgid "Changes the plan of a user's active membership. If no active membership exists a new membership can optionally be created."
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:31
+msgid "Existing plan"
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:32
+msgid "[None]"
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:33
+msgid "Leave this blank to only create new memberships."
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:38
+msgid "New plan"
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:43
+msgid "Allow membership creation?"
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:44
+msgid "If checked a new membership will be created for the user if they are not a member of the existing plan."
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:69
+msgid "Plan could not be changed or created because the user already has a membership using the new plan."
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:105
+msgid "Membership created by AutomateWoo workflow #%s"
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:111
+msgid "Membership #%s successfully created."
+msgstr ""
+
+#: includes/actions/memberships-change-plan.php:125
+msgid "Membership plan changed from %s to %s by AutomateWoo workflow:#%s"
+msgstr ""
+
+#: includes/actions/memberships-delete-user-membership.php:19
+msgid "Delete Membership For User"
+msgstr ""
+
+#: includes/actions/memberships-delete-user-membership.php:29
+msgid "Plan"
+msgstr ""
+
+#: includes/actions/memberships-delete-user-membership.php:53
+msgid "The user did not have membership that matched the selected plan."
+msgstr ""
+
+#: includes/actions/memberships-delete-user-membership.php:62
+msgid "Deleted membership #%s"
+msgstr ""
+
+#: includes/actions/memberships-delete-user-membership.php:65
+msgid "Failed deleting membership #%s"
+msgstr ""
+
+#: includes/actions/order-add-note.php:18, includes/actions/subscription-add-note.php:28
+msgid "Add Note"
+msgstr ""
+
+#: includes/actions/order-add-note.php:29, includes/actions/order-update-customer-shipping-note.php:29
+msgid "Note"
+msgstr ""
+
+#: includes/actions/order-change-status.php:18, includes/actions/subscription-change-status.php:18
+msgid "Change Status"
+msgstr ""
+
+#: includes/actions/order-change-status.php:25
+msgid "Order status will be changed to this."
+msgstr ""
+
+#: includes/actions/order-change-status.php:40
+msgid "AutomateWoo workflow #%s."
+msgstr ""
+
+#: includes/actions/order-item-update-meta.php:27
+msgid "Order Item"
+msgstr ""
+
+#: includes/actions/order-item-update-meta.php:28
+msgid "This action can add or update an order item's custom field."
+msgstr ""
+
+#: includes/actions/order-resend-email.php:18
+msgid "Resend Order Email"
+msgstr ""
+
+#: includes/actions/order-resend-email.php:20
+msgid "Please note that email tracking is not currently supported on this action."
+msgstr ""
+
+#: includes/actions/order-resend-email.php:45
+msgid "Admin"
+msgstr ""
+
+#: includes/actions/order-resend-email.php:96
+msgid "%s email notification sent by AutomateWoo workflow #%d"
+msgstr ""
+
+#: includes/actions/order-trigger-action.php:18
+msgid "Trigger Order Action"
+msgstr ""
+
+#: includes/actions/order-trigger-action.php:20
+msgid "Not to be confused with AutomateWoo actions this action can trigger a WooCommerce order action. They can normally be found in the in the top right of of the order edit view."
+msgstr ""
+
+#: includes/actions/order-trigger-action.php:28
+msgid "Order action"
+msgstr ""
+
+#: includes/actions/order-update-customer-shipping-note.php:17
+msgid "Update Customer Provided Note"
+msgstr ""
+
+#: includes/actions/order-update-customer-shipping-note.php:36
+msgid "If checked and there is an existing customer shipping note for this order the note on this action will added to the field after a pipe (|). If unchecked any existing note will be replaced."
+msgstr ""
+
+#: includes/actions/order-update-customer-shipping-note.php:35
+msgid "Append to existing note?"
+msgstr ""
+
+#: includes/actions/order-update-meta.php:19
+msgid "This action can add or update an order's custom field."
+msgstr ""
+
+#: includes/actions/points-rewards-add-points.php:22
+msgid "Add Points"
+msgstr ""
+
+#: includes/actions/points-rewards-remove-points.php:22
+msgid "Remove Points"
+msgstr ""
+
+#: includes/actions/send-email-plain-text.php:28
+msgid "Send Email - Plain Text"
+msgstr ""
+
+#: includes/actions/send-email-plain-text.php:29
+msgid "This action sends a plain text email. It will contain no HTML which means open tracking and click tracking will not work. Some variables may display unexpectedly due to having HTML removed. If necessary, an unsubscribe link will be added after the email content."
+msgstr ""
+
+#: includes/actions/send-email-plain-text.php:40, includes/fields/email-content.php:22
+msgid "Email content"
+msgstr ""
+
+#: includes/actions/send-email-plain-text.php:41
+msgid "All HTML will be removed from this field when sending. Variables that use HTML may display unexpectedly because of this."
+msgstr ""
+
+#: includes/actions/send-email-raw.php:25
+msgid "Send Email - Raw HTML [BETA]"
+msgstr ""
+
+#: includes/actions/send-email-raw.php:26
+msgid "This action sends emails with only the HTML/CSS entered in the action's HTML field and is designed for advanced use only. This is different from the standard Send Email action, which inserts the email content into a template. Some variables may display unexpectedly due to the different CSS. Please note that you should include an unsubscribe link by using the variable {{ unsubscribe_url }}."
+msgstr ""
+
+#: includes/actions/send-email-raw.php:35
+msgid "Include AutomateWoo CSS"
+msgstr ""
+
+#: includes/actions/send-email-raw.php:37
+msgid "Checking this box adds the basic AutomateWoo CSS that is used to style variables to your custom HTML."
+msgstr ""
+
+#: includes/actions/send-email-raw.php:41
+msgid "Email HTML"
+msgstr ""
+
+#: includes/actions/send-email-raw.php:42
+msgid "Any CSS included in the HTML will be automatically inlined."
+msgstr ""
+
+#: includes/actions/send-email.php:26
+msgid "Send Email"
+msgstr ""
+
+#: includes/actions/send-email.php:28
+msgid "This action sends an HTML email using a template. The default template matches the style of your WooCommerce transactional emails. <%s>View email templates documentation<%s>."
+msgstr ""
+
+#: includes/actions/send-email.php:42
+msgid "The appearance will depend on your email template. Not all templates support this field."
+msgstr ""
+
+#: includes/actions/send-email.php:40
+msgid "Email heading"
+msgstr ""
+
+#: includes/actions/send-email.php:48
+msgid "A preheader is a short text summary that follows the subject line when an email is viewed in the inbox. If no preheader is set the first text found in the email is used."
+msgstr ""
+
+#: includes/actions/send-email.php:46
+msgid "Email preheader"
+msgstr ""
+
+#: includes/actions/send-email.php:53
+msgid "Select which template to use when formatting the email. If you select 'None', the email will have no template but the email will still be sent as an HTML email."
+msgstr ""
+
+#: includes/actions/send-email.php:52
+msgid "Template"
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:15
+msgid "Send SMS (Twilio)"
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:16
+msgid "SMS"
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:17
+msgid "It is recommended to include an unsubscribe link by using the variable {{ customer.unsubscribe_url }} in the SMS body."
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:20
+msgid "Links in the SMS body will be shortened with the <%1$s>Bitly integration<%2$s>."
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:22
+msgid "To shorten links in the SMS body the <%1$s>Bitly integration<%2$s> must be enabled."
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:37
+msgid "Multiple recipient numbers must be separated by commas. When using the {{ customer.phone }} variable the country code will be added automatically, if not already entered by the customer, by referencing the billing country."
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:36
+msgid "SMS recipients"
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:43
+msgid "SMS body"
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:62
+msgid "No valid recipients"
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:66
+msgid "Empty message body"
+msgstr ""
+
+#: includes/actions/send-sms-twilio.php:118
+msgid "SMS successfully sent."
+msgstr ""
+
+#: includes/actions/subscription-add-coupon.php:23
+msgid "Add Coupon"
+msgstr ""
+
+#: includes/actions/subscription-add-coupon.php:24
+msgid "Add a coupon to discount future payments for a subscription. The coupon will be added using the discount amount set on the coupon. This action can be used for bulk editing subscriptions, or to change the coupons provided to a subscriber at different stages of their subscription's lifecycle. The same coupon code will only be added once to a subscription. Only recurring coupon types can be added."
+msgstr ""
+
+#: includes/actions/subscription-add-coupon.php:54
+msgid "%1$s workflow run: added coupon %2$s to subscription. (Workflow ID: %3$d)"
+msgstr ""
+
+#: includes/actions/subscription-add-product.php:48
+msgid "Add Product"
+msgstr ""
+
+#: includes/actions/subscription-add-product.php:49
+msgid "Add a product as a new line item on a subscription. The item will be added using the price set on the product. This action can be used for bulk editing subscriptions, or to change the products provided to a subscriber at different stages of their subscription's lifecycle."
+msgstr ""
+
+#: includes/actions/subscription-add-product.php:92
+msgid "%1$s workflow run: added %2$s to subscription. (Product ID: %3$d; Workflow ID: %4$d)"
+msgstr ""
+
+#: includes/actions/subscription-change-status.php:42
+msgid "Subscription status changed by AutomateWoo Workflow #%s."
+msgstr ""
+
+#: includes/actions/subscription-remove-coupon.php:23
+msgid "Remove Coupon"
+msgstr ""
+
+#: includes/actions/subscription-remove-coupon.php:24
+msgid "Remove a coupon line item or items from a subscription, if any line items match the chosen coupon code. This is useful for bulk editing subscriptions, or to change the coupons provided to a subscriber at different stages of their subscription's lifecycle. Please note: all line items that match the chosen coupon code will be removed."
+msgstr ""
+
+#: includes/actions/subscription-remove-coupon.php:57
+msgid "%1$s workflow run: removed coupon %2$s. (Workflow ID: %3$d)"
+msgstr ""
+
+#: includes/actions/subscription-remove-product.php:32
+msgid "Remove Product"
+msgstr ""
+
+#: includes/actions/subscription-remove-product.php:33
+msgid "Remove a product line item or items from a subscription, if any line items match the chosen product. This is useful for bulk editing subscriptions, or to change the products provided to a subscriber at different stages of their subscription's lifecycle. Please note: all line items that match the chosen product will be removed. Choosing a variable product will also remove any variations of that product. Choose a variation to remove only specific variations."
+msgstr ""
+
+#: includes/actions/subscription-remove-product.php:73
+msgid "%1$s workflow run: removed all line items for %2$s. (Product ID: %3$d; Workflow ID: %4$d)"
+msgstr ""
+
+#: includes/actions/subscription-send-invoice.php:18
+msgid "Send Invoice"
+msgstr ""
+
+#: includes/actions/subscription-send-invoice.php:19
+msgid "Email the invoice to the subscription customer."
+msgstr ""
+
+#: includes/actions/subscription-update-meta.php:20
+msgid "This action can add or update a subscription's custom field."
+msgstr ""
+
+#: includes/compat/order-notes.php:130
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/fields/attribute-term.php:22
+msgid "Terms"
+msgstr ""
+
+#: includes/fields/attribute-term.php:51, includes/fields/taxonomy-term.php:42
+msgid "Search for a term&hellip;"
+msgstr ""
+
+#: includes/fields/attribute.php:22
+msgid "Attribute"
+msgstr ""
+
+#: includes/fields/before-after-day.php:35
+msgid "When to run"
+msgstr ""
+
+#: includes/fields/before-after-day.php:61
+msgid "On the day"
+msgstr ""
+
+#: includes/fields/before-after-day.php:62
+msgid "day(s) after"
+msgstr ""
+
+#: includes/fields/before-after-day.php:63
+msgid "day(s) before"
+msgstr ""
+
+#: includes/fields/category.php:22
+msgid "Product category"
+msgstr ""
+
+#: includes/fields/checkbox.php:22
+msgid "Checkbox"
+msgstr ""
+
+#: includes/fields/countries.php:20
+msgid "Countries"
+msgstr ""
+
+#: includes/fields/email-content.php:23
+msgid "The contents of this field will be formatted as per the selected email template."
+msgstr ""
+
+#: includes/fields/number.php:20
+msgid "Number"
+msgstr ""
+
+#: includes/fields/order-note-type.php:21
+msgid "Note type"
+msgstr ""
+
+#: includes/fields/order-note-type.php:23
+msgid "Note to customer"
+msgstr ""
+
+#: includes/fields/order-note-type.php:24
+msgid "Private note"
+msgstr ""
+
+#: includes/fields/order-status.php:21
+msgid "Order status"
+msgstr ""
+
+#: includes/fields/order-status.php:24, includes/fields/subscription-products.php:27, includes/fields/subscription-status.php:26
+msgid "[Any]"
+msgstr ""
+
+#: includes/fields/payment-gateway.php:24
+msgid "Payment Gateway"
+msgstr ""
+
+#: includes/fields/payment-gateway.php:25
+msgid "Only trigger when the order is placed with certain payment methods."
+msgstr ""
+
+#: includes/fields/product.php:75
+msgid "(Product not found)"
+msgstr ""
+
+#: includes/fields/select.php:34
+msgid "Select"
+msgstr ""
+
+#: includes/fields/subscription-status.php:23
+msgid "Subscription status"
+msgstr ""
+
+#: includes/fields/tag.php:19
+msgid "Product tag"
+msgstr ""
+
+#: includes/fields/taxonomy-term.php:21
+msgid "Term"
+msgstr ""
+
+#: includes/fields/taxonomy.php:18
+msgid "Taxonomy"
+msgstr ""
+
+#: includes/fields/text-area.php:30
+msgid "Text Area"
+msgstr ""
+
+#: includes/fields/text.php:31
+msgid "Text Input"
+msgstr ""
+
+#: includes/fields/time.php:66
+msgctxt "time field"
+msgid "HH"
+msgstr ""
+
+#: includes/fields/time.php:78
+msgctxt "time field"
+msgid "MM"
+msgstr ""
+
+#: includes/fields/user-role.php:22
+msgid "User role"
+msgstr ""
+
+#: includes/rules/cart-count.php:17
+msgid "Cart - Item Count"
+msgstr ""
+
+#: includes/rules/cart-coupons.php:27
+msgid "Cart - Coupons"
+msgstr ""
+
+#: includes/rules/cart-created-date.php:34
+msgid "Cart - Created Date"
+msgstr ""
+
+#: includes/rules/cart-item-categories.php:23
+msgid "Cart - Item Categories"
+msgstr ""
+
+#: includes/rules/cart-item-tags.php:23
+msgid "Cart - Item Tags"
+msgstr ""
+
+#: includes/rules/cart-items.php:17
+msgid "Cart - Items"
+msgstr ""
+
+#: includes/rules/cart-total.php:18
+msgid "Cart - Total"
+msgstr ""
+
+#: includes/rules/customer-account-created-date.php:34
+msgid "Customer - Account Created Date"
+msgstr ""
+
+#: includes/rules/customer-active-membership-plans.php:23
+msgid "Customer - Active Memberships Plans"
+msgstr ""
+
+#: includes/rules/customer-city.php:17
+msgid "Customer - City"
+msgstr ""
+
+#: includes/rules/customer-company.php:17
+msgid "Customer - Company"
+msgstr ""
+
+#: includes/rules/customer-country.php:19
+msgid "Customer - Country"
+msgstr ""
+
+#: includes/rules/customer-email.php:17
+msgid "Customer - Email"
+msgstr ""
+
+#: includes/rules/customer-first-order-date.php:34
+msgid "Customer - First Paid Order Date"
+msgstr ""
+
+#: includes/rules/customer-has-active-subscription.php:17
+msgid "Customer - Has Active Subscription"
+msgstr ""
+
+#: includes/rules/customer-is-guest.php:17
+msgid "Customer - Is Guest"
+msgstr ""
+
+#: includes/rules/customer-is-mailchimp-subscriber.php:19
+msgid "Customer - Is Subscribed To MailChimp List"
+msgstr ""
+
+#: includes/rules/customer-is-mailchimp-subscriber.php:20
+msgid "Select a list&hellip;"
+msgstr ""
+
+#: includes/rules/customer-last-order-date.php:33
+msgid "Customer - Last Paid Order Date"
+msgstr ""
+
+#: includes/rules/customer-last-review-date.php:34
+msgid "Customer - Last Review Date"
+msgstr ""
+
+#: includes/rules/customer-meta.php:17
+msgid "Customer - Custom Field"
+msgstr ""
+
+#: includes/rules/customer-order-count.php:19
+msgid "Customer - Order Count"
+msgstr ""
+
+#: includes/rules/customer-order-statuses.php:21
+msgid "Customer - Current Order Statuses"
+msgstr ""
+
+#: includes/rules/customer-phone.php:17
+msgid "Customer - Phone"
+msgstr ""
+
+#: includes/rules/customer-postcode.php:17
+msgid "Customer - Postcode"
+msgstr ""
+
+#: includes/rules/customer-purchased-categories.php:23
+msgid "Customer - Purchased Categories - All Time"
+msgstr ""
+
+#: includes/rules/customer-purchased-products.php:25
+msgid "Customer - Purchased Products - All Time"
+msgstr ""
+
+#: includes/rules/customer-review-count.php:19
+msgid "Customer - Review Count"
+msgstr ""
+
+#: includes/rules/customer-role.php:19
+msgid "Customer - User Role"
+msgstr ""
+
+#: includes/rules/customer-run-count.php:19
+msgid "Workflow - Run Count For Customer"
+msgstr ""
+
+#: includes/rules/customer-state-text-match.php:17
+msgid "Customer - State - Text Match"
+msgstr ""
+
+#: includes/rules/customer-state.php:19
+msgid "Customer - State"
+msgstr ""
+
+#: includes/rules/customer-tags.php:23
+msgid "Customer - User Tags"
+msgstr ""
+
+#: includes/rules/customer-total-spent.php:19
+msgid "Customer - Total Spent"
+msgstr ""
+
+#: includes/rules/guest-email.php:15
+msgid "Guest - Email"
+msgstr ""
+
+#: includes/rules/guest-order-count.php:20
+msgid "Guest - Order Count"
+msgstr ""
+
+#: includes/rules/guest-run-count.php:17
+msgid "Workflow - Run Count For Guest"
+msgstr ""
+
+#: includes/rules/order-billing-country.php:19
+msgid "Order - Billing Country"
+msgstr ""
+
+#: includes/rules/order-coupon-count.php:20
+msgid "Order - Coupon Count"
+msgstr ""
+
+#: includes/rules/order-coupons-text-match.php:18
+msgid "Order - Coupons - Text Match"
+msgstr ""
+
+#: includes/rules/order-coupons.php:41
+msgid "Order - Coupons"
+msgstr ""
+
+#: includes/rules/order-created-date.php:33
+msgid "Order - Created Date"
+msgstr ""
+
+#: includes/rules/order-created-via.php:19
+msgid "Order - Created Via"
+msgstr ""
+
+#: includes/rules/order-created-via.php:28, includes/variables/cart-link.php:18
+msgid "Checkout"
+msgstr ""
+
+#: includes/rules/order-created-via.php:29
+msgid "REST API"
+msgstr ""
+
+#: includes/rules/order-customer-provided-note.php:19
+msgid "Order - Customer Provided Note"
+msgstr ""
+
+#: includes/rules/order-has-cross-sells.php:15
+msgid "Order - Has Cross-Sells Available"
+msgstr ""
+
+#: includes/rules/order-is-customers-first.php:15
+msgid "Order - Is Customer's First"
+msgstr ""
+
+#: includes/rules/order-is-guest-order.php:16
+msgid "Order - Is Placed By Guest"
+msgstr ""
+
+#: includes/rules/order-is-pos.php:15
+msgid "Order - Is POS"
+msgstr ""
+
+#: includes/rules/order-is-pos.php:16
+msgid "POS"
+msgstr ""
+
+#: includes/rules/order-is-subscription-parent.php:18
+msgid "Order - Is Subscription Parent"
+msgstr ""
+
+#: includes/rules/order-is-subscription-renewal.php:18
+msgid "Order - Is Subscription Renewal"
+msgstr ""
+
+#: includes/rules/order-item-categories.php:21
+msgid "Order - Item Categories"
+msgstr ""
+
+#: includes/rules/order-item-count.php:19
+msgid "Order - Item Count"
+msgstr ""
+
+#: includes/rules/order-item-meta.php:17
+msgid "Order Line Item - Custom Field"
+msgstr ""
+
+#: includes/rules/order-item-quantity.php:19
+msgid "Order Line Item - Quantity"
+msgstr ""
+
+#: includes/rules/order-item-tags.php:21
+msgid "Order - Item Tags"
+msgstr ""
+
+#: includes/rules/order-items-text-match.php:17
+msgid "Order - Item Names - Text Match"
+msgstr ""
+
+#: includes/rules/order-items.php:21
+msgid "Order - Items"
+msgstr ""
+
+#: includes/rules/order-line-count.php:19
+msgid "Order - Line Count"
+msgstr ""
+
+#: includes/rules/order-meta.php:17
+msgid "Order - Custom Field"
+msgstr ""
+
+#: includes/rules/order-paid-date.php:34
+msgid "Order - Paid Date"
+msgstr ""
+
+#: includes/rules/order-payment-gateway.php:19
+msgid "Order - Payment Gateway"
+msgstr ""
+
+#: includes/rules/order-run-count.php:17
+msgid "Workflow - Run Count For Order"
+msgstr ""
+
+#: includes/rules/order-shipping-country.php:17
+msgid "Order - Shipping Country"
+msgstr ""
+
+#: includes/rules/order-shipping-method-string.php:15
+msgid "Order - Shipping Method - Text Match"
+msgstr ""
+
+#: includes/rules/order-shipping-method.php:23
+msgid "Order - Shipping Method"
+msgstr ""
+
+#: includes/rules/order-status.php:19
+msgid "Order - Status"
+msgstr ""
+
+#: includes/rules/order-subscription-payment-retry-count.php:19
+msgid "Order - Subscription Payment Retry Count"
+msgstr ""
+
+#: includes/rules/order-total.php:17
+msgid "Order - Total"
+msgstr ""
+
+#: includes/rules/points-rewards-customer-points.php:34
+msgid "Customer - Points"
+msgstr ""
+
+#: includes/rules/product-categories.php:24
+msgid "Product - Categories"
+msgstr ""
+
+#: includes/rules/product.php:21
+msgid "Product - Product"
+msgstr ""
+
+#: includes/rules/review-rating.php:19
+msgid "Review - Rating"
+msgstr ""
+
+#: includes/rules/subscription-can-renew-early.php:27
+msgid "Subscription - Can Renew Early"
+msgstr ""
+
+#: includes/rules/subscription-coupon-count.php:26
+msgid "Subscription - Coupon Count"
+msgstr ""
+
+#: includes/rules/subscription-coupons-text-match.php:26
+msgid "Subscription - Coupons - Text Match"
+msgstr ""
+
+#: includes/rules/subscription-coupons.php:28
+msgid "Subscription - Coupons"
+msgstr ""
+
+#: includes/rules/subscription-created-date.php:34
+msgid "Subscription - Created Date"
+msgstr ""
+
+#: includes/rules/subscription-end-date.php:35
+msgid "Subscription - End Date"
+msgstr ""
+
+#: includes/rules/subscription-has-payment-method.php:25
+msgid "Subscription - Has Payment Method"
+msgstr ""
+
+#: includes/rules/subscription-item-categories.php:17
+msgid "Subscription - Item Categories"
+msgstr ""
+
+#: includes/rules/subscription-items.php:18
+msgid "Subscription - Items"
+msgstr ""
+
+#: includes/rules/subscription-last-payment-date.php:34
+msgid "Subscription - Last Payment Date"
+msgstr ""
+
+#: includes/rules/subscription-meta.php:17
+msgid "Subscription - Custom Field"
+msgstr ""
+
+#: includes/rules/subscription-next-payment-date.php:34
+msgid "Subscription - Next Payment Date"
+msgstr ""
+
+#: includes/rules/subscription-payment-count.php:17
+msgid "Subscription - Payment Count"
+msgstr ""
+
+#: includes/rules/subscription-payment-method.php:28
+msgid "Subscription - Payment Method"
+msgstr ""
+
+#: includes/rules/subscription-requires-manual-renewal.php:17
+msgid "Subscription - Requires Manual Renewal"
+msgstr ""
+
+#: includes/rules/subscription-status.php:21
+msgid "Subscription - Status"
+msgstr ""
+
+#: includes/rules/subscription-trial-end-date.php:35
+msgid "Subscription - Trial End Date"
+msgstr ""
+
+#: includes/rules/workflow-last-customer-run-date.php:34
+msgid "Workflow - Last Run Date For Customer"
+msgstr ""
+
+#: includes/system-checks/cron-running.php:17
+msgid "WP Cron"
+msgstr ""
+
+#: includes/system-checks/cron-running.php:18
+msgid "Checks the dates of scheduled events to see if they are processing."
+msgstr ""
+
+#: includes/system-checks/cron-running.php:48
+msgid "WP Cron does not appear to be running. This function is heavily relied upon by AutomateWoo. Please contact your hosting provider to resolve the issue."
+msgstr ""
+
+#: includes/system-checks/database-tables-exist.php:15
+msgid "Database Tables Installed"
+msgstr ""
+
+#: includes/system-checks/database-tables-exist.php:16
+msgid "Checks the AutomateWoo custom database tables have been installed."
+msgstr ""
+
+#: includes/system-checks/database-tables-exist.php:34
+msgid "Tables could not be installed."
+msgstr ""
+
+#: includes/tools/guest-eraser.php:19
+msgid "Guest Eraser"
+msgstr ""
+
+#: includes/tools/guest-eraser.php:20
+msgid "Erase stored data for guests that have not placed an order. Orders that are failed or cancelled are not included."
+msgstr ""
+
+#: includes/tools/guest-eraser.php:70
+msgid "Are you sure you want to permanently delete the guests who have not placed an order? Any workflow logs for deleted guests will be anonymized."
+msgstr ""
+
+#: includes/tools/guest-eraser.php:71
+msgid "%s guest will be deleted."
+msgid_plural "%s guests will be deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/tools/manual-orders-trigger.php:18
+msgid "Manual Orders Trigger"
+msgstr ""
+
+#: includes/tools/manual-orders-trigger.php:19
+msgid "Manually trigger a workflow for existing orders that match a date range. For example, if you create a workflow using the <b>Order Completed</b> trigger and want to have that workflow run for existing completed orders."
+msgstr ""
+
+#: includes/tools/manual-orders-trigger.php:59
+msgid "Order Created Date - Range From"
+msgstr ""
+
+#: includes/tools/manual-orders-trigger.php:65
+msgid "Order Created Date - Range To"
+msgstr ""
+
+#: includes/tools/manual-orders-trigger.php:80, includes/tools/manual-subscriptions-trigger.php:63, includes/tools/optout-importer.php:62
+msgid "Missing a required field."
+msgstr ""
+
+#: includes/tools/manual-orders-trigger.php:86, includes/tools/manual-subscriptions-trigger.php:69
+msgid "The selected workflow is not currently active."
+msgstr ""
+
+#: includes/tools/manual-orders-trigger.php:92
+msgid "No orders were found matching the date range or required status."
+msgstr ""
+
+#: includes/tools/manual-orders-trigger.php:197
+msgctxt "1: order ID, 2: customer name"
+msgid "%1$s for %2$s"
+msgstr ""
+
+#: includes/tools/manual-orders-trigger.php:205
+msgid "+%d more orders..."
+msgstr ""
+
+#: includes/tools/manual-subscriptions-trigger.php:19
+msgid "Manual Subscriptions Trigger"
+msgstr ""
+
+#: includes/tools/manual-subscriptions-trigger.php:20
+msgid "Manually trigger a workflow for existing subscriptions based on the date they were created."
+msgstr ""
+
+#: includes/tools/manual-subscriptions-trigger.php:42
+msgid "Subscription Start Date - Range From"
+msgstr ""
+
+#: includes/tools/manual-subscriptions-trigger.php:48
+msgid "Subscription Start Date - Range To"
+msgstr ""
+
+#: includes/tools/manual-subscriptions-trigger.php:75
+msgid "No subscriptions match that date range."
+msgstr ""
+
+#: includes/tools/manual-subscriptions-trigger.php:163
+msgctxt "1: subscription ID, 2: customer name"
+msgid "%1$s for %2$s"
+msgstr ""
+
+#: includes/tools/manual-subscriptions-trigger.php:171
+msgid "+%d more subscriptions..."
+msgstr ""
+
+#: includes/tools/optin-importer.php:21
+msgid "Opt-in Importer"
+msgstr ""
+
+#: includes/tools/optin-importer.php:22
+msgid "Opt-in customers by importing email addresses."
+msgstr ""
+
+#: includes/tools/optin-importer.php:35
+msgid "Are you sure you want to opt-in <strong>%s customers</strong>?"
+msgstr ""
+
+#: includes/tools/optout-importer.php:19
+msgid "Opt-out Importer"
+msgstr ""
+
+#: includes/tools/optout-importer.php:20
+msgid "Opt-out customers by importing email addresses."
+msgstr ""
+
+#: includes/tools/optout-importer.php:35
+msgid "Add one email per line..."
+msgstr ""
+
+#: includes/tools/optout-importer.php:32
+msgid "Emails"
+msgstr ""
+
+#: includes/tools/optout-importer.php:69
+msgid "%s is not a valid email."
+msgstr ""
+
+#: includes/tools/optout-importer.php:86
+msgid "Could not process."
+msgstr ""
+
+#: includes/tools/optout-importer.php:111
+msgid "Are you sure you want to opt-out <strong>%s customers</strong>?"
+msgstr ""
+
+#: includes/tools/optout-importer.php:133
+msgid "+ %d more items..."
+msgstr ""
+
+#: includes/tools/reset-workflow-records.php:19
+msgid "Reset Workflow Records"
+msgstr ""
+
+#: includes/tools/reset-workflow-records.php:20
+msgid "Deletes all logs, queued events and conversions for a workflow. The workflow itself will not be deleted."
+msgstr ""
+
+#: includes/tools/reset-workflow-records.php:46
+msgid "Please select a workflow to reset."
+msgstr ""
+
+#: includes/tools/reset-workflow-records.php:68
+msgid "Are you sure you want to reset all records for the workflow <strong>%s</strong>? This can not be undone."
+msgstr ""
+
+#: includes/triggers/abandoned-cart-customer.php:17
+msgid "Cart Abandoned"
+msgstr ""
+
+#: includes/triggers/abandoned-cart-customer.php:18, includes/triggers/abandoned-cart-guest.php:18
+msgid "This trigger fires when a cart belonging to a registered customer or a guest customer is abandoned."
+msgstr ""
+
+#: includes/triggers/abandoned-cart-guest.php:17
+msgid "Cart Abandoned - Guests Only"
+msgstr ""
+
+#: includes/triggers/abandoned-cart-user.php:17
+msgid "Cart Abandoned - Registered Users Only"
+msgstr ""
+
+#: includes/triggers/abandoned-cart-user.php:18
+msgid "This trigger fires when a cart belonging to a registered customer is abandoned."
+msgstr ""
+
+#: includes/triggers/customer-before-saved-card-expiry.php:18
+msgid "Customer Before Saved Card Expiry"
+msgstr ""
+
+#: includes/triggers/customer-before-saved-card-expiry.php:19
+msgid "This trigger runs a set number of days before a customer's saved card expires. Cards expire on the last calendar day of their expiry month."
+msgstr ""
+
+#: includes/triggers/customer-before-saved-card-expiry.php:20, includes/triggers/customer-new-account.php:18, includes/triggers/customer-opted-in.php:18, includes/triggers/customer-opted-out.php:19, includes/triggers/customer-order-count-reaches.php:19, includes/triggers/customer-total-spend-reaches.php:21, includes/triggers/customer-win-back.php:19
+msgid "Customers"
+msgstr ""
+
+#: includes/triggers/customer-before-saved-card-expiry.php:27
+msgid "Days before expiry"
+msgstr ""
+
+#: includes/triggers/customer-new-account.php:17
+msgid "Customer Account Created"
+msgstr ""
+
+#: includes/triggers/customer-opted-in.php:17
+msgid "Customer Opted In"
+msgstr ""
+
+#: includes/triggers/customer-opted-out.php:17
+msgid "Customer Opted Out"
+msgstr ""
+
+#: includes/triggers/customer-opted-out.php:18
+msgid "Fires when a customer unsubscribes from workflows."
+msgstr ""
+
+#: includes/triggers/customer-order-count-reaches.php:17
+msgid "Customer Order Count Reaches"
+msgstr ""
+
+#: includes/triggers/customer-order-count-reaches.php:18
+msgid "This trigger checks the customer's order count each time an order is completed."
+msgstr ""
+
+#: includes/triggers/customer-total-spend-reaches.php:19
+msgid "Customer Total Spend Reaches"
+msgstr ""
+
+#: includes/triggers/customer-total-spend-reaches.php:20
+msgid "This trigger checks the customer's total spend each time an order is completed."
+msgstr ""
+
+#: includes/triggers/customer-total-spend-reaches.php:28
+msgid "Total spend"
+msgstr ""
+
+#: includes/triggers/customer-total-spend-reaches.php:29
+msgid "Do not add a currency symbol."
+msgstr ""
+
+#: includes/triggers/customer-win-back.php:17
+msgid "Customer Win Back"
+msgstr ""
+
+#: includes/triggers/customer-win-back.php:18
+msgid "This trigger fires for customers based on the date of their last paid order. Please note that it will not start running immediately because it is processed daily in the background. The 'order based' variables, rules and actions used by this trigger refer to the customer's last paid order."
+msgstr ""
+
+#: includes/triggers/customer-win-back.php:28
+msgid "Defines the minimum number of days to wait after a customer's last purchase."
+msgstr ""
+
+#: includes/triggers/customer-win-back.php:27
+msgid "Minimum days since purchase"
+msgstr ""
+
+#: includes/triggers/customer-win-back.php:35
+msgid "Defines the maximum number of days after the customer's last purchase that this trigger will fire. The default value will be 3 greater than the value of the minimum days field."
+msgstr ""
+
+#: includes/triggers/customer-win-back.php:34
+msgid "Maximum days since purchase"
+msgstr ""
+
+#: includes/triggers/customer-win-back.php:40
+msgid "If checked this trigger will repeatedly fire after the minimum last purchase date passes and the customer has not made a purchase. E.g. if the minimum is set to 30 days the trigger will fire 30 days after the customers last purchase and every 30 days from then until the maximum is reached or the customer makes another purchase. If unchecked the trigger will not repeat until the customer makes a new purchase."
+msgstr ""
+
+#: includes/triggers/customer-win-back.php:39
+msgid "Enable repeats"
+msgstr ""
+
+#: includes/triggers/guest-created.php:18
+msgid "New Guest Captured"
+msgstr ""
+
+#: includes/triggers/guest-created.php:20
+msgid "This trigger fires when a new guest is captured. Usually this immediately after they enter email during the checkout process."
+msgstr ""
+
+#: includes/triggers/mc4wp-form-submission.php:18
+msgid "MailChimp for WordPress - Form Submission"
+msgstr ""
+
+#: includes/triggers/mc4wp-form-submission.php:19
+msgid "This trigger fires after a MailChimp for WordPress form is successfully submitted."
+msgstr ""
+
+#: includes/triggers/mc4wp-form-submission.php:20
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: includes/triggers/mc4wp-form-submission.php:36
+msgid "Choose which MailChimp for WordPress form this workflow should trigger for."
+msgstr ""
+
+#: includes/triggers/mc4wp-form-submission.php:33
+msgid "Form"
+msgstr ""
+
+#: includes/triggers/membership-created.php:19
+msgid "Membership Created"
+msgstr ""
+
+#: includes/triggers/membership-status-changed.php:17
+msgid "Membership Status Changed"
+msgstr ""
+
+#: includes/triggers/membership-status-changed.php:27
+msgid "Leave blank for any status"
+msgstr ""
+
+#: includes/triggers/membership-status-changed.php:30, includes/triggers/order-status-changes.php:26, includes/triggers/subscription-status-changed.php:30
+msgid "Status changes from"
+msgstr ""
+
+#: includes/triggers/membership-status-changed.php:37, includes/triggers/order-status-changes.php:32, includes/triggers/subscription-status-changed.php:37
+msgid "Status changes to"
+msgstr ""
+
+#: includes/triggers/order-cancelled.php:18
+msgid "Order Cancelled"
+msgstr ""
+
+#: includes/triggers/order-completed.php:18
+msgid "Order Completed"
+msgstr ""
+
+#: includes/triggers/order-created-each-line-item.php:19
+msgid "Order Created - Each Line Item"
+msgstr ""
+
+#: includes/triggers/order-created-each-line-item.php:20
+msgid "Triggers for each order line item after an order is created in the database. At checkout this happens before payment is confirmed."
+msgstr ""
+
+#: includes/triggers/order-created.php:16
+msgid "Order Created"
+msgstr ""
+
+#: includes/triggers/order-created.php:17
+msgid "This trigger fires after an order is created in the database. At checkout this happens before payment is confirmed."
+msgstr ""
+
+#: includes/triggers/order-note-added.php:32
+msgid "Order Note Added"
+msgstr ""
+
+#: includes/triggers/order-note-added.php:33
+msgid "Fires when any note is added to an order, can include both private notes and notes to the customer. These notes appear on the right of the order edit screen."
+msgstr ""
+
+#: includes/triggers/order-note-added.php:34, includes/triggers/user-purchases-product-variation-with-attribute.php:19, includes/triggers/abstracts/abstract-order-base.php:31
+msgid "Orders"
+msgstr ""
+
+#: includes/triggers/order-note-added.php:43
+msgid "Note contains text"
+msgstr ""
+
+#: includes/triggers/order-note-added.php:44
+msgid "Only trigger this workflow if the order note contains the certain text. This field is optional."
+msgstr ""
+
+#: includes/triggers/order-note-added.php:47
+msgid "[All]"
+msgstr ""
+
+#: includes/triggers/order-on-hold.php:18
+msgid "Order On Hold"
+msgstr ""
+
+#: includes/triggers/order-paid-each-line-item.php:18
+msgid "Order Paid - Each Line Item"
+msgstr ""
+
+#: includes/triggers/order-paid-each-line-item.php:19
+msgid "Triggers for each order line item at the end of the payment process after the order status has been changed and stock has been reduced."
+msgstr ""
+
+#: includes/triggers/order-paid.php:16
+msgid "Order Paid"
+msgstr ""
+
+#: includes/triggers/order-paid.php:17
+msgid "Triggers at the end of the payment process after the order status has been changed and stock has been reduced."
+msgstr ""
+
+#: includes/triggers/order-pending.php:18
+msgid "Order Pending Payment"
+msgstr ""
+
+#: includes/triggers/order-processing.php:18
+msgid "Order Processing"
+msgstr ""
+
+#: includes/triggers/order-refunded.php:18
+msgid "Order Refunded"
+msgstr ""
+
+#: includes/triggers/order-status-changes-each-line-item.php:19
+msgid "Order Status Changes - Each Line Item"
+msgstr ""
+
+#: includes/triggers/order-status-changes-each-line-item.php:20
+msgid "This trigger runs for each line item after an order status change occurs. Using this trigger allows access to the specific order item and product data."
+msgstr ""
+
+#: includes/triggers/order-status-changes.php:16
+msgid "Order Status Changes"
+msgstr ""
+
+#: includes/triggers/order-status-changes.php:17
+msgid "Triggers after an order changes status occurs. Set the workflow to run on certain status changes with the trigger options."
+msgstr ""
+
+#: includes/triggers/order-status-changes.php:23
+msgid "Select which order statuses will trigger this workflow. Leave blank for any status."
+msgstr ""
+
+#: includes/triggers/review-posted.php:17
+msgid "New Review Posted"
+msgstr ""
+
+#: includes/triggers/review-posted.php:18
+msgid "Reviews"
+msgstr ""
+
+#: includes/triggers/review-posted.php:19
+msgid "This trigger does not fire until the review has been approved. If a customer leaves multiple reviews on the same product the workflow will only run once."
+msgstr ""
+
+#: includes/triggers/subscription-before-end.php:15
+msgid "Subscription Before End"
+msgstr ""
+
+#: includes/triggers/subscription-before-end.php:16
+msgid "This trigger checks for subscriptions that are due to expire/end once every 24 hours."
+msgstr ""
+
+#: includes/triggers/subscription-before-end.php:25
+msgid "Days before end"
+msgstr ""
+
+#: includes/triggers/subscription-before-renewal.php:23
+msgid "Subscription Before Renewal"
+msgstr ""
+
+#: includes/triggers/subscription-before-renewal.php:24
+msgid "This trigger checks for upcoming subscription renewals once every 24 hours."
+msgstr ""
+
+#: includes/triggers/subscription-before-renewal.php:33
+msgid "Days before renewal"
+msgstr ""
+
+#: includes/triggers/subscription-created.php:26
+msgid "Subscription Created"
+msgstr ""
+
+#: includes/triggers/subscription-created.php:27
+msgid "This trigger fires after a subscription is created which happens before payment is confirmed. To create a workflow that runs when the subscription is paid, use the Subscription Status Changed trigger."
+msgstr ""
+
+#: includes/triggers/subscription-note-added.php:25
+msgid "Subscription Note Added"
+msgstr ""
+
+#: includes/triggers/subscription-note-added.php:26
+msgid "Fires when a note is added to a subscription. This includes private notes and notes to the customer. These notes appear on the right of the subscription edit screen."
+msgstr ""
+
+#: includes/triggers/subscription-payment-complete.php:22
+msgid "Subscription Renewal Payment Complete"
+msgstr ""
+
+#: includes/triggers/subscription-payment-failed.php:22
+msgid "Subscription Renewal Payment Failed"
+msgstr ""
+
+#: includes/triggers/subscription-status-changed-each-line-item.php:26
+msgid "Subscription Status Changed - Each Line Item"
+msgstr ""
+
+#: includes/triggers/subscription-status-changed-each-line-item.php:27
+msgid "This trigger runs for every line item of a subscription when the status changes. Using this trigger allows access to the product data of the subscription line item."
+msgstr ""
+
+#: includes/triggers/subscription-status-changed.php:22
+msgid "Subscription Status Changed"
+msgstr ""
+
+#: includes/triggers/subscription-status-changed.php:32
+msgid "Select which subscription status changes will trigger this workflow. Leave blank for any subscription status."
+msgstr ""
+
+#: includes/triggers/subscription-status-changed.php:43
+msgid "This is useful for workflows that are not run immediately as it ensures the status of the subscription hasn't changed since initial trigger."
+msgstr ""
+
+#: includes/triggers/subscription-trial-end.php:23
+msgid "Subscription Trial End"
+msgstr ""
+
+#: includes/triggers/user-purchases-from-category.php:25
+msgid "Order Includes Product From Category [DEPRECATED]"
+msgstr ""
+
+#: includes/triggers/user-purchases-from-category.php:27
+msgid "Instead please use one of the order status triggers in combination with the Order Item Categories rule."
+msgstr ""
+
+#: includes/triggers/user-purchases-from-category.php:34
+msgid "Only trigger when the a product is purchased from a certain category."
+msgstr ""
+
+#: includes/triggers/user-purchases-from-tag.php:23
+msgid "Order Includes Product From Tag [DEPRECATED]"
+msgstr ""
+
+#: includes/triggers/user-purchases-from-tag.php:25
+msgid "Instead please use one of the order status triggers in combination with the Order Item Tags rule."
+msgstr ""
+
+#: includes/triggers/user-purchases-from-tag.php:31
+msgid "Only trigger when the a product is purchased from a certain tag."
+msgstr ""
+
+#: includes/triggers/user-purchases-from-taxonomy-term.php:16
+msgid "Order Includes Product from Taxonomy Term"
+msgstr ""
+
+#: includes/triggers/user-purchases-product-variation-with-attribute.php:18
+msgid "Order Includes Product Variation with Specific Attribute"
+msgstr ""
+
+#: includes/triggers/user-purchases-specific-product.php:24
+msgid "Order Includes a Specific Product [DEPRECATED]"
+msgstr ""
+
+#: includes/triggers/user-purchases-specific-product.php:26
+msgid "Instead please use one of the order status triggers in combination with the Order Items rule."
+msgstr ""
+
+#: includes/triggers/user-purchases-specific-product.php:34
+msgid "Only trigger when a certain product is purchased."
+msgstr ""
+
+#: includes/triggers/wishlist-item-added.php:18
+msgid "Customer Adds Product (%s)"
+msgstr ""
+
+#: includes/triggers/wishlist-item-added.php:19, includes/triggers/wishlist-item-goes-on-sale.php:20, includes/triggers/wishlist-reminder.php:19
+msgid "Wishlists"
+msgstr ""
+
+#: includes/triggers/wishlist-item-goes-on-sale.php:19
+msgid "Wishlist Item On Sale (%s)"
+msgstr ""
+
+#: includes/triggers/wishlist-reminder.php:18
+msgid "Wishlist Reminder (%s)"
+msgstr ""
+
+#: includes/triggers/wishlist-reminder.php:20
+msgid "Setting the 'Reminder Interval' field to 30 means this trigger will fire every 30 days for any users that have items in their wishlist. This trigger is checked daily. Please note this doesn't work for guests because their wishlist data only exists in their session data."
+msgstr ""
+
+#: includes/triggers/wishlist-reminder.php:31
+msgid "Reminder interval (days)"
+msgstr ""
+
+#: includes/triggers/wishlist-reminder.php:32
+msgid "E.g. Reminder any customers with items in a Wishlist every 30 days."
+msgstr ""
+
+#: includes/triggers/wishlist-reminder.php:37
+msgid "Once per customer"
+msgstr ""
+
+#: includes/triggers/wishlist-reminder.php:38
+msgid "If checked the trigger will fire only once for each customer for each wishlist they create. Most customers only use the one wishlist so use with caution. Setting a high Reminder interval may be a better plan."
+msgstr ""
+
+#: includes/triggers/workflow-times-run-reaches.php:17
+msgid "Workflow Times Run Reaches"
+msgstr ""
+
+#: includes/triggers/workflow-times-run-reaches.php:30
+msgid "Times run"
+msgstr ""
+
+#: includes/variables/card-expiry-month.php:15
+msgid "Displays the expiry month of the card."
+msgstr ""
+
+#: includes/variables/card-expiry-year.php:15
+msgid "Displays the expiry year of the card."
+msgstr ""
+
+#: includes/variables/card-last-four.php:15
+msgid "Displays the last 4 digits of the card."
+msgstr ""
+
+#: includes/variables/card-type.php:15
+msgid "Displays the type of the card e.g. Visa, MasterCard."
+msgstr ""
+
+#: includes/variables/cart-item-count.php:16
+msgid "Displays the number of the items in cart."
+msgstr ""
+
+#: includes/variables/cart-items.php:18
+msgid "Display a product listing of the items in the cart."
+msgstr ""
+
+#: includes/variables/cart-link.php:15
+msgid "Displays a unique link to the cart page that will also restore items to the customer's cart."
+msgstr ""
+
+#: includes/variables/cart-link.php:16
+msgid "Sets which page the link will direct the customer to when clicked."
+msgstr ""
+
+#: includes/variables/cart-total.php:19
+msgid "Displays the total cost of the cart."
+msgstr ""
+
+#: includes/variables/category-id.php:15
+msgid "Displays the ID of the category."
+msgstr ""
+
+#: includes/variables/category-permalink.php:15
+msgid "Displays a permalink to the category page."
+msgstr ""
+
+#: includes/variables/category-title.php:15
+msgid "Displays the title of the category."
+msgstr ""
+
+#: includes/variables/comment-author-ip.php:15
+msgid "Displays the IP address of the comment author."
+msgstr ""
+
+#: includes/variables/comment-author-name.php:13
+msgid "Displays the name of the comment author."
+msgstr ""
+
+#: includes/variables/comment-content.php:15
+msgid "Displays the content of the comment."
+msgstr ""
+
+#: includes/variables/comment-id.php:15
+msgid "Displays the ID of the comment."
+msgstr ""
+
+#: includes/variables/customer-address-line-1.php:23
+msgid "Displays the first line of the customer's address."
+msgstr ""
+
+#: includes/variables/customer-address-line-2.php:23
+msgid "Displays the second line of the customer's address."
+msgstr ""
+
+#: includes/variables/customer-city.php:15
+msgid "Displays the customer's billing city."
+msgstr ""
+
+#: includes/variables/customer-company.php:15
+msgid "Displays the customer's billing company."
+msgstr ""
+
+#: includes/variables/customer-country.php:15
+msgid "Displays the customer's billing country."
+msgstr ""
+
+#: includes/variables/customer-email.php:15
+msgid "Displays the customer's email address. You can use this variable in the To field when sending emails."
+msgstr ""
+
+#: includes/variables/customer-first-name.php:15
+msgid "Displays the customer's first name."
+msgstr ""
+
+#: includes/variables/customer-full-name.php:14
+msgid "Displays the customer's full name."
+msgstr ""
+
+#: includes/variables/customer-last-name.php:15
+msgid "Displays the customer's last name."
+msgstr ""
+
+#: includes/variables/customer-meta.php:15
+msgid "Displays the value of a customer's custom field. If the customer has an account, the value is pulled from the user meta table. If the customer is a guest, the guest meta table is used."
+msgstr ""
+
+#: includes/variables/customer-order-count.php:15
+msgid "Displays the total number of orders the customer has placed."
+msgstr ""
+
+#: includes/variables/customer-phone.php:15
+msgid "Displays the customer's billing phone."
+msgstr ""
+
+#: includes/variables/customer-points.php:23
+msgid "Displays the customer's total points."
+msgstr ""
+
+#: includes/variables/customer-points.php:27
+msgid "Choose whether to display the total number of points or their monetary value."
+msgstr ""
+
+#: includes/variables/customer-points.php:29, includes/actions/abstracts/points-rewards-edit-points-abstract.php:43
+msgid "Number of Points"
+msgstr ""
+
+#: includes/variables/customer-points.php:30
+msgid "Point value as decimal"
+msgstr ""
+
+#: includes/variables/customer-points.php:31
+msgid "Point value as price"
+msgstr ""
+
+#: includes/variables/customer-postcode.php:15
+msgid "Displays the customer's billing postcode."
+msgstr ""
+
+#: includes/variables/customer-state.php:15
+msgid "Displays the customer's billing state."
+msgstr ""
+
+#: includes/variables/customer-state.php:17
+msgid "Choose whether to display the abbreviation or full name of the state."
+msgstr ""
+
+#: includes/variables/customer-state.php:18, includes/variables/order-shipping-country.php:28
+msgid "Full"
+msgstr ""
+
+#: includes/variables/customer-state.php:19, includes/variables/order-shipping-country.php:29
+msgid "Abbreviation"
+msgstr ""
+
+#: includes/variables/customer-tags.php:15
+msgid "Displays a comma separated list of the customer's user tags."
+msgstr ""
+
+#: includes/variables/customer-total-spent.php:19
+msgid "Displays the total amount the customer has spent."
+msgstr ""
+
+#: includes/variables/customer-unsubscribe-url.php:16
+msgid "Displays a URL that the customer can use to unsubscribe."
+msgstr ""
+
+#: includes/variables/customer-user-id.php:15
+msgid "Displays the customer's user ID."
+msgstr ""
+
+#: includes/variables/customer-username.php:18
+msgid "Displays the customer's username. This will be blank for guest customers."
+msgstr ""
+
+#: includes/variables/guest-email.php:15
+msgid "Displays the guest’s email address. Note: You can use this variable in the To field when sending emails."
+msgstr ""
+
+#: includes/variables/guest-first-name.php:15
+msgid "Displays the guest's first name. Please note that guests will not always have a first name stored."
+msgstr ""
+
+#: includes/variables/guest-last-name.php:15
+msgid "Displays the guest's last name. Please note that guests will not always have a last name stored."
+msgstr ""
+
+#: includes/variables/membership-date-expires.php:16
+msgid "Displays the membership expiry date in your website's timezone. Not all memberships will have an expiry."
+msgstr ""
+
+#: includes/variables/membership-date-started.php:16
+msgid "Displays the membership start date in your website's timezone."
+msgstr ""
+
+#: includes/variables/membership-id.php:15
+msgid "Displays the ID of the membership."
+msgstr ""
+
+#: includes/variables/membership-meta.php:20
+msgid "Displays a memberships's custom field."
+msgstr ""
+
+#: includes/variables/membership-plan-id.php:15
+msgid "Displays the plan ID of the membership."
+msgstr ""
+
+#: includes/variables/membership-plan-name.php:15
+msgid "Displays the plan name of the membership."
+msgstr ""
+
+#: includes/variables/membership-renewal-url.php:16
+msgid "Displays the renewal URL for the membership."
+msgstr ""
+
+#: includes/variables/membership-status.php:15
+msgid "Displays the status of the membership."
+msgstr ""
+
+#: includes/variables/order-admin-url.php:21
+msgid "Displays the admin URL of the order."
+msgstr ""
+
+#: includes/variables/order-billing-address.php:15
+msgid "Displays the formatted billing address for the order."
+msgstr ""
+
+#: includes/variables/order-billing-phone.php:15
+msgid "Displays the billing phone number for the order."
+msgstr ""
+
+#: includes/variables/order-cross-sells.php:20
+msgid "Displays a product listing of cross sells based on the items in an order. Be sure to <a href='%s' target='_blank'>set up cross sells</a> before using."
+msgstr ""
+
+#: includes/variables/order-customer-details.php:15
+msgid "Displays the HTML formatted customer details that are normally shown at the bottom of order transactional emails."
+msgstr ""
+
+#: includes/variables/order-customer-note.php:15
+msgid "Displays the customer provided note for the order."
+msgstr ""
+
+#: includes/variables/order-date-shipped.php:18
+msgid "Displays the shipping date as set with the <%s>WooCommerce Shipment Tracking<%s> extension."
+msgstr ""
+
+#: includes/variables/order-date.php:16
+msgid "Displays the date the order was placed."
+msgstr ""
+
+#: includes/variables/order-id.php:15
+msgid "Displays the order's unique ID."
+msgstr ""
+
+#: includes/variables/order-item-attribute.php:15
+msgid "Can be used to display the attribute term name when a customer orders a variable product."
+msgstr ""
+
+#: includes/variables/order-item-attribute.php:16
+msgid "The slug of the product attribute."
+msgstr ""
+
+#: includes/variables/order-item-meta.php:15
+msgid "Can be used to display the value of an order item meta field."
+msgstr ""
+
+#: includes/variables/order-item-meta.php:16
+msgid "The key of the order item meta field."
+msgstr ""
+
+#: includes/variables/order-item-quantity.php:15
+msgid "Can be used to display the quantity of a product line item on an order."
+msgstr ""
+
+#: includes/variables/order-items.php:19
+msgid "Displays the products in an order. Please note this variable returns HTML."
+msgstr ""
+
+#: includes/variables/order-itemscount.php:15
+msgid "Displays the number of items in the order."
+msgstr ""
+
+#: includes/variables/order-meta-date.php:15, includes/variables/abstracts/abstract-meta.php:14
+msgid "The meta_key of the field you would like to display."
+msgstr ""
+
+#: includes/variables/order-meta-date.php:17
+msgid "Displays the value of a date-based meta field in your site's timezone. The meta field must be stored in UTC time in MYSQL or UNIX timestamp format."
+msgstr ""
+
+#: includes/variables/order-meta.php:16
+msgid "Displays the value of an order custom field."
+msgstr ""
+
+#: includes/variables/order-note-content.php:15
+msgid "Displays the content of the order note."
+msgstr ""
+
+#: includes/variables/order-number.php:15
+msgid "Displays the order number."
+msgstr ""
+
+#: includes/variables/order-payment-method.php:15
+msgid "Choose whether to display the title or the ID of the payment method."
+msgstr ""
+
+#: includes/variables/order-payment-method.php:16, includes/variables/order-shipping-method.php:16
+msgid "Title"
+msgstr ""
+
+#: includes/variables/order-payment-method.php:17, includes/variables/order-shipping-method.php:17
+msgid "ID"
+msgstr ""
+
+#: includes/variables/order-payment-method.php:20
+msgid "Displays the payment method for the order."
+msgstr ""
+
+#: includes/variables/order-payment-url.php:15
+msgid "Displays a payment URL for the order."
+msgstr ""
+
+#: includes/variables/order-related-products.php:19
+msgid "Displays a listing of products related to the items in an order."
+msgstr ""
+
+#: includes/variables/order-reorder-url.php:16
+msgid "Displays a reorder URL for the order. When clicked all items from the order will be added to the user's cart."
+msgstr ""
+
+#: includes/variables/order-shipping-address-line-1.php:22
+msgid "Displays the first line of the order shipping address."
+msgstr ""
+
+#: includes/variables/order-shipping-address-line-2.php:22
+msgid "Displays the second line of the shipping address for the order."
+msgstr ""
+
+#: includes/variables/order-shipping-address.php:15
+msgid "Displays the formatted shipping address for the order."
+msgstr ""
+
+#: includes/variables/order-shipping-city.php:22
+msgid "Displays the shipping city for the order."
+msgstr ""
+
+#: includes/variables/order-shipping-company-name.php:22
+msgid "Displays the shipping company name for the order."
+msgstr ""
+
+#: includes/variables/order-shipping-country.php:22
+msgid "Displays the shipping country for the order."
+msgstr ""
+
+#: includes/variables/order-shipping-country.php:26
+msgid "Choose whether to display the abbreviation or full name of the country."
+msgstr ""
+
+#: includes/variables/order-shipping-first-name.php:22
+msgid "Displays the shipping first name of the order."
+msgstr ""
+
+#: includes/variables/order-shipping-last-name.php:21
+msgid "Displays the shipping address last name for the order."
+msgstr ""
+
+#: includes/variables/order-shipping-method.php:15
+msgid "Choose whether to display the title or the ID of the shipping method."
+msgstr ""
+
+#: includes/variables/order-shipping-method.php:20
+msgid "Displays the shipping method for the order."
+msgstr ""
+
+#: includes/variables/order-shipping-postcode.php:22
+msgid "Displays the shipping postcode for the order."
+msgstr ""
+
+#: includes/variables/order-shipping-provider.php:16
+msgid "Displays the name of shipping provider as set with the <%s>WooCommerce Shipment Tracking<%s> extension."
+msgstr ""
+
+#: includes/variables/order-shipping-state.php:23
+msgid "Displays the shipping state for the order."
+msgstr ""
+
+#: includes/variables/order-status.php:15
+msgid "Displays the status of the order."
+msgstr ""
+
+#: includes/variables/order-subtotal.php:19
+msgid "Displays the order subtotal."
+msgstr ""
+
+#: includes/variables/order-total.php:19
+msgid "Displays the total cost of the order."
+msgstr ""
+
+#: includes/variables/order-tracking-number.php:16
+msgid "Displays the tracking number as set with the <%s>WooCommerce Shipment Tracking<%s> extension."
+msgstr ""
+
+#: includes/variables/order-tracking-url.php:16
+msgid "Displays the shipment tracking URL as set with the <%s>WooCommerce Shipment Tracking<%s> extension."
+msgstr ""
+
+#: includes/variables/order-view-url.php:15
+msgid "Displays a URL to view the order in the user account area."
+msgstr ""
+
+#: includes/variables/product-add-to-cart-url.php:15
+msgid "Displays a link to the product that will also add the product to the users cart when clicked."
+msgstr ""
+
+#: includes/variables/product-current-price.php:19
+msgid "Displays the product's current price."
+msgstr ""
+
+#: includes/variables/product-description.php:15
+msgid "Displays the description of the product or variation."
+msgstr ""
+
+#: includes/variables/product-featured-image.php:16
+msgid "Displays the product's featured image."
+msgstr ""
+
+#: includes/variables/product-id.php:15
+msgid "Displays the product's ID."
+msgstr ""
+
+#: includes/variables/product-meta.php:16
+msgid "Displays a product's custom field."
+msgstr ""
+
+#: includes/variables/product-parent-sku.php:16
+msgid "Displays the parent product's SKU."
+msgstr ""
+
+#: includes/variables/product-permalink.php:15
+msgid "Displays the permalink to the product."
+msgstr ""
+
+#: includes/variables/product-regular-price.php:19
+msgid "Displays the product's regular price."
+msgstr ""
+
+#: includes/variables/product-short-description.php:15
+msgid "Displays the product's short description."
+msgstr ""
+
+#: includes/variables/product-sku.php:15
+msgid "Displays the product's SKU."
+msgstr ""
+
+#: includes/variables/product-title.php:15
+msgid "Displays the product's title."
+msgstr ""
+
+#: includes/variables/review-content.php:15
+msgid "Displays the content of the review."
+msgstr ""
+
+#: includes/variables/review-rating.php:15
+msgid "Displays the review rating as a number."
+msgstr ""
+
+#: includes/variables/shop-admin-email.php:15
+msgid "Display the site admin email. Note: You can use this variable in the To field when sending emails."
+msgstr ""
+
+#: includes/variables/shop-current-datetime.php:16
+msgid "Current datetime as per your website's specified timezone."
+msgstr ""
+
+#: includes/variables/shop-products.php:18
+msgid "Determines which products will be displayed."
+msgstr ""
+
+#: includes/variables/shop-products.php:19
+msgid "Featured"
+msgstr ""
+
+#: includes/variables/shop-products.php:20
+msgid "Sale"
+msgstr ""
+
+#: includes/variables/shop-products.php:21
+msgid "Recent"
+msgstr ""
+
+#: includes/variables/shop-products.php:22
+msgid "Top Selling"
+msgstr ""
+
+#: includes/variables/shop-products.php:23
+msgid "By Product Category"
+msgstr ""
+
+#: includes/variables/shop-products.php:24
+msgid "By Product Tag"
+msgstr ""
+
+#: includes/variables/shop-products.php:25
+msgid "By Product IDs"
+msgstr ""
+
+#: includes/variables/shop-products.php:26
+msgid "By Custom Filter"
+msgstr ""
+
+#: includes/variables/shop-products.php:29
+msgid "Display products by ID, use '+' as a delimiter. E.g. 34+12+5"
+msgstr ""
+
+#: includes/variables/shop-products.php:33
+msgid "Display products by product category slug. E.g. clothing or clothing+shoes"
+msgstr ""
+
+#: includes/variables/shop-products.php:37
+msgid "Display products by product tag slug. E.g. winter or winter+summer"
+msgstr ""
+
+#: includes/variables/shop-products.php:41
+msgid "Display products by using a WP filter."
+msgstr ""
+
+#: includes/variables/shop-products.php:45
+msgid "Set the sorting of the products."
+msgstr ""
+
+#: includes/variables/shop-products.php:46
+msgid "Date added - Descending"
+msgstr ""
+
+#: includes/variables/shop-products.php:47
+msgid "Date added - Ascending"
+msgstr ""
+
+#: includes/variables/shop-products.php:48
+msgid "Title - Descending"
+msgstr ""
+
+#: includes/variables/shop-products.php:49
+msgid "Title - Ascending"
+msgstr ""
+
+#: includes/variables/shop-products.php:50
+msgid "Popularity - Descending"
+msgstr ""
+
+#: includes/variables/shop-products.php:51
+msgid "Popularity - Ascending"
+msgstr ""
+
+#: includes/variables/shop-products.php:52
+msgid "Random"
+msgstr ""
+
+#: includes/variables/shop-products.php:58
+msgid "Display your shop's products by various criteria."
+msgstr ""
+
+#: includes/variables/shop-tagline.php:15
+msgid "Displays your shop's tag line."
+msgstr ""
+
+#: includes/variables/shop-title.php:15
+msgid "Displays your shop's title."
+msgstr ""
+
+#: includes/variables/shop-url.php:15
+msgid "Displays the URL to the home page of your shop."
+msgstr ""
+
+#: includes/variables/subscription-admin-url.php:20
+msgid "Displays the admin URL of the subscription."
+msgstr ""
+
+#: includes/variables/subscription-billing-address.php:15
+msgid "Displays the formatted billing address for the subscription."
+msgstr ""
+
+#: includes/variables/subscription-change-payment-method-url.php:18
+msgid "Shows a URL to the subscription add/change payment method page."
+msgstr ""
+
+#: includes/variables/subscription-early-renewal-url.php:20
+msgid "Displays the early renewal URL for the subscription."
+msgstr ""
+
+#: includes/variables/subscription-end-date.php:16
+msgid "Displays the subscription end date in your website's timezone."
+msgstr ""
+
+#: includes/variables/subscription-id.php:15
+msgid "Displays the ID of the subscription."
+msgstr ""
+
+#: includes/variables/subscription-items.php:19
+msgid "Displays a product listing of items in a subscription."
+msgstr ""
+
+#: includes/variables/subscription-last-payment-date.php:16
+msgid "Displays the date of the most recent payment for the subscription."
+msgstr ""
+
+#: includes/variables/subscription-meta.php:16
+msgid "Displays a subscription's custom field."
+msgstr ""
+
+#: includes/variables/subscription-next-payment-date.php:16
+msgid "Displays the subscription next payment date in your website timezone."
+msgstr ""
+
+#: includes/variables/subscription-payment-method.php:15
+msgid "Displays the payment method of the subscription."
+msgstr ""
+
+#: includes/variables/subscription-shipping-address.php:15
+msgid "Displays the formatted shipping address for the subscription."
+msgstr ""
+
+#: includes/variables/subscription-start-date.php:16
+msgid "Displays the subscription start date in your website's timezone."
+msgstr ""
+
+#: includes/variables/subscription-status.php:15
+msgid "Displays the formatted status of the subscription."
+msgstr ""
+
+#: includes/variables/subscription-total.php:19
+msgid "Displays the subscription's recurring total."
+msgstr ""
+
+#: includes/variables/subscription-trial-end-date.php:16
+msgid "Displays the subscription trial end date in your website's timezone."
+msgstr ""
+
+#: includes/variables/subscription-view-order-url.php:15
+msgid "Displays a URL to the subscription page in the My Account area."
+msgstr ""
+
+#: includes/variables/wishlist-items.php:16
+msgid "Display a product listing of the items in the wishlist."
+msgstr ""
+
+#: includes/variables/wishlist-itemscount.php:15
+msgid "Displays the number of items in the wishlist."
+msgstr ""
+
+#: includes/variables/wishlist-view-link.php:15
+msgid "Displays a link to the wishlist."
+msgstr ""
+
+#: templates/communication-preferences/communication-form-no-customer.php:16
+msgid "We couldn't find any customer data matching your request. Your account may have been deleted."
+msgstr ""
+
+#: templates/communication-preferences/communication-form-no-customer.php:19
+msgid "<%s>Sign in to your account<%s> to manage your communication preferences."
+msgstr ""
+
+#: templates/communication-preferences/communication-form.php:26
+msgid "You are managing preferences for %s."
+msgstr ""
+
+#: templates/communication-preferences/communication-preferences-list.php:42
+msgid "Updates about products and promotions"
+msgstr ""
+
+#: templates/communication-preferences/communication-preferences-list.php:43
+msgid "Receive marketing communications that we think you will be interested in."
+msgstr ""
+
+#: templates/communication-preferences/communication-preferences-list.php:56
+msgid "Account and order information"
+msgstr ""
+
+#: templates/communication-preferences/communication-preferences-list.php:57
+msgid "Receive important information about your orders and account."
+msgstr ""
+
+#: templates/communication-preferences/signup-form.php:20
+msgid "Email address"
+msgstr ""
+
+#: templates/email/review-grid-2-col.php:46, templates/email/review-rows.php:41
+msgid "Leave a review"
+msgstr ""
+
+#: includes/actions/abstracts/active-campaign-abstract.php:20
+msgid "Server is missing CURL extension required to use the ActiveCampaign API."
+msgstr ""
+
+#: includes/actions/abstracts/active-campaign-abstract.php:32, includes/actions/abstracts/campaign-monitor-abstract.php:25
+msgid "You can use variables such as {{ customer.email }} here."
+msgstr ""
+
+#: includes/actions/abstracts/active-campaign-abstract.php:31, includes/actions/abstracts/mailchimp-abstract.php:44
+msgid "Contact email"
+msgstr ""
+
+#: includes/actions/abstracts/active-campaign-abstract.php:60
+msgid "Organization"
+msgstr ""
+
+#: includes/actions/abstracts/active-campaign-abstract.php:77
+msgid "Add multiple tags separated by commas. Please note that tags are case-sensitive."
+msgstr ""
+
+#: includes/actions/abstracts/campaign-monitor-abstract.php:24
+msgid "Subscriber email"
+msgstr ""
+
+#: includes/actions/abstracts/campaign-monitor-abstract.php:38
+msgid "Subscriber name"
+msgstr ""
+
+#: includes/actions/abstracts/campaign-monitor-abstract.php:50, includes/actions/abstracts/mailchimp-abstract.php:24
+msgid "List"
+msgstr ""
+
+#: includes/actions/abstracts/campaign-monitor-abstract.php:63
+msgid "Resubscribe"
+msgstr ""
+
+#: includes/actions/abstracts/campaign-monitor-abstract.php:64
+msgid "If checked the user will be subscribed even if they have already unsubscribed from one of your lists. Use with caution."
+msgstr ""
+
+#: includes/actions/abstracts/mailchimp-abstract.php:45
+msgid "Use variables such as {{ customer.email }} here. If blank {{ customer.email }} will be used."
+msgstr ""
+
+#: includes/actions/abstracts/memberships-abstract.php:15, includes/triggers/abstracts/abstract-memberships.php:18
+msgid "Memberships"
+msgstr ""
+
+#: includes/actions/abstracts/points-rewards-edit-points-abstract.php:31
+msgid "Please note that points are not supported on guest customers. Uses the WooCommerce Points and Rewards plugin."
+msgstr ""
+
+#: includes/actions/abstracts/points-rewards-edit-points-abstract.php:50
+msgid "Event Description"
+msgstr ""
+
+#: includes/actions/abstracts/points-rewards-edit-points-abstract.php:52
+msgid "Describe the event and/or why the points were modified. This description will be visible to customers on their \"my account\" points log."
+msgstr ""
+
+#: includes/actions/abstracts/send-email-abstract.php:42
+msgid "To"
+msgstr ""
+
+#: includes/actions/abstracts/send-email-abstract.php:43
+msgid "Enter emails here or use variables such as {{ customer.email }}. Multiple emails can be separated by commas. Add <b>--notracking</b> after an email to disable open and click tracking for that recipient."
+msgstr ""
+
+#: includes/actions/abstracts/send-email-abstract.php:44
+msgid "E.g. {{ customer.email }}, admin@example.org --notracking"
+msgstr ""
+
+#: includes/actions/abstracts/send-email-abstract.php:50
+msgid "Email subject"
+msgstr ""
+
+#: includes/actions/abstracts/send-email-abstract.php:79
+msgid "Email successfully sent."
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-coupon-abstract.php:47
+msgid "Coupon"
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-item-abstract.php:157
+msgid "Custom Item Name"
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-item-abstract.php:165
+msgid "The name to set on the line item."
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-item-abstract.php:185
+msgid "E.g. 10.00"
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-item-abstract.php:195
+msgid "Custom Item Cost %s"
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-item-abstract.php:203
+msgid "Optionally set a custom amount, excluding tax, to use for the line item's cost. Do not include a currency symbol. Total line item cost will be this amount * line item's quantity."
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-product-abstract.php:104
+msgid "Custom Product Name"
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-product-abstract.php:112
+msgid "Optionally set a custom name for the product line item added to the subscription. Defaults to the name set on the product."
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-product-abstract.php:120
+msgid "Custom Product Price"
+msgstr ""
+
+#: includes/actions/abstracts/subscription-edit-product-abstract.php:128
+msgid "Optionally set a custom price to use for the line item's cost. Do not include a currency symbol. Total line item cost will be this amount * quantity. Price should be entered the same as it would be on the Edit Product screen - taxes inclusive or exclusive. Defaults to price set on the product."
+msgstr ""
+
+#: includes/fields/abstracts/searchable-select-abstract.php:75
+msgid "Search&hellip;"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:123
+msgid "Is in the next"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:124
+msgid "Is not in the next"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:128
+msgid "Is in the last"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:129
+msgid "Is not in the last"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:134
+msgid "Is after"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:139
+msgid "Is before"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:144
+msgid "Is on"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:149
+msgid "Is not on"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:153
+msgid "Is on day/s of the week"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:157
+msgid "Is in the range"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:161
+msgid "Is not set"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-date.php:165
+msgid "Is set"
+msgstr ""
+
+#: includes/rules/abstracts/abstract-object.php:32, includes/rules/abstracts/searchable-select-rule-abstract.php:51
+msgid "Search..."
+msgstr ""
+
+#: includes/rules/abstracts/product-select-rule-abstract.php:27
+msgid "Search products..."
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:103, includes/rules/abstracts/rule.php:116
+msgid "is"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:104, includes/rules/abstracts/rule.php:117
+msgid "is not"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:114
+msgid "contains"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:115
+msgid "does not contain"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:118
+msgid "starts with"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:119
+msgid "ends with"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:120
+msgid "is blank"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:121
+msgid "is not blank"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:122
+msgid "matches regex"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:132
+msgid "any contains"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:133
+msgid "any matches exactly"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:134
+msgid "any starts with"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:135
+msgid "any ends with"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:145
+msgid "is greater than"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:146
+msgid "is less than"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:156
+msgid "is a multiple of"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:157
+msgid "is not a multiple of"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:170
+msgid "matches any"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:171
+msgid "matches all"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:172
+msgid "matches none"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:185
+msgid "includes"
+msgstr ""
+
+#: includes/rules/abstracts/rule.php:186
+msgid "does not include"
+msgstr ""
+
+#: includes/triggers/abstracts/abstract-abandoned-cart.php:16
+msgid "Carts are considered abandoned if they are inactive for %d minutes. When a customer purchases or empties their abandoned cart all queued workflows will be automatically cleared. <%s>View documentation.<%s>"
+msgstr ""
+
+#: includes/triggers/abstracts/abstract-memberships.php:32
+msgid "Select which membership plans to trigger for. Leave blank to apply for all plans."
+msgstr ""
+
+#: includes/triggers/abstracts/abstract-memberships.php:31
+msgid "Membership plans"
+msgstr ""
+
+#: includes/triggers/abstracts/background-processed-abstract.php:56
+msgid "Time of day"
+msgstr ""
+
+#: includes/triggers/abstracts/background-processed-abstract.php:57
+msgid "Set the time in your site's timezone that the workflow will be triggered. If no time is set the workflow will run at midnight. If you set a time that has already passed for today the workflow will not run until tomorrow. The workflow will never be run twice in the same day. It's not possible to set a time after 23:00 which gives the background processor at least 1 hour to run any tasks."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:26
+msgid "To set a custom date or time format please refer to the %1$sWordPress documentation%2$s."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:39
+msgid "Choose the format that the date will be displayed in. The default is MySQL datetime format."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:46
+msgid "Set a format according to the documentation link in the variable's description."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:54
+msgid "Optional parameter to modify the value of the datetime. Uses the PHP strtotime() function."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:56
+msgid "e.g. +2 months, -1 day, +6 hours"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:94
+msgid "MySQL datetime - %2$s"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:95
+msgid "Site setting - %2$s"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:99
+msgid "Unix timestamp - %2$s"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:100
+msgctxt "custom date format option"
+msgid "Custom"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-datetime.php:122
+msgctxt "date format option"
+msgid "%1$s - %2$s"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-generate-coupon.php:17
+msgid "Generates a unique coupon based on a template coupon. <%s>View documentation<%s>."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-generate-coupon.php:25
+msgid "Name of the coupon that will be cloned."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-generate-coupon.php:28
+msgid "Number of days the coupon will be valid for. If left blank then the expiry set for the template coupon will be used."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-generate-coupon.php:29, includes/variables/abstracts/abstract-generate-coupon.php:30
+msgid "The prefix for the coupon code, defaults to 'aw-'. To remove the prefix set this field to a single space character."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-generate-coupon.php:31
+msgid "The number of times the generated coupon can be used. Set to '0' for unlimited."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-generate-coupon.php:61
+msgid "AutomateWoo Test Coupon"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-price.php:22
+msgid "Choose to display the amount as a formatted price or numerical value."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-price.php:25
+msgid "Decimal"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:25
+msgid "Product Grid - 2 Column"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:26
+msgid "Product Grid - 3 Column"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:27
+msgid "Product Rows"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:28
+msgid "Cart Table"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:29
+msgid "Order Table"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:30
+msgid "List - Comma Separated"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:31
+msgid "Review Product Grid - 2 Column"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:32
+msgid "Review Product Grid - 3 Column"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:33
+msgid "Review Product Rows"
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:44
+msgid "Select which template will be used to display the products. The default is 'Product Grid - 2 Column'. For information on creating custom templates please refer to the documentation."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:46
+msgid "Add a string to the end of each product URL. For example, using '#tab-reviews' can link customers directly to the review tab on a product page."
+msgstr ""
+
+#: includes/variables/abstracts/abstract-product-display.php:49
+msgid "Set the maximum number of products that will be displayed."
+msgstr ""
