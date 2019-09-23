@@ -11,7 +11,7 @@
  * @author      Brent Shepherd
  * @since       1.0
  */
-class WSSP_Variation_Fields {
+class WSSP_Shipping_Fields {
 
 	/**
 	 * Bootstraps the class and hooks required actions & filters.
@@ -19,10 +19,53 @@ class WSSP_Variation_Fields {
 	 * @since 1.0
 	 */
 	public static function init() {
-		// And also on the variations section
+		add_action( 'woocommerce_product_options_general_product_data', __CLASS__ . '::subscription_shipping_interval_fields' );
+		add_action( 'save_post', __CLASS__ . '::save_subscription_meta', 11 );
 		add_action( 'woocommerce_product_after_variable_attributes', __CLASS__ . '::variable_subscription_shipping_fields', 12, 3 );
 		add_action( 'woocommerce_save_product_variation', __CLASS__ . '::save_product_variation', 20, 2 );
 	}
+
+	public static function subscription_shipping_interval_fields() {
+		global $post;
+
+		$shipping_interval = get_post_meta( $post->ID, '_subscription_shipping_interval', true );
+
+
+		// Subscription Shipping, Interval and Period
+		?>
+		<p class="form-row form-row-first form-field show_if_subscription _subscription_price_field">
+			<label for="_subscription_shipping_interval">
+				<?php
+				// translators: placeholder is a currency symbol / code
+				echo __( 'Shipping Interval (in Months)', 'wdm-subscription-split-payment' );
+				?>
+			</label>
+			<input type="number" class="wc_input_price wc_input_subscription_price" id="_subscription_shipping_interval" name="_subscription_shipping_interval" value="<?php echo $shipping_interval; ?>" placeholder="<?php echo __( 'e.g. 1', 'wdm-subscription-split-payment' ); ?>
+			" min="1">    
+		</p>
+		
+
+		<?php
+	}
+
+
+	/**
+	 * Save meta data for simple subscription product type when the "Edit Product" form is submitted.
+	 *
+	 * @param int $post_id
+	 * @since 1.0
+	 */
+	public static function save_subscription_meta( $post_id ) {
+
+		if ( empty( $_POST['_wcsnonce'] ) || ! wp_verify_nonce( $_POST['_wcsnonce'], 'wcs_subscription_meta' ) ) {
+			return;
+		}
+
+		$shipping_interval = isset( $_REQUEST['_subscription_shipping_interval'] ) ? wc_format_decimal( $_REQUEST['_subscription_shipping_interval'] ) : '';
+
+		update_post_meta( $post_id, '_subscription_shipping_interval', $shipping_interval );
+	}
+
 
 	public static function variable_subscription_shipping_fields( $loop, $variation_data, $variation ) {
 		$variation_product = wc_get_product( $variation );

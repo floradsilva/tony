@@ -22,9 +22,8 @@ if ( ! defined( 'WSSP_PLUGIN_PATH' ) ) {
 }
 
 // Load dependencies.
-require_once plugin_dir_path( __FILE__ ) . 'includes/class-wssp-variation-fields.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-wssp-shipping-fields.php';
 
 
 // Initialize our classes.
-WSSP_Variation_Fields::init();
-
+WSSP_Shipping_Fields::init();
