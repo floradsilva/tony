@@ -1,0 +1,129 @@
+/* Backend css */
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_title_head {
+	color: #000;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_user_roles .phoen_category,
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_user_roles .phoen_role {
+	display: inline-block;
+    margin: 0 40px 30px 0;
+    vertical-align: top;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_user_roles .select2-container--classic .select2-selection--multiple,
+.phoen_main_accordian .phoen_user_roles .select2-container--classic .select2-selection--multiple {
+	border-color: #ccc;
+	border-radius: 2px;
+}
+
+#phoeniixx_discount_html_content_div_main .phoen_main_accordian {
+	padding: 15px;
+}
+
+.phoen_main_accordian .phoen_user_roles {
+	margin: 0 0 30px;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_user_roles label {
+	display: block;
+	font-weight: 500;
+	margin: 0 0 5px;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_expiry {
+	margin: 0 0 30px;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_expiry label {
+	font-weight: 500;
+}
+
+.phoen_main_accordian .phoen_never_expiry,
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_never_expiry {
+	margin: 0 0 10px;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_never_expiry h2 {
+	margin: 0 0 5px;
+}
+
+.phoen_main_accordian .phoen_never_expiry input.phoen_never_min,
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_never_expiry input.phoen_never_min {
+    margin: 1px 3px 0;
+}
+
+.phoen_main_accordian .phoen_never_expiry h2 {
+	padding: 0 0 8px!important;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_expiry input,
+.phoen_main_accordian .phoen_expiry input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 20px 0 5px;
+    vertical-align: middle;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoen_mindiv_label label,
+.phoen_main_accordian .phoen_mindiv_label label {
+	display: inline-block;
+    font-weight: 500;
+    margin: 0 10px 4px 0;
+    width: 150px;
+}
+
+.phoen_main_accordian .phoen_mindiv_label label {
+	width: 120px;
+	font-weight: 400;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoeniixx_discount_min_max_div,
+.phoen_main_accordian .phoeniixx_discount_min_max_div {
+	margin-bottom: 10px;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoeniixx_discount_min_max_div input,
+.phoeniixx_phoe_Disc_wrap_profile_div .phoeniixx_discount_min_max_div select {
+	margin: 0 10px 0 0;
+	width: 150px;
+}
+
+.phoen_main_accordian .phoeniixx_discount_min_max_div input,
+.phoen_main_accordian .phoeniixx_discount_min_max_div select {
+	margin: 0 10px 0 0;
+	width: 120px;
+}
+
+.phoeniixx_phoe_Disc_wrap_profile_div .phoeniixx_discount_min_max_div .phoe_remove_disc_div.button,
+.phoen_main_accordian .phoeniixx_discount_min_max_div .phoe_remove_disc_div.button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 20px;
+    margin: 2px 0 0;
+}
+
+.phoen_main_accordian .phoeniixx_discount_html_content_div,
+.phoeniixx_phoe_Disc_wrap_profile_div .phoeniixx_discount_html_content_div {
+	margin: 30px 0 20px;
+}
+
+.nav-tab-wrapper .phoen_oopw {
+    background-color: #ee8d2b;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 4px;
+    padding: 4px;
+    text-align: center;
+}
+.phoeniixx_phoe_Disc_wrap_profile_div .pho-upgrade-btn {
+    margin-top: 30px;
+}
