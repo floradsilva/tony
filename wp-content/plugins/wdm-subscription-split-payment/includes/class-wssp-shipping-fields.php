@@ -19,8 +19,11 @@ class WSSP_Shipping_Fields {
 	 * @since 1.0
 	 */
 	public static function init() {
+		// for simple subscription
 		add_action( 'woocommerce_product_options_general_product_data', __CLASS__ . '::subscription_shipping_interval_fields' );
 		add_action( 'save_post', __CLASS__ . '::save_subscription_meta', 11 );
+
+		// for variable subscription
 		add_action( 'woocommerce_product_after_variable_attributes', __CLASS__ . '::variable_subscription_shipping_fields', 12, 3 );
 		add_action( 'woocommerce_save_product_variation', __CLASS__ . '::save_product_variation', 20, 2 );
 	}
@@ -29,7 +32,6 @@ class WSSP_Shipping_Fields {
 		global $post;
 
 		$shipping_interval = get_post_meta( $post->ID, '_subscription_shipping_interval', true );
-
 
 		// Subscription Shipping, Interval and Period
 		?>
