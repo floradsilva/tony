@@ -23,7 +23,9 @@ if ( ! defined( 'WSSP_PLUGIN_PATH' ) ) {
 
 // Load dependencies.
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wssp-shipping-fields.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-wssp-shipping-orders.php';
 
 
 // Initialize our classes.
 WSSP_Shipping_Fields::init();
+WSSP_Shipping_Orders::init();
