@@ -1,0 +1,2826 @@
+<pre>===================shipping_status=================<br>int(0)
+===================shipping_total=================<br>string(2) "10"
+===================totals=================<br>string(5) "45.00"
+===================shipping_item=================<br>array(1) {
+  [236]=>
+  object(WC_Order_Item_Product)#2648 (11) {
+    ["extra_data":protected]=>
+    array(9) {
+      ["product_id"]=>
+      int(0)
+      ["variation_id"]=>
+      int(0)
+      ["quantity"]=>
+      int(1)
+      ["tax_class"]=>
+      string(0) ""
+      ["subtotal"]=>
+      int(0)
+      ["subtotal_tax"]=>
+      int(0)
+      ["total"]=>
+      int(0)
+      ["total_tax"]=>
+      int(0)
+      ["taxes"]=>
+      array(2) {
+        ["subtotal"]=>
+        array(0) {
+        }
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["data":protected]=>
+    array(11) {
+      ["order_id"]=>
+      int(4385)
+      ["name"]=>
+      string(57) "1st subscription product VSP - Two Months Monthly Payment"
+      ["product_id"]=>
+      int(2464)
+      ["variation_id"]=>
+      int(2498)
+      ["quantity"]=>
+      int(1)
+      ["tax_class"]=>
+      string(0) ""
+      ["subtotal"]=>
+      string(2) "35"
+      ["subtotal_tax"]=>
+      string(1) "0"
+      ["total"]=>
+      string(2) "35"
+      ["total_tax"]=>
+      string(1) "0"
+      ["taxes"]=>
+      array(2) {
+        ["total"]=>
+        array(0) {
+        }
+        ["subtotal"]=>
+        array(0) {
+        }
+      }
+    }
+    ["cache_group":protected]=>
+    string(11) "order-items"
+    ["meta_type":protected]=>
+    string(10) "order_item"
+    ["object_type":protected]=>
+    string(10) "order_item"
+    ["id":protected]=>
+    int(236)
+    ["changes":protected]=>
+    array(0) {
+    }
+    ["object_read":protected]=>
+    bool(true)
+    ["default_data":protected]=>
+    array(11) {
+      ["order_id"]=>
+      int(0)
+      ["name"]=>
+      string(0) ""
+      ["product_id"]=>
+      int(0)
+      ["variation_id"]=>
+      int(0)
+      ["quantity"]=>
+      int(1)
+      ["tax_class"]=>
+      string(0) ""
+      ["subtotal"]=>
+      int(0)
+      ["subtotal_tax"]=>
+      int(0)
+      ["total"]=>
+      int(0)
+      ["total_tax"]=>
+      int(0)
+      ["taxes"]=>
+      array(2) {
+        ["subtotal"]=>
+        array(0) {
+        }
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["data_store":protected]=>
+    object(WC_Data_Store)#2647 (4) {
+      ["instance":"WC_Data_Store":private]=>
+      object(WC_Order_Item_Product_Data_Store)#2600 (4) {
+        ["internal_meta_keys":protected]=>
+        array(20) {
+          [0]=>
+          string(9) "_order_id"
+          [1]=>
+          string(5) "_name"
+          [2]=>
+          string(11) "_product_id"
+          [3]=>
+          string(13) "_variation_id"
+          [4]=>
+          string(9) "_quantity"
+          [5]=>
+          string(10) "_tax_class"
+          [6]=>
+          string(9) "_subtotal"
+          [7]=>
+          string(13) "_subtotal_tax"
+          [8]=>
+          string(6) "_total"
+          [9]=>
+          string(10) "_total_tax"
+          [10]=>
+          string(6) "_taxes"
+          [11]=>
+          string(11) "_product_id"
+          [12]=>
+          string(13) "_variation_id"
+          [13]=>
+          string(4) "_qty"
+          [14]=>
+          string(10) "_tax_class"
+          [15]=>
+          string(14) "_line_subtotal"
+          [16]=>
+          string(18) "_line_subtotal_tax"
+          [17]=>
+          string(11) "_line_total"
+          [18]=>
+          string(9) "_line_tax"
+          [19]=>
+          string(14) "_line_tax_data"
+        }
+        ["meta_type":protected]=>
+        string(10) "order_item"
+        ["object_id_field_for_meta":protected]=>
+        string(13) "order_item_id"
+        ["must_exist_meta_keys":protected]=>
+        array(0) {
+        }
+      }
+      ["stores":"WC_Data_Store":private]=>
+      array(46) {
+        ["coupon"]=>
+        string(24) "WC_Coupon_Data_Store_CPT"
+        ["customer"]=>
+        string(22) "WC_Customer_Data_Store"
+        ["customer-download"]=>
+        string(31) "WC_Customer_Download_Data_Store"
+        ["customer-download-log"]=>
+        string(35) "WC_Customer_Download_Log_Data_Store"
+        ["customer-session"]=>
+        string(30) "WC_Customer_Data_Store_Session"
+        ["order"]=>
+        string(23) "WC_Order_Data_Store_CPT"
+        ["order-refund"]=>
+        string(30) "WC_Order_Refund_Data_Store_CPT"
+        ["order-item"]=>
+        string(24) "WC_Order_Item_Data_Store"
+        ["order-item-coupon"]=>
+        string(31) "WC_Order_Item_Coupon_Data_Store"
+        ["order-item-fee"]=>
+        string(28) "WC_Order_Item_Fee_Data_Store"
+        ["order-item-product"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-shipping"]=>
+        string(33) "WC_Order_Item_Shipping_Data_Store"
+        ["order-item-tax"]=>
+        string(28) "WC_Order_Item_Tax_Data_Store"
+        ["payment-token"]=>
+        string(27) "WC_Payment_Token_Data_Store"
+        ["product"]=>
+        string(25) "WC_Product_Data_Store_CPT"
+        ["product-grouped"]=>
+        string(33) "WC_Product_Grouped_Data_Store_CPT"
+        ["product-variable"]=>
+        string(34) "WC_Product_Variable_Data_Store_CPT"
+        ["product-variation"]=>
+        string(35) "WC_Product_Variation_Data_Store_CPT"
+        ["shipping-zone"]=>
+        string(27) "WC_Shipping_Zone_Data_Store"
+        ["webhook"]=>
+        string(21) "WC_Webhook_Data_Store"
+        ["order-item-line_item_removed"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-line_item_switched"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-coupon_pending_switch"]=>
+        string(31) "WC_Order_Item_Coupon_Data_Store"
+        ["order-item-fee_pending_switch"]=>
+        string(28) "WC_Order_Item_Fee_Data_Store"
+        ["subscription"]=>
+        string(31) "WCS_Subscription_Data_Store_CPT"
+        ["product-variable-subscription"]=>
+        string(35) "WCS_Product_Variable_Data_Store_CPT"
+        ["product-subscription_variation"]=>
+        string(35) "WC_Product_Variation_Data_Store_CPT"
+        ["order-item-line_item_pending_switch"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["product-bundle"]=>
+        string(32) "WC_Product_Bundle_Data_Store_CPT"
+        ["report-revenue-stats"]=>
+        string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+        ["report-orders"]=>
+        string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+        ["report-orders-stats"]=>
+        string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+        ["report-products"]=>
+        string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+        ["report-variations"]=>
+        string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+        ["report-products-stats"]=>
+        string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+        ["report-categories"]=>
+        string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+        ["report-taxes"]=>
+        string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+        ["report-taxes-stats"]=>
+        string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+        ["report-coupons"]=>
+        string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+        ["report-coupons-stats"]=>
+        string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+        ["report-downloads"]=>
+        string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+        ["report-downloads-stats"]=>
+        string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+        ["admin-note"]=>
+        string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+        ["report-customers"]=>
+        string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+        ["report-customers-stats"]=>
+        string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+        ["report-stock-stats"]=>
+        string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+      }
+      ["current_class_name":"WC_Data_Store":private]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["object_type":"WC_Data_Store":private]=>
+      string(18) "order-item-product"
+    }
+    ["meta_data":protected]=>
+    array(1) {
+      [0]=>
+      object(WC_Meta_Data)#2606 (2) {
+        ["current_data":protected]=>
+        array(3) {
+          ["id"]=>
+          int(2340)
+          ["key"]=>
+          string(13) "payment-cycle"
+          ["value"]=>
+          string(26) "Two Months Monthly Payment"
+        }
+        ["data":protected]=>
+        array(3) {
+          ["id"]=>
+          int(2340)
+          ["key"]=>
+          string(13) "payment-cycle"
+          ["value"]=>
+          string(26) "Two Months Monthly Payment"
+        }
+      }
+    }
+  }
+}
+===================shipping_methods=================<br>array(1) {
+  [237]=>
+  object(WC_Order_Item_Shipping)#2333 (11) {
+    ["extra_data":protected]=>
+    array(6) {
+      ["method_title"]=>
+      string(0) ""
+      ["method_id"]=>
+      string(0) ""
+      ["instance_id"]=>
+      string(0) ""
+      ["total"]=>
+      int(0)
+      ["total_tax"]=>
+      int(0)
+      ["taxes"]=>
+      array(1) {
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["data":protected]=>
+    array(8) {
+      ["order_id"]=>
+      int(4385)
+      ["name"]=>
+      string(9) "Flat rate"
+      ["method_title"]=>
+      string(9) "Flat rate"
+      ["method_id"]=>
+      string(9) "flat_rate"
+      ["instance_id"]=>
+      string(0) ""
+      ["total"]=>
+      string(5) "10.00"
+      ["total_tax"]=>
+      string(1) "0"
+      ["taxes"]=>
+      array(1) {
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["cache_group":protected]=>
+    string(11) "order-items"
+    ["meta_type":protected]=>
+    string(10) "order_item"
+    ["object_type":protected]=>
+    string(10) "order_item"
+    ["id":protected]=>
+    int(237)
+    ["changes":protected]=>
+    array(0) {
+    }
+    ["object_read":protected]=>
+    bool(true)
+    ["default_data":protected]=>
+    array(8) {
+      ["order_id"]=>
+      int(0)
+      ["name"]=>
+      string(0) ""
+      ["method_title"]=>
+      string(0) ""
+      ["method_id"]=>
+      string(0) ""
+      ["instance_id"]=>
+      string(0) ""
+      ["total"]=>
+      int(0)
+      ["total_tax"]=>
+      int(0)
+      ["taxes"]=>
+      array(1) {
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["data_store":protected]=>
+    object(WC_Data_Store)#2334 (4) {
+      ["instance":"WC_Data_Store":private]=>
+      object(WC_Order_Item_Shipping_Data_Store)#2350 (4) {
+        ["internal_meta_keys":protected]=>
+        array(13) {
+          [0]=>
+          string(9) "_order_id"
+          [1]=>
+          string(5) "_name"
+          [2]=>
+          string(13) "_method_title"
+          [3]=>
+          string(10) "_method_id"
+          [4]=>
+          string(12) "_instance_id"
+          [5]=>
+          string(6) "_total"
+          [6]=>
+          string(10) "_total_tax"
+          [7]=>
+          string(6) "_taxes"
+          [8]=>
+          string(9) "method_id"
+          [9]=>
+          string(11) "instance_id"
+          [10]=>
+          string(4) "cost"
+          [11]=>
+          string(9) "total_tax"
+          [12]=>
+          string(5) "taxes"
+        }
+        ["meta_type":protected]=>
+        string(10) "order_item"
+        ["object_id_field_for_meta":protected]=>
+        string(13) "order_item_id"
+        ["must_exist_meta_keys":protected]=>
+        array(0) {
+        }
+      }
+      ["stores":"WC_Data_Store":private]=>
+      array(46) {
+        ["coupon"]=>
+        string(24) "WC_Coupon_Data_Store_CPT"
+        ["customer"]=>
+        string(22) "WC_Customer_Data_Store"
+        ["customer-download"]=>
+        string(31) "WC_Customer_Download_Data_Store"
+        ["customer-download-log"]=>
+        string(35) "WC_Customer_Download_Log_Data_Store"
+        ["customer-session"]=>
+        string(30) "WC_Customer_Data_Store_Session"
+        ["order"]=>
+        string(23) "WC_Order_Data_Store_CPT"
+        ["order-refund"]=>
+        string(30) "WC_Order_Refund_Data_Store_CPT"
+        ["order-item"]=>
+        string(24) "WC_Order_Item_Data_Store"
+        ["order-item-coupon"]=>
+        string(31) "WC_Order_Item_Coupon_Data_Store"
+        ["order-item-fee"]=>
+        string(28) "WC_Order_Item_Fee_Data_Store"
+        ["order-item-product"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-shipping"]=>
+        string(33) "WC_Order_Item_Shipping_Data_Store"
+        ["order-item-tax"]=>
+        string(28) "WC_Order_Item_Tax_Data_Store"
+        ["payment-token"]=>
+        string(27) "WC_Payment_Token_Data_Store"
+        ["product"]=>
+        string(25) "WC_Product_Data_Store_CPT"
+        ["product-grouped"]=>
+        string(33) "WC_Product_Grouped_Data_Store_CPT"
+        ["product-variable"]=>
+        string(34) "WC_Product_Variable_Data_Store_CPT"
+        ["product-variation"]=>
+        string(35) "WC_Product_Variation_Data_Store_CPT"
+        ["shipping-zone"]=>
+        string(27) "WC_Shipping_Zone_Data_Store"
+        ["webhook"]=>
+        string(21) "WC_Webhook_Data_Store"
+        ["order-item-line_item_removed"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-line_item_switched"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-coupon_pending_switch"]=>
+        string(31) "WC_Order_Item_Coupon_Data_Store"
+        ["order-item-fee_pending_switch"]=>
+        string(28) "WC_Order_Item_Fee_Data_Store"
+        ["subscription"]=>
+        string(31) "WCS_Subscription_Data_Store_CPT"
+        ["product-variable-subscription"]=>
+        string(35) "WCS_Product_Variable_Data_Store_CPT"
+        ["product-subscription_variation"]=>
+        string(35) "WC_Product_Variation_Data_Store_CPT"
+        ["order-item-line_item_pending_switch"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["product-bundle"]=>
+        string(32) "WC_Product_Bundle_Data_Store_CPT"
+        ["report-revenue-stats"]=>
+        string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+        ["report-orders"]=>
+        string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+        ["report-orders-stats"]=>
+        string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+        ["report-products"]=>
+        string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+        ["report-variations"]=>
+        string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+        ["report-products-stats"]=>
+        string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+        ["report-categories"]=>
+        string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+        ["report-taxes"]=>
+        string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+        ["report-taxes-stats"]=>
+        string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+        ["report-coupons"]=>
+        string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+        ["report-coupons-stats"]=>
+        string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+        ["report-downloads"]=>
+        string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+        ["report-downloads-stats"]=>
+        string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+        ["admin-note"]=>
+        string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+        ["report-customers"]=>
+        string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+        ["report-customers-stats"]=>
+        string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+        ["report-stock-stats"]=>
+        string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+      }
+      ["current_class_name":"WC_Data_Store":private]=>
+      string(33) "WC_Order_Item_Shipping_Data_Store"
+      ["object_type":"WC_Data_Store":private]=>
+      string(19) "order-item-shipping"
+    }
+    ["meta_data":protected]=>
+    array(1) {
+      [0]=>
+      object(WC_Meta_Data)#2597 (2) {
+        ["current_data":protected]=>
+        array(3) {
+          ["id"]=>
+          int(2346)
+          ["key"]=>
+          string(5) "Items"
+          ["value"]=>
+          string(67) "1st subscription product VSP - Two Months Monthly Payment &times; 1"
+        }
+        ["data":protected]=>
+        array(3) {
+          ["id"]=>
+          int(2346)
+          ["key"]=>
+          string(5) "Items"
+          ["value"]=>
+          string(67) "1st subscription product VSP - Two Months Monthly Payment &times; 1"
+        }
+      }
+    }
+  }
+}
+===================order=================<br>object(WC_Order)#2389 (14) {
+  ["status_transition":protected]=>
+  bool(false)
+  ["data":protected]=>
+  array(28) {
+    ["parent_id"]=>
+    int(0)
+    ["status"]=>
+    string(0) ""
+    ["currency"]=>
+    string(3) "NZD"
+    ["version"]=>
+    string(5) "3.7.0"
+    ["prices_include_tax"]=>
+    bool(true)
+    ["date_created"]=>
+    object(WC_DateTime)#2553 (4) {
+      ["utc_offset":protected]=>
+      int(0)
+      ["date"]=>
+      string(26) "2019-09-28 03:17:44.000000"
+      ["timezone_type"]=>
+      int(3)
+      ["timezone"]=>
+      string(16) "Pacific/Auckland"
+    }
+    ["date_modified"]=>
+    NULL
+    ["discount_total"]=>
+    string(1) "0"
+    ["discount_tax"]=>
+    string(1) "0"
+    ["shipping_total"]=>
+    string(2) "10"
+    ["shipping_tax"]=>
+    string(1) "0"
+    ["cart_tax"]=>
+    string(1) "0"
+    ["total"]=>
+    string(5) "45.00"
+    ["total_tax"]=>
+    string(1) "0"
+    ["customer_id"]=>
+    int(4)
+    ["order_key"]=>
+    string(22) "wc_order_ZGf1wJVIqWuJs"
+    ["billing"]=>
+    array(11) {
+      ["first_name"]=>
+      string(4) "Test"
+      ["last_name"]=>
+      string(9) "Wisdmlabs"
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(14) "Lodha Supremus"
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(5) "Thane"
+      ["state"]=>
+      string(2) "MH"
+      ["postcode"]=>
+      string(6) "421301"
+      ["country"]=>
+      string(2) "IN"
+      ["email"]=>
+      string(27) "coffeetoffee12345@gmail.com"
+      ["phone"]=>
+      string(10) "9865327410"
+    }
+    ["shipping"]=>
+    array(9) {
+      ["first_name"]=>
+      string(4) "Test"
+      ["last_name"]=>
+      string(9) "Wisdmlabs"
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(14) "Lodha Supremus"
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(5) "Thane"
+      ["state"]=>
+      string(2) "MH"
+      ["postcode"]=>
+      string(6) "421301"
+      ["country"]=>
+      string(2) "IN"
+    }
+    ["payment_method"]=>
+    string(0) ""
+    ["payment_method_title"]=>
+    string(0) ""
+    ["transaction_id"]=>
+    string(0) ""
+    ["customer_ip_address"]=>
+    string(9) "127.0.0.1"
+    ["customer_user_agent"]=>
+    string(105) "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+    ["created_via"]=>
+    string(12) "subscription"
+    ["customer_note"]=>
+    string(0) ""
+    ["date_completed"]=>
+    NULL
+    ["date_paid"]=>
+    NULL
+    ["cart_hash"]=>
+    string(0) ""
+  }
+  ["items":protected]=>
+  array(4) {
+    ["line_items"]=>
+    array(1) {
+      [236]=>
+      object(WC_Order_Item_Product)#2648 (11) {
+        ["extra_data":protected]=>
+        array(9) {
+          ["product_id"]=>
+          int(0)
+          ["variation_id"]=>
+          int(0)
+          ["quantity"]=>
+          int(1)
+          ["tax_class"]=>
+          string(0) ""
+          ["subtotal"]=>
+          int(0)
+          ["subtotal_tax"]=>
+          int(0)
+          ["total"]=>
+          int(0)
+          ["total_tax"]=>
+          int(0)
+          ["taxes"]=>
+          array(2) {
+            ["subtotal"]=>
+            array(0) {
+            }
+            ["total"]=>
+            array(0) {
+            }
+          }
+        }
+        ["data":protected]=>
+        array(11) {
+          ["order_id"]=>
+          int(4385)
+          ["name"]=>
+          string(57) "1st subscription product VSP - Two Months Monthly Payment"
+          ["product_id"]=>
+          int(2464)
+          ["variation_id"]=>
+          int(2498)
+          ["quantity"]=>
+          int(1)
+          ["tax_class"]=>
+          string(0) ""
+          ["subtotal"]=>
+          string(2) "35"
+          ["subtotal_tax"]=>
+          string(1) "0"
+          ["total"]=>
+          string(2) "35"
+          ["total_tax"]=>
+          string(1) "0"
+          ["taxes"]=>
+          array(2) {
+            ["total"]=>
+            array(0) {
+            }
+            ["subtotal"]=>
+            array(0) {
+            }
+          }
+        }
+        ["cache_group":protected]=>
+        string(11) "order-items"
+        ["meta_type":protected]=>
+        string(10) "order_item"
+        ["object_type":protected]=>
+        string(10) "order_item"
+        ["id":protected]=>
+        int(236)
+        ["changes":protected]=>
+        array(0) {
+        }
+        ["object_read":protected]=>
+        bool(true)
+        ["default_data":protected]=>
+        array(11) {
+          ["order_id"]=>
+          int(0)
+          ["name"]=>
+          string(0) ""
+          ["product_id"]=>
+          int(0)
+          ["variation_id"]=>
+          int(0)
+          ["quantity"]=>
+          int(1)
+          ["tax_class"]=>
+          string(0) ""
+          ["subtotal"]=>
+          int(0)
+          ["subtotal_tax"]=>
+          int(0)
+          ["total"]=>
+          int(0)
+          ["total_tax"]=>
+          int(0)
+          ["taxes"]=>
+          array(2) {
+            ["subtotal"]=>
+            array(0) {
+            }
+            ["total"]=>
+            array(0) {
+            }
+          }
+        }
+        ["data_store":protected]=>
+        object(WC_Data_Store)#2647 (4) {
+          ["instance":"WC_Data_Store":private]=>
+          object(WC_Order_Item_Product_Data_Store)#2600 (4) {
+            ["internal_meta_keys":protected]=>
+            array(20) {
+              [0]=>
+              string(9) "_order_id"
+              [1]=>
+              string(5) "_name"
+              [2]=>
+              string(11) "_product_id"
+              [3]=>
+              string(13) "_variation_id"
+              [4]=>
+              string(9) "_quantity"
+              [5]=>
+              string(10) "_tax_class"
+              [6]=>
+              string(9) "_subtotal"
+              [7]=>
+              string(13) "_subtotal_tax"
+              [8]=>
+              string(6) "_total"
+              [9]=>
+              string(10) "_total_tax"
+              [10]=>
+              string(6) "_taxes"
+              [11]=>
+              string(11) "_product_id"
+              [12]=>
+              string(13) "_variation_id"
+              [13]=>
+              string(4) "_qty"
+              [14]=>
+              string(10) "_tax_class"
+              [15]=>
+              string(14) "_line_subtotal"
+              [16]=>
+              string(18) "_line_subtotal_tax"
+              [17]=>
+              string(11) "_line_total"
+              [18]=>
+              string(9) "_line_tax"
+              [19]=>
+              string(14) "_line_tax_data"
+            }
+            ["meta_type":protected]=>
+            string(10) "order_item"
+            ["object_id_field_for_meta":protected]=>
+            string(13) "order_item_id"
+            ["must_exist_meta_keys":protected]=>
+            array(0) {
+            }
+          }
+          ["stores":"WC_Data_Store":private]=>
+          array(46) {
+            ["coupon"]=>
+            string(24) "WC_Coupon_Data_Store_CPT"
+            ["customer"]=>
+            string(22) "WC_Customer_Data_Store"
+            ["customer-download"]=>
+            string(31) "WC_Customer_Download_Data_Store"
+            ["customer-download-log"]=>
+            string(35) "WC_Customer_Download_Log_Data_Store"
+            ["customer-session"]=>
+            string(30) "WC_Customer_Data_Store_Session"
+            ["order"]=>
+            string(23) "WC_Order_Data_Store_CPT"
+            ["order-refund"]=>
+            string(30) "WC_Order_Refund_Data_Store_CPT"
+            ["order-item"]=>
+            string(24) "WC_Order_Item_Data_Store"
+            ["order-item-coupon"]=>
+            string(31) "WC_Order_Item_Coupon_Data_Store"
+            ["order-item-fee"]=>
+            string(28) "WC_Order_Item_Fee_Data_Store"
+            ["order-item-product"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-shipping"]=>
+            string(33) "WC_Order_Item_Shipping_Data_Store"
+            ["order-item-tax"]=>
+            string(28) "WC_Order_Item_Tax_Data_Store"
+            ["payment-token"]=>
+            string(27) "WC_Payment_Token_Data_Store"
+            ["product"]=>
+            string(25) "WC_Product_Data_Store_CPT"
+            ["product-grouped"]=>
+            string(33) "WC_Product_Grouped_Data_Store_CPT"
+            ["product-variable"]=>
+            string(34) "WC_Product_Variable_Data_Store_CPT"
+            ["product-variation"]=>
+            string(35) "WC_Product_Variation_Data_Store_CPT"
+            ["shipping-zone"]=>
+            string(27) "WC_Shipping_Zone_Data_Store"
+            ["webhook"]=>
+            string(21) "WC_Webhook_Data_Store"
+            ["order-item-line_item_removed"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-line_item_switched"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-coupon_pending_switch"]=>
+            string(31) "WC_Order_Item_Coupon_Data_Store"
+            ["order-item-fee_pending_switch"]=>
+            string(28) "WC_Order_Item_Fee_Data_Store"
+            ["subscription"]=>
+            string(31) "WCS_Subscription_Data_Store_CPT"
+            ["product-variable-subscription"]=>
+            string(35) "WCS_Product_Variable_Data_Store_CPT"
+            ["product-subscription_variation"]=>
+            string(35) "WC_Product_Variation_Data_Store_CPT"
+            ["order-item-line_item_pending_switch"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["product-bundle"]=>
+            string(32) "WC_Product_Bundle_Data_Store_CPT"
+            ["report-revenue-stats"]=>
+            string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+            ["report-orders"]=>
+            string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+            ["report-orders-stats"]=>
+            string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+            ["report-products"]=>
+            string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+            ["report-variations"]=>
+            string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+            ["report-products-stats"]=>
+            string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+            ["report-categories"]=>
+            string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+            ["report-taxes"]=>
+            string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+            ["report-taxes-stats"]=>
+            string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+            ["report-coupons"]=>
+            string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+            ["report-coupons-stats"]=>
+            string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+            ["report-downloads"]=>
+            string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+            ["report-downloads-stats"]=>
+            string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+            ["admin-note"]=>
+            string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+            ["report-customers"]=>
+            string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+            ["report-customers-stats"]=>
+            string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+            ["report-stock-stats"]=>
+            string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+          }
+          ["current_class_name":"WC_Data_Store":private]=>
+          string(32) "WC_Order_Item_Product_Data_Store"
+          ["object_type":"WC_Data_Store":private]=>
+          string(18) "order-item-product"
+        }
+        ["meta_data":protected]=>
+        array(1) {
+          [0]=>
+          object(WC_Meta_Data)#2606 (2) {
+            ["current_data":protected]=>
+            array(3) {
+              ["id"]=>
+              int(2340)
+              ["key"]=>
+              string(13) "payment-cycle"
+              ["value"]=>
+              string(26) "Two Months Monthly Payment"
+            }
+            ["data":protected]=>
+            array(3) {
+              ["id"]=>
+              int(2340)
+              ["key"]=>
+              string(13) "payment-cycle"
+              ["value"]=>
+              string(26) "Two Months Monthly Payment"
+            }
+          }
+        }
+      }
+    }
+    ["shipping_lines"]=>
+    array(1) {
+      [237]=>
+      object(WC_Order_Item_Shipping)#2333 (11) {
+        ["extra_data":protected]=>
+        array(6) {
+          ["method_title"]=>
+          string(0) ""
+          ["method_id"]=>
+          string(0) ""
+          ["instance_id"]=>
+          string(0) ""
+          ["total"]=>
+          int(0)
+          ["total_tax"]=>
+          int(0)
+          ["taxes"]=>
+          array(1) {
+            ["total"]=>
+            array(0) {
+            }
+          }
+        }
+        ["data":protected]=>
+        array(8) {
+          ["order_id"]=>
+          int(4385)
+          ["name"]=>
+          string(9) "Flat rate"
+          ["method_title"]=>
+          string(9) "Flat rate"
+          ["method_id"]=>
+          string(9) "flat_rate"
+          ["instance_id"]=>
+          string(0) ""
+          ["total"]=>
+          string(5) "10.00"
+          ["total_tax"]=>
+          string(1) "0"
+          ["taxes"]=>
+          array(1) {
+            ["total"]=>
+            array(0) {
+            }
+          }
+        }
+        ["cache_group":protected]=>
+        string(11) "order-items"
+        ["meta_type":protected]=>
+        string(10) "order_item"
+        ["object_type":protected]=>
+        string(10) "order_item"
+        ["id":protected]=>
+        int(237)
+        ["changes":protected]=>
+        array(0) {
+        }
+        ["object_read":protected]=>
+        bool(true)
+        ["default_data":protected]=>
+        array(8) {
+          ["order_id"]=>
+          int(0)
+          ["name"]=>
+          string(0) ""
+          ["method_title"]=>
+          string(0) ""
+          ["method_id"]=>
+          string(0) ""
+          ["instance_id"]=>
+          string(0) ""
+          ["total"]=>
+          int(0)
+          ["total_tax"]=>
+          int(0)
+          ["taxes"]=>
+          array(1) {
+            ["total"]=>
+            array(0) {
+            }
+          }
+        }
+        ["data_store":protected]=>
+        object(WC_Data_Store)#2334 (4) {
+          ["instance":"WC_Data_Store":private]=>
+          object(WC_Order_Item_Shipping_Data_Store)#2350 (4) {
+            ["internal_meta_keys":protected]=>
+            array(13) {
+              [0]=>
+              string(9) "_order_id"
+              [1]=>
+              string(5) "_name"
+              [2]=>
+              string(13) "_method_title"
+              [3]=>
+              string(10) "_method_id"
+              [4]=>
+              string(12) "_instance_id"
+              [5]=>
+              string(6) "_total"
+              [6]=>
+              string(10) "_total_tax"
+              [7]=>
+              string(6) "_taxes"
+              [8]=>
+              string(9) "method_id"
+              [9]=>
+              string(11) "instance_id"
+              [10]=>
+              string(4) "cost"
+              [11]=>
+              string(9) "total_tax"
+              [12]=>
+              string(5) "taxes"
+            }
+            ["meta_type":protected]=>
+            string(10) "order_item"
+            ["object_id_field_for_meta":protected]=>
+            string(13) "order_item_id"
+            ["must_exist_meta_keys":protected]=>
+            array(0) {
+            }
+          }
+          ["stores":"WC_Data_Store":private]=>
+          array(46) {
+            ["coupon"]=>
+            string(24) "WC_Coupon_Data_Store_CPT"
+            ["customer"]=>
+            string(22) "WC_Customer_Data_Store"
+            ["customer-download"]=>
+            string(31) "WC_Customer_Download_Data_Store"
+            ["customer-download-log"]=>
+            string(35) "WC_Customer_Download_Log_Data_Store"
+            ["customer-session"]=>
+            string(30) "WC_Customer_Data_Store_Session"
+            ["order"]=>
+            string(23) "WC_Order_Data_Store_CPT"
+            ["order-refund"]=>
+            string(30) "WC_Order_Refund_Data_Store_CPT"
+            ["order-item"]=>
+            string(24) "WC_Order_Item_Data_Store"
+            ["order-item-coupon"]=>
+            string(31) "WC_Order_Item_Coupon_Data_Store"
+            ["order-item-fee"]=>
+            string(28) "WC_Order_Item_Fee_Data_Store"
+            ["order-item-product"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-shipping"]=>
+            string(33) "WC_Order_Item_Shipping_Data_Store"
+            ["order-item-tax"]=>
+            string(28) "WC_Order_Item_Tax_Data_Store"
+            ["payment-token"]=>
+            string(27) "WC_Payment_Token_Data_Store"
+            ["product"]=>
+            string(25) "WC_Product_Data_Store_CPT"
+            ["product-grouped"]=>
+            string(33) "WC_Product_Grouped_Data_Store_CPT"
+            ["product-variable"]=>
+            string(34) "WC_Product_Variable_Data_Store_CPT"
+            ["product-variation"]=>
+            string(35) "WC_Product_Variation_Data_Store_CPT"
+            ["shipping-zone"]=>
+            string(27) "WC_Shipping_Zone_Data_Store"
+            ["webhook"]=>
+            string(21) "WC_Webhook_Data_Store"
+            ["order-item-line_item_removed"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-line_item_switched"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-coupon_pending_switch"]=>
+            string(31) "WC_Order_Item_Coupon_Data_Store"
+            ["order-item-fee_pending_switch"]=>
+            string(28) "WC_Order_Item_Fee_Data_Store"
+            ["subscription"]=>
+            string(31) "WCS_Subscription_Data_Store_CPT"
+            ["product-variable-subscription"]=>
+            string(35) "WCS_Product_Variable_Data_Store_CPT"
+            ["product-subscription_variation"]=>
+            string(35) "WC_Product_Variation_Data_Store_CPT"
+            ["order-item-line_item_pending_switch"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["product-bundle"]=>
+            string(32) "WC_Product_Bundle_Data_Store_CPT"
+            ["report-revenue-stats"]=>
+            string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+            ["report-orders"]=>
+            string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+            ["report-orders-stats"]=>
+            string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+            ["report-products"]=>
+            string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+            ["report-variations"]=>
+            string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+            ["report-products-stats"]=>
+            string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+            ["report-categories"]=>
+            string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+            ["report-taxes"]=>
+            string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+            ["report-taxes-stats"]=>
+            string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+            ["report-coupons"]=>
+            string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+            ["report-coupons-stats"]=>
+            string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+            ["report-downloads"]=>
+            string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+            ["report-downloads-stats"]=>
+            string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+            ["admin-note"]=>
+            string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+            ["report-customers"]=>
+            string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+            ["report-customers-stats"]=>
+            string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+            ["report-stock-stats"]=>
+            string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+          }
+          ["current_class_name":"WC_Data_Store":private]=>
+          string(33) "WC_Order_Item_Shipping_Data_Store"
+          ["object_type":"WC_Data_Store":private]=>
+          string(19) "order-item-shipping"
+        }
+        ["meta_data":protected]=>
+        array(1) {
+          [0]=>
+          object(WC_Meta_Data)#2597 (2) {
+            ["current_data":protected]=>
+            array(3) {
+              ["id"]=>
+              int(2346)
+              ["key"]=>
+              string(5) "Items"
+              ["value"]=>
+              string(67) "1st subscription product VSP - Two Months Monthly Payment &times; 1"
+            }
+            ["data":protected]=>
+            array(3) {
+              ["id"]=>
+              int(2346)
+              ["key"]=>
+              string(5) "Items"
+              ["value"]=>
+              string(67) "1st subscription product VSP - Two Months Monthly Payment &times; 1"
+            }
+          }
+        }
+      }
+    }
+    ["fee_lines"]=>
+    array(0) {
+    }
+    ["tax_lines"]=>
+    array(0) {
+    }
+  }
+  ["items_to_delete":protected]=>
+  array(0) {
+  }
+  ["cache_group":protected]=>
+  string(6) "orders"
+  ["data_store_name":protected]=>
+  string(5) "order"
+  ["object_type":protected]=>
+  string(5) "order"
+  ["id":protected]=>
+  int(4385)
+  ["changes":protected]=>
+  array(0) {
+  }
+  ["object_read":protected]=>
+  bool(true)
+  ["extra_data":protected]=>
+  array(0) {
+  }
+  ["default_data":protected]=>
+  array(28) {
+    ["parent_id"]=>
+    int(0)
+    ["status"]=>
+    string(0) ""
+    ["currency"]=>
+    string(0) ""
+    ["version"]=>
+    string(0) ""
+    ["prices_include_tax"]=>
+    bool(false)
+    ["date_created"]=>
+    NULL
+    ["date_modified"]=>
+    NULL
+    ["discount_total"]=>
+    int(0)
+    ["discount_tax"]=>
+    int(0)
+    ["shipping_total"]=>
+    int(0)
+    ["shipping_tax"]=>
+    int(0)
+    ["cart_tax"]=>
+    int(0)
+    ["total"]=>
+    int(0)
+    ["total_tax"]=>
+    int(0)
+    ["customer_id"]=>
+    int(0)
+    ["order_key"]=>
+    string(0) ""
+    ["billing"]=>
+    array(11) {
+      ["first_name"]=>
+      string(0) ""
+      ["last_name"]=>
+      string(0) ""
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(0) ""
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(0) ""
+      ["state"]=>
+      string(0) ""
+      ["postcode"]=>
+      string(0) ""
+      ["country"]=>
+      string(0) ""
+      ["email"]=>
+      string(0) ""
+      ["phone"]=>
+      string(0) ""
+    }
+    ["shipping"]=>
+    array(9) {
+      ["first_name"]=>
+      string(0) ""
+      ["last_name"]=>
+      string(0) ""
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(0) ""
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(0) ""
+      ["state"]=>
+      string(0) ""
+      ["postcode"]=>
+      string(0) ""
+      ["country"]=>
+      string(0) ""
+    }
+    ["payment_method"]=>
+    string(0) ""
+    ["payment_method_title"]=>
+    string(0) ""
+    ["transaction_id"]=>
+    string(0) ""
+    ["customer_ip_address"]=>
+    string(0) ""
+    ["customer_user_agent"]=>
+    string(0) ""
+    ["created_via"]=>
+    string(0) ""
+    ["customer_note"]=>
+    string(0) ""
+    ["date_completed"]=>
+    NULL
+    ["date_paid"]=>
+    NULL
+    ["cart_hash"]=>
+    string(0) ""
+  }
+  ["data_store":protected]=>
+  object(WC_Data_Store)#2544 (4) {
+    ["instance":"WC_Data_Store":private]=>
+    object(WC_Order_Data_Store_CPT)#2168 (4) {
+      ["internal_meta_keys":protected]=>
+      array(78) {
+        [0]=>
+        string(10) "_parent_id"
+        [1]=>
+        string(7) "_status"
+        [2]=>
+        string(9) "_currency"
+        [3]=>
+        string(8) "_version"
+        [4]=>
+        string(19) "_prices_include_tax"
+        [5]=>
+        string(13) "_date_created"
+        [6]=>
+        string(14) "_date_modified"
+        [7]=>
+        string(15) "_discount_total"
+        [8]=>
+        string(13) "_discount_tax"
+        [9]=>
+        string(15) "_shipping_total"
+        [10]=>
+        string(13) "_shipping_tax"
+        [11]=>
+        string(9) "_cart_tax"
+        [12]=>
+        string(6) "_total"
+        [13]=>
+        string(10) "_total_tax"
+        [14]=>
+        string(12) "_customer_id"
+        [15]=>
+        string(10) "_order_key"
+        [16]=>
+        string(8) "_billing"
+        [17]=>
+        string(9) "_shipping"
+        [18]=>
+        string(15) "_payment_method"
+        [19]=>
+        string(21) "_payment_method_title"
+        [20]=>
+        string(15) "_transaction_id"
+        [21]=>
+        string(20) "_customer_ip_address"
+        [22]=>
+        string(20) "_customer_user_agent"
+        [23]=>
+        string(12) "_created_via"
+        [24]=>
+        string(14) "_customer_note"
+        [25]=>
+        string(15) "_date_completed"
+        [26]=>
+        string(10) "_date_paid"
+        [27]=>
+        string(10) "_cart_hash"
+        [28]=>
+        string(14) "_customer_user"
+        [29]=>
+        string(10) "_order_key"
+        [30]=>
+        string(15) "_order_currency"
+        [31]=>
+        string(19) "_billing_first_name"
+        [32]=>
+        string(18) "_billing_last_name"
+        [33]=>
+        string(16) "_billing_company"
+        [34]=>
+        string(18) "_billing_address_1"
+        [35]=>
+        string(18) "_billing_address_2"
+        [36]=>
+        string(13) "_billing_city"
+        [37]=>
+        string(14) "_billing_state"
+        [38]=>
+        string(17) "_billing_postcode"
+        [39]=>
+        string(16) "_billing_country"
+        [40]=>
+        string(14) "_billing_email"
+        [41]=>
+        string(14) "_billing_phone"
+        [42]=>
+        string(20) "_shipping_first_name"
+        [43]=>
+        string(19) "_shipping_last_name"
+        [44]=>
+        string(17) "_shipping_company"
+        [45]=>
+        string(19) "_shipping_address_1"
+        [46]=>
+        string(19) "_shipping_address_2"
+        [47]=>
+        string(14) "_shipping_city"
+        [48]=>
+        string(15) "_shipping_state"
+        [49]=>
+        string(18) "_shipping_postcode"
+        [50]=>
+        string(17) "_shipping_country"
+        [51]=>
+        string(15) "_completed_date"
+        [52]=>
+        string(10) "_paid_date"
+        [53]=>
+        string(10) "_edit_lock"
+        [54]=>
+        string(10) "_edit_last"
+        [55]=>
+        string(14) "_cart_discount"
+        [56]=>
+        string(18) "_cart_discount_tax"
+        [57]=>
+        string(15) "_order_shipping"
+        [58]=>
+        string(19) "_order_shipping_tax"
+        [59]=>
+        string(10) "_order_tax"
+        [60]=>
+        string(12) "_order_total"
+        [61]=>
+        string(15) "_payment_method"
+        [62]=>
+        string(21) "_payment_method_title"
+        [63]=>
+        string(15) "_transaction_id"
+        [64]=>
+        string(20) "_customer_ip_address"
+        [65]=>
+        string(20) "_customer_user_agent"
+        [66]=>
+        string(12) "_created_via"
+        [67]=>
+        string(14) "_order_version"
+        [68]=>
+        string(19) "_prices_include_tax"
+        [69]=>
+        string(15) "_date_completed"
+        [70]=>
+        string(10) "_date_paid"
+        [71]=>
+        string(15) "_payment_tokens"
+        [72]=>
+        string(22) "_billing_address_index"
+        [73]=>
+        string(23) "_shipping_address_index"
+        [74]=>
+        string(15) "_recorded_sales"
+        [75]=>
+        string(29) "_recorded_coupon_usage_counts"
+        [76]=>
+        string(29) "_download_permissions_granted"
+        [77]=>
+        string(20) "_order_stock_reduced"
+      }
+      ["meta_type":protected]=>
+      string(4) "post"
+      ["object_id_field_for_meta":protected]=>
+      string(0) ""
+      ["must_exist_meta_keys":protected]=>
+      array(0) {
+      }
+    }
+    ["stores":"WC_Data_Store":private]=>
+    array(46) {
+      ["coupon"]=>
+      string(24) "WC_Coupon_Data_Store_CPT"
+      ["customer"]=>
+      string(22) "WC_Customer_Data_Store"
+      ["customer-download"]=>
+      string(31) "WC_Customer_Download_Data_Store"
+      ["customer-download-log"]=>
+      string(35) "WC_Customer_Download_Log_Data_Store"
+      ["customer-session"]=>
+      string(30) "WC_Customer_Data_Store_Session"
+      ["order"]=>
+      string(23) "WC_Order_Data_Store_CPT"
+      ["order-refund"]=>
+      string(30) "WC_Order_Refund_Data_Store_CPT"
+      ["order-item"]=>
+      string(24) "WC_Order_Item_Data_Store"
+      ["order-item-coupon"]=>
+      string(31) "WC_Order_Item_Coupon_Data_Store"
+      ["order-item-fee"]=>
+      string(28) "WC_Order_Item_Fee_Data_Store"
+      ["order-item-product"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-shipping"]=>
+      string(33) "WC_Order_Item_Shipping_Data_Store"
+      ["order-item-tax"]=>
+      string(28) "WC_Order_Item_Tax_Data_Store"
+      ["payment-token"]=>
+      string(27) "WC_Payment_Token_Data_Store"
+      ["product"]=>
+      string(25) "WC_Product_Data_Store_CPT"
+      ["product-grouped"]=>
+      string(33) "WC_Product_Grouped_Data_Store_CPT"
+      ["product-variable"]=>
+      string(34) "WC_Product_Variable_Data_Store_CPT"
+      ["product-variation"]=>
+      string(35) "WC_Product_Variation_Data_Store_CPT"
+      ["shipping-zone"]=>
+      string(27) "WC_Shipping_Zone_Data_Store"
+      ["webhook"]=>
+      string(21) "WC_Webhook_Data_Store"
+      ["order-item-line_item_removed"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-line_item_switched"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-coupon_pending_switch"]=>
+      string(31) "WC_Order_Item_Coupon_Data_Store"
+      ["order-item-fee_pending_switch"]=>
+      string(28) "WC_Order_Item_Fee_Data_Store"
+      ["subscription"]=>
+      string(31) "WCS_Subscription_Data_Store_CPT"
+      ["product-variable-subscription"]=>
+      string(35) "WCS_Product_Variable_Data_Store_CPT"
+      ["product-subscription_variation"]=>
+      string(35) "WC_Product_Variation_Data_Store_CPT"
+      ["order-item-line_item_pending_switch"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["product-bundle"]=>
+      string(32) "WC_Product_Bundle_Data_Store_CPT"
+      ["report-revenue-stats"]=>
+      string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+      ["report-orders"]=>
+      string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+      ["report-orders-stats"]=>
+      string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+      ["report-products"]=>
+      string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+      ["report-variations"]=>
+      string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+      ["report-products-stats"]=>
+      string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+      ["report-categories"]=>
+      string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+      ["report-taxes"]=>
+      string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+      ["report-taxes-stats"]=>
+      string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+      ["report-coupons"]=>
+      string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+      ["report-coupons-stats"]=>
+      string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+      ["report-downloads"]=>
+      string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+      ["report-downloads-stats"]=>
+      string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+      ["admin-note"]=>
+      string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+      ["report-customers"]=>
+      string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+      ["report-customers-stats"]=>
+      string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+      ["report-stock-stats"]=>
+      string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+    }
+    ["current_class_name":"WC_Data_Store":private]=>
+    string(23) "WC_Order_Data_Store_CPT"
+    ["object_type":"WC_Data_Store":private]=>
+    string(5) "order"
+  }
+  ["meta_data":protected]=>
+  array(4) {
+    [0]=>
+    object(WC_Meta_Data)#2629 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(13) "is_vat_exempt"
+        ["value"]=>
+        string(2) "no"
+        ["id"]=>
+        int(22080)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(13) "is_vat_exempt"
+        ["value"]=>
+        string(2) "no"
+        ["id"]=>
+        int(22080)
+      }
+    }
+    [1]=>
+    object(WC_Meta_Data)#2628 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(23) "_wssp_shipping_interval"
+        ["value"]=>
+        string(1) "2"
+        ["id"]=>
+        int(22081)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(23) "_wssp_shipping_interval"
+        ["value"]=>
+        string(1) "2"
+        ["id"]=>
+        int(22081)
+      }
+    }
+    [2]=>
+    object(WC_Meta_Data)#2627 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(21) "_wssp_shipping_status"
+        ["value"]=>
+        string(1) "0"
+        ["id"]=>
+        int(22082)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(21) "_wssp_shipping_status"
+        ["value"]=>
+        string(1) "0"
+        ["id"]=>
+        int(22082)
+      }
+    }
+    [3]=>
+    object(WC_Meta_Data)#2613 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(21) "_subscription_renewal"
+        ["value"]=>
+        int(4365)
+        ["id"]=>
+        int(22098)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(21) "_subscription_renewal"
+        ["value"]=>
+        int(4365)
+        ["id"]=>
+        int(22098)
+      }
+    }
+  }
+}
+================================================<br></pre><pre>===================shipping_status=================<br>int(1)
+===================shipping_total=================<br>string(1) "0"
+===================totals=================<br>string(5) "35.00"
+===================shipping_item=================<br>array(1) {
+  [239]=>
+  object(WC_Order_Item_Shipping)#2648 (11) {
+    ["extra_data":protected]=>
+    array(6) {
+      ["method_title"]=>
+      string(0) ""
+      ["method_id"]=>
+      string(0) ""
+      ["instance_id"]=>
+      string(0) ""
+      ["total"]=>
+      int(0)
+      ["total_tax"]=>
+      int(0)
+      ["taxes"]=>
+      array(1) {
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["data":protected]=>
+    array(8) {
+      ["order_id"]=>
+      int(4396)
+      ["name"]=>
+      string(9) "Flat rate"
+      ["method_title"]=>
+      string(9) "Flat rate"
+      ["method_id"]=>
+      string(9) "flat_rate"
+      ["instance_id"]=>
+      string(0) ""
+      ["total"]=>
+      string(5) "10.00"
+      ["total_tax"]=>
+      string(1) "0"
+      ["taxes"]=>
+      array(1) {
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["cache_group":protected]=>
+    string(11) "order-items"
+    ["meta_type":protected]=>
+    string(10) "order_item"
+    ["object_type":protected]=>
+    string(10) "order_item"
+    ["id":protected]=>
+    int(0)
+    ["changes":protected]=>
+    array(0) {
+    }
+    ["object_read":protected]=>
+    bool(true)
+    ["default_data":protected]=>
+    array(8) {
+      ["order_id"]=>
+      int(0)
+      ["name"]=>
+      string(0) ""
+      ["method_title"]=>
+      string(0) ""
+      ["method_id"]=>
+      string(0) ""
+      ["instance_id"]=>
+      string(0) ""
+      ["total"]=>
+      int(0)
+      ["total_tax"]=>
+      int(0)
+      ["taxes"]=>
+      array(1) {
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["data_store":protected]=>
+    object(WC_Data_Store)#2647 (4) {
+      ["instance":"WC_Data_Store":private]=>
+      object(WC_Order_Item_Shipping_Data_Store)#2600 (4) {
+        ["internal_meta_keys":protected]=>
+        array(13) {
+          [0]=>
+          string(9) "_order_id"
+          [1]=>
+          string(5) "_name"
+          [2]=>
+          string(13) "_method_title"
+          [3]=>
+          string(10) "_method_id"
+          [4]=>
+          string(12) "_instance_id"
+          [5]=>
+          string(6) "_total"
+          [6]=>
+          string(10) "_total_tax"
+          [7]=>
+          string(6) "_taxes"
+          [8]=>
+          string(9) "method_id"
+          [9]=>
+          string(11) "instance_id"
+          [10]=>
+          string(4) "cost"
+          [11]=>
+          string(9) "total_tax"
+          [12]=>
+          string(5) "taxes"
+        }
+        ["meta_type":protected]=>
+        string(10) "order_item"
+        ["object_id_field_for_meta":protected]=>
+        string(13) "order_item_id"
+        ["must_exist_meta_keys":protected]=>
+        array(0) {
+        }
+      }
+      ["stores":"WC_Data_Store":private]=>
+      array(46) {
+        ["coupon"]=>
+        string(24) "WC_Coupon_Data_Store_CPT"
+        ["customer"]=>
+        string(22) "WC_Customer_Data_Store"
+        ["customer-download"]=>
+        string(31) "WC_Customer_Download_Data_Store"
+        ["customer-download-log"]=>
+        string(35) "WC_Customer_Download_Log_Data_Store"
+        ["customer-session"]=>
+        string(30) "WC_Customer_Data_Store_Session"
+        ["order"]=>
+        string(23) "WC_Order_Data_Store_CPT"
+        ["order-refund"]=>
+        string(30) "WC_Order_Refund_Data_Store_CPT"
+        ["order-item"]=>
+        string(24) "WC_Order_Item_Data_Store"
+        ["order-item-coupon"]=>
+        string(31) "WC_Order_Item_Coupon_Data_Store"
+        ["order-item-fee"]=>
+        string(28) "WC_Order_Item_Fee_Data_Store"
+        ["order-item-product"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-shipping"]=>
+        string(33) "WC_Order_Item_Shipping_Data_Store"
+        ["order-item-tax"]=>
+        string(28) "WC_Order_Item_Tax_Data_Store"
+        ["payment-token"]=>
+        string(27) "WC_Payment_Token_Data_Store"
+        ["product"]=>
+        string(25) "WC_Product_Data_Store_CPT"
+        ["product-grouped"]=>
+        string(33) "WC_Product_Grouped_Data_Store_CPT"
+        ["product-variable"]=>
+        string(34) "WC_Product_Variable_Data_Store_CPT"
+        ["product-variation"]=>
+        string(35) "WC_Product_Variation_Data_Store_CPT"
+        ["shipping-zone"]=>
+        string(27) "WC_Shipping_Zone_Data_Store"
+        ["webhook"]=>
+        string(21) "WC_Webhook_Data_Store"
+        ["order-item-line_item_removed"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-line_item_switched"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-coupon_pending_switch"]=>
+        string(31) "WC_Order_Item_Coupon_Data_Store"
+        ["order-item-fee_pending_switch"]=>
+        string(28) "WC_Order_Item_Fee_Data_Store"
+        ["subscription"]=>
+        string(31) "WCS_Subscription_Data_Store_CPT"
+        ["product-variable-subscription"]=>
+        string(35) "WCS_Product_Variable_Data_Store_CPT"
+        ["product-subscription_variation"]=>
+        string(35) "WC_Product_Variation_Data_Store_CPT"
+        ["order-item-line_item_pending_switch"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["product-bundle"]=>
+        string(32) "WC_Product_Bundle_Data_Store_CPT"
+        ["report-revenue-stats"]=>
+        string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+        ["report-orders"]=>
+        string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+        ["report-orders-stats"]=>
+        string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+        ["report-products"]=>
+        string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+        ["report-variations"]=>
+        string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+        ["report-products-stats"]=>
+        string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+        ["report-categories"]=>
+        string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+        ["report-taxes"]=>
+        string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+        ["report-taxes-stats"]=>
+        string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+        ["report-coupons"]=>
+        string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+        ["report-coupons-stats"]=>
+        string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+        ["report-downloads"]=>
+        string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+        ["report-downloads-stats"]=>
+        string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+        ["admin-note"]=>
+        string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+        ["report-customers"]=>
+        string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+        ["report-customers-stats"]=>
+        string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+        ["report-stock-stats"]=>
+        string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+      }
+      ["current_class_name":"WC_Data_Store":private]=>
+      string(33) "WC_Order_Item_Shipping_Data_Store"
+      ["object_type":"WC_Data_Store":private]=>
+      string(19) "order-item-shipping"
+    }
+    ["meta_data":protected]=>
+    array(1) {
+      [0]=>
+      object(WC_Meta_Data)#2574 (2) {
+        ["current_data":protected]=>
+        array(3) {
+          ["id"]=>
+          int(2362)
+          ["key"]=>
+          string(5) "Items"
+          ["value"]=>
+          string(67) "1st subscription product VSP - Two Months Monthly Payment &times; 1"
+        }
+        ["data":protected]=>
+        array(3) {
+          ["id"]=>
+          int(2362)
+          ["key"]=>
+          string(5) "Items"
+          ["value"]=>
+          string(67) "1st subscription product VSP - Two Months Monthly Payment &times; 1"
+        }
+      }
+    }
+  }
+}
+===================order=================<br>object(WC_Order)#2389 (14) {
+  ["status_transition":protected]=>
+  bool(false)
+  ["data":protected]=>
+  array(28) {
+    ["parent_id"]=>
+    int(0)
+    ["status"]=>
+    string(0) ""
+    ["currency"]=>
+    string(3) "NZD"
+    ["version"]=>
+    string(5) "3.7.0"
+    ["prices_include_tax"]=>
+    bool(true)
+    ["date_created"]=>
+    object(WC_DateTime)#2553 (4) {
+      ["utc_offset":protected]=>
+      int(0)
+      ["date"]=>
+      string(26) "2019-09-28 03:23:28.000000"
+      ["timezone_type"]=>
+      int(3)
+      ["timezone"]=>
+      string(16) "Pacific/Auckland"
+    }
+    ["date_modified"]=>
+    NULL
+    ["discount_total"]=>
+    string(1) "0"
+    ["discount_tax"]=>
+    string(1) "0"
+    ["shipping_total"]=>
+    string(1) "0"
+    ["shipping_tax"]=>
+    string(1) "0"
+    ["cart_tax"]=>
+    string(1) "0"
+    ["total"]=>
+    string(5) "35.00"
+    ["total_tax"]=>
+    string(1) "0"
+    ["customer_id"]=>
+    int(4)
+    ["order_key"]=>
+    string(22) "wc_order_x89yxik2FbCYi"
+    ["billing"]=>
+    array(11) {
+      ["first_name"]=>
+      string(4) "Test"
+      ["last_name"]=>
+      string(9) "Wisdmlabs"
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(14) "Lodha Supremus"
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(5) "Thane"
+      ["state"]=>
+      string(2) "MH"
+      ["postcode"]=>
+      string(6) "421301"
+      ["country"]=>
+      string(2) "IN"
+      ["email"]=>
+      string(27) "coffeetoffee12345@gmail.com"
+      ["phone"]=>
+      string(10) "9865327410"
+    }
+    ["shipping"]=>
+    array(9) {
+      ["first_name"]=>
+      string(4) "Test"
+      ["last_name"]=>
+      string(9) "Wisdmlabs"
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(14) "Lodha Supremus"
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(5) "Thane"
+      ["state"]=>
+      string(2) "MH"
+      ["postcode"]=>
+      string(6) "421301"
+      ["country"]=>
+      string(2) "IN"
+    }
+    ["payment_method"]=>
+    string(0) ""
+    ["payment_method_title"]=>
+    string(0) ""
+    ["transaction_id"]=>
+    string(0) ""
+    ["customer_ip_address"]=>
+    string(9) "127.0.0.1"
+    ["customer_user_agent"]=>
+    string(105) "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+    ["created_via"]=>
+    string(12) "subscription"
+    ["customer_note"]=>
+    string(0) ""
+    ["date_completed"]=>
+    NULL
+    ["date_paid"]=>
+    NULL
+    ["cart_hash"]=>
+    string(0) ""
+  }
+  ["items":protected]=>
+  array(4) {
+    ["shipping_lines"]=>
+    array(0) {
+    }
+    ["line_items"]=>
+    array(1) {
+      [238]=>
+      object(WC_Order_Item_Product)#2489 (11) {
+        ["extra_data":protected]=>
+        array(9) {
+          ["product_id"]=>
+          int(0)
+          ["variation_id"]=>
+          int(0)
+          ["quantity"]=>
+          int(1)
+          ["tax_class"]=>
+          string(0) ""
+          ["subtotal"]=>
+          int(0)
+          ["subtotal_tax"]=>
+          int(0)
+          ["total"]=>
+          int(0)
+          ["total_tax"]=>
+          int(0)
+          ["taxes"]=>
+          array(2) {
+            ["subtotal"]=>
+            array(0) {
+            }
+            ["total"]=>
+            array(0) {
+            }
+          }
+        }
+        ["data":protected]=>
+        array(11) {
+          ["order_id"]=>
+          int(4396)
+          ["name"]=>
+          string(57) "1st subscription product VSP - Two Months Monthly Payment"
+          ["product_id"]=>
+          int(2464)
+          ["variation_id"]=>
+          int(2498)
+          ["quantity"]=>
+          int(1)
+          ["tax_class"]=>
+          string(0) ""
+          ["subtotal"]=>
+          string(2) "35"
+          ["subtotal_tax"]=>
+          string(1) "0"
+          ["total"]=>
+          string(2) "35"
+          ["total_tax"]=>
+          string(1) "0"
+          ["taxes"]=>
+          array(2) {
+            ["total"]=>
+            array(0) {
+            }
+            ["subtotal"]=>
+            array(0) {
+            }
+          }
+        }
+        ["cache_group":protected]=>
+        string(11) "order-items"
+        ["meta_type":protected]=>
+        string(10) "order_item"
+        ["object_type":protected]=>
+        string(10) "order_item"
+        ["id":protected]=>
+        int(238)
+        ["changes":protected]=>
+        array(0) {
+        }
+        ["object_read":protected]=>
+        bool(true)
+        ["default_data":protected]=>
+        array(11) {
+          ["order_id"]=>
+          int(0)
+          ["name"]=>
+          string(0) ""
+          ["product_id"]=>
+          int(0)
+          ["variation_id"]=>
+          int(0)
+          ["quantity"]=>
+          int(1)
+          ["tax_class"]=>
+          string(0) ""
+          ["subtotal"]=>
+          int(0)
+          ["subtotal_tax"]=>
+          int(0)
+          ["total"]=>
+          int(0)
+          ["total_tax"]=>
+          int(0)
+          ["taxes"]=>
+          array(2) {
+            ["subtotal"]=>
+            array(0) {
+            }
+            ["total"]=>
+            array(0) {
+            }
+          }
+        }
+        ["data_store":protected]=>
+        object(WC_Data_Store)#2587 (4) {
+          ["instance":"WC_Data_Store":private]=>
+          object(WC_Order_Item_Product_Data_Store)#2586 (4) {
+            ["internal_meta_keys":protected]=>
+            array(20) {
+              [0]=>
+              string(9) "_order_id"
+              [1]=>
+              string(5) "_name"
+              [2]=>
+              string(11) "_product_id"
+              [3]=>
+              string(13) "_variation_id"
+              [4]=>
+              string(9) "_quantity"
+              [5]=>
+              string(10) "_tax_class"
+              [6]=>
+              string(9) "_subtotal"
+              [7]=>
+              string(13) "_subtotal_tax"
+              [8]=>
+              string(6) "_total"
+              [9]=>
+              string(10) "_total_tax"
+              [10]=>
+              string(6) "_taxes"
+              [11]=>
+              string(11) "_product_id"
+              [12]=>
+              string(13) "_variation_id"
+              [13]=>
+              string(4) "_qty"
+              [14]=>
+              string(10) "_tax_class"
+              [15]=>
+              string(14) "_line_subtotal"
+              [16]=>
+              string(18) "_line_subtotal_tax"
+              [17]=>
+              string(11) "_line_total"
+              [18]=>
+              string(9) "_line_tax"
+              [19]=>
+              string(14) "_line_tax_data"
+            }
+            ["meta_type":protected]=>
+            string(10) "order_item"
+            ["object_id_field_for_meta":protected]=>
+            string(13) "order_item_id"
+            ["must_exist_meta_keys":protected]=>
+            array(0) {
+            }
+          }
+          ["stores":"WC_Data_Store":private]=>
+          array(46) {
+            ["coupon"]=>
+            string(24) "WC_Coupon_Data_Store_CPT"
+            ["customer"]=>
+            string(22) "WC_Customer_Data_Store"
+            ["customer-download"]=>
+            string(31) "WC_Customer_Download_Data_Store"
+            ["customer-download-log"]=>
+            string(35) "WC_Customer_Download_Log_Data_Store"
+            ["customer-session"]=>
+            string(30) "WC_Customer_Data_Store_Session"
+            ["order"]=>
+            string(23) "WC_Order_Data_Store_CPT"
+            ["order-refund"]=>
+            string(30) "WC_Order_Refund_Data_Store_CPT"
+            ["order-item"]=>
+            string(24) "WC_Order_Item_Data_Store"
+            ["order-item-coupon"]=>
+            string(31) "WC_Order_Item_Coupon_Data_Store"
+            ["order-item-fee"]=>
+            string(28) "WC_Order_Item_Fee_Data_Store"
+            ["order-item-product"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-shipping"]=>
+            string(33) "WC_Order_Item_Shipping_Data_Store"
+            ["order-item-tax"]=>
+            string(28) "WC_Order_Item_Tax_Data_Store"
+            ["payment-token"]=>
+            string(27) "WC_Payment_Token_Data_Store"
+            ["product"]=>
+            string(25) "WC_Product_Data_Store_CPT"
+            ["product-grouped"]=>
+            string(33) "WC_Product_Grouped_Data_Store_CPT"
+            ["product-variable"]=>
+            string(34) "WC_Product_Variable_Data_Store_CPT"
+            ["product-variation"]=>
+            string(35) "WC_Product_Variation_Data_Store_CPT"
+            ["shipping-zone"]=>
+            string(27) "WC_Shipping_Zone_Data_Store"
+            ["webhook"]=>
+            string(21) "WC_Webhook_Data_Store"
+            ["order-item-line_item_removed"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-line_item_switched"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["order-item-coupon_pending_switch"]=>
+            string(31) "WC_Order_Item_Coupon_Data_Store"
+            ["order-item-fee_pending_switch"]=>
+            string(28) "WC_Order_Item_Fee_Data_Store"
+            ["subscription"]=>
+            string(31) "WCS_Subscription_Data_Store_CPT"
+            ["product-variable-subscription"]=>
+            string(35) "WCS_Product_Variable_Data_Store_CPT"
+            ["product-subscription_variation"]=>
+            string(35) "WC_Product_Variation_Data_Store_CPT"
+            ["order-item-line_item_pending_switch"]=>
+            string(32) "WC_Order_Item_Product_Data_Store"
+            ["product-bundle"]=>
+            string(32) "WC_Product_Bundle_Data_Store_CPT"
+            ["report-revenue-stats"]=>
+            string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+            ["report-orders"]=>
+            string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+            ["report-orders-stats"]=>
+            string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+            ["report-products"]=>
+            string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+            ["report-variations"]=>
+            string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+            ["report-products-stats"]=>
+            string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+            ["report-categories"]=>
+            string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+            ["report-taxes"]=>
+            string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+            ["report-taxes-stats"]=>
+            string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+            ["report-coupons"]=>
+            string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+            ["report-coupons-stats"]=>
+            string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+            ["report-downloads"]=>
+            string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+            ["report-downloads-stats"]=>
+            string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+            ["admin-note"]=>
+            string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+            ["report-customers"]=>
+            string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+            ["report-customers-stats"]=>
+            string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+            ["report-stock-stats"]=>
+            string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+          }
+          ["current_class_name":"WC_Data_Store":private]=>
+          string(32) "WC_Order_Item_Product_Data_Store"
+          ["object_type":"WC_Data_Store":private]=>
+          string(18) "order-item-product"
+        }
+        ["meta_data":protected]=>
+        array(1) {
+          [0]=>
+          object(WC_Meta_Data)#2350 (2) {
+            ["current_data":protected]=>
+            array(3) {
+              ["id"]=>
+              int(2356)
+              ["key"]=>
+              string(13) "payment-cycle"
+              ["value"]=>
+              string(26) "Two Months Monthly Payment"
+            }
+            ["data":protected]=>
+            array(3) {
+              ["id"]=>
+              int(2356)
+              ["key"]=>
+              string(13) "payment-cycle"
+              ["value"]=>
+              string(26) "Two Months Monthly Payment"
+            }
+          }
+        }
+      }
+    }
+    ["fee_lines"]=>
+    array(0) {
+    }
+    ["tax_lines"]=>
+    array(0) {
+    }
+  }
+  ["items_to_delete":protected]=>
+  array(0) {
+  }
+  ["cache_group":protected]=>
+  string(6) "orders"
+  ["data_store_name":protected]=>
+  string(5) "order"
+  ["object_type":protected]=>
+  string(5) "order"
+  ["id":protected]=>
+  int(4396)
+  ["changes":protected]=>
+  array(0) {
+  }
+  ["object_read":protected]=>
+  bool(true)
+  ["extra_data":protected]=>
+  array(0) {
+  }
+  ["default_data":protected]=>
+  array(28) {
+    ["parent_id"]=>
+    int(0)
+    ["status"]=>
+    string(0) ""
+    ["currency"]=>
+    string(0) ""
+    ["version"]=>
+    string(0) ""
+    ["prices_include_tax"]=>
+    bool(false)
+    ["date_created"]=>
+    NULL
+    ["date_modified"]=>
+    NULL
+    ["discount_total"]=>
+    int(0)
+    ["discount_tax"]=>
+    int(0)
+    ["shipping_total"]=>
+    int(0)
+    ["shipping_tax"]=>
+    int(0)
+    ["cart_tax"]=>
+    int(0)
+    ["total"]=>
+    int(0)
+    ["total_tax"]=>
+    int(0)
+    ["customer_id"]=>
+    int(0)
+    ["order_key"]=>
+    string(0) ""
+    ["billing"]=>
+    array(11) {
+      ["first_name"]=>
+      string(0) ""
+      ["last_name"]=>
+      string(0) ""
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(0) ""
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(0) ""
+      ["state"]=>
+      string(0) ""
+      ["postcode"]=>
+      string(0) ""
+      ["country"]=>
+      string(0) ""
+      ["email"]=>
+      string(0) ""
+      ["phone"]=>
+      string(0) ""
+    }
+    ["shipping"]=>
+    array(9) {
+      ["first_name"]=>
+      string(0) ""
+      ["last_name"]=>
+      string(0) ""
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(0) ""
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(0) ""
+      ["state"]=>
+      string(0) ""
+      ["postcode"]=>
+      string(0) ""
+      ["country"]=>
+      string(0) ""
+    }
+    ["payment_method"]=>
+    string(0) ""
+    ["payment_method_title"]=>
+    string(0) ""
+    ["transaction_id"]=>
+    string(0) ""
+    ["customer_ip_address"]=>
+    string(0) ""
+    ["customer_user_agent"]=>
+    string(0) ""
+    ["created_via"]=>
+    string(0) ""
+    ["customer_note"]=>
+    string(0) ""
+    ["date_completed"]=>
+    NULL
+    ["date_paid"]=>
+    NULL
+    ["cart_hash"]=>
+    string(0) ""
+  }
+  ["data_store":protected]=>
+  object(WC_Data_Store)#2544 (4) {
+    ["instance":"WC_Data_Store":private]=>
+    object(WC_Order_Data_Store_CPT)#2168 (4) {
+      ["internal_meta_keys":protected]=>
+      array(78) {
+        [0]=>
+        string(10) "_parent_id"
+        [1]=>
+        string(7) "_status"
+        [2]=>
+        string(9) "_currency"
+        [3]=>
+        string(8) "_version"
+        [4]=>
+        string(19) "_prices_include_tax"
+        [5]=>
+        string(13) "_date_created"
+        [6]=>
+        string(14) "_date_modified"
+        [7]=>
+        string(15) "_discount_total"
+        [8]=>
+        string(13) "_discount_tax"
+        [9]=>
+        string(15) "_shipping_total"
+        [10]=>
+        string(13) "_shipping_tax"
+        [11]=>
+        string(9) "_cart_tax"
+        [12]=>
+        string(6) "_total"
+        [13]=>
+        string(10) "_total_tax"
+        [14]=>
+        string(12) "_customer_id"
+        [15]=>
+        string(10) "_order_key"
+        [16]=>
+        string(8) "_billing"
+        [17]=>
+        string(9) "_shipping"
+        [18]=>
+        string(15) "_payment_method"
+        [19]=>
+        string(21) "_payment_method_title"
+        [20]=>
+        string(15) "_transaction_id"
+        [21]=>
+        string(20) "_customer_ip_address"
+        [22]=>
+        string(20) "_customer_user_agent"
+        [23]=>
+        string(12) "_created_via"
+        [24]=>
+        string(14) "_customer_note"
+        [25]=>
+        string(15) "_date_completed"
+        [26]=>
+        string(10) "_date_paid"
+        [27]=>
+        string(10) "_cart_hash"
+        [28]=>
+        string(14) "_customer_user"
+        [29]=>
+        string(10) "_order_key"
+        [30]=>
+        string(15) "_order_currency"
+        [31]=>
+        string(19) "_billing_first_name"
+        [32]=>
+        string(18) "_billing_last_name"
+        [33]=>
+        string(16) "_billing_company"
+        [34]=>
+        string(18) "_billing_address_1"
+        [35]=>
+        string(18) "_billing_address_2"
+        [36]=>
+        string(13) "_billing_city"
+        [37]=>
+        string(14) "_billing_state"
+        [38]=>
+        string(17) "_billing_postcode"
+        [39]=>
+        string(16) "_billing_country"
+        [40]=>
+        string(14) "_billing_email"
+        [41]=>
+        string(14) "_billing_phone"
+        [42]=>
+        string(20) "_shipping_first_name"
+        [43]=>
+        string(19) "_shipping_last_name"
+        [44]=>
+        string(17) "_shipping_company"
+        [45]=>
+        string(19) "_shipping_address_1"
+        [46]=>
+        string(19) "_shipping_address_2"
+        [47]=>
+        string(14) "_shipping_city"
+        [48]=>
+        string(15) "_shipping_state"
+        [49]=>
+        string(18) "_shipping_postcode"
+        [50]=>
+        string(17) "_shipping_country"
+        [51]=>
+        string(15) "_completed_date"
+        [52]=>
+        string(10) "_paid_date"
+        [53]=>
+        string(10) "_edit_lock"
+        [54]=>
+        string(10) "_edit_last"
+        [55]=>
+        string(14) "_cart_discount"
+        [56]=>
+        string(18) "_cart_discount_tax"
+        [57]=>
+        string(15) "_order_shipping"
+        [58]=>
+        string(19) "_order_shipping_tax"
+        [59]=>
+        string(10) "_order_tax"
+        [60]=>
+        string(12) "_order_total"
+        [61]=>
+        string(15) "_payment_method"
+        [62]=>
+        string(21) "_payment_method_title"
+        [63]=>
+        string(15) "_transaction_id"
+        [64]=>
+        string(20) "_customer_ip_address"
+        [65]=>
+        string(20) "_customer_user_agent"
+        [66]=>
+        string(12) "_created_via"
+        [67]=>
+        string(14) "_order_version"
+        [68]=>
+        string(19) "_prices_include_tax"
+        [69]=>
+        string(15) "_date_completed"
+        [70]=>
+        string(10) "_date_paid"
+        [71]=>
+        string(15) "_payment_tokens"
+        [72]=>
+        string(22) "_billing_address_index"
+        [73]=>
+        string(23) "_shipping_address_index"
+        [74]=>
+        string(15) "_recorded_sales"
+        [75]=>
+        string(29) "_recorded_coupon_usage_counts"
+        [76]=>
+        string(29) "_download_permissions_granted"
+        [77]=>
+        string(20) "_order_stock_reduced"
+      }
+      ["meta_type":protected]=>
+      string(4) "post"
+      ["object_id_field_for_meta":protected]=>
+      string(0) ""
+      ["must_exist_meta_keys":protected]=>
+      array(0) {
+      }
+    }
+    ["stores":"WC_Data_Store":private]=>
+    array(46) {
+      ["coupon"]=>
+      string(24) "WC_Coupon_Data_Store_CPT"
+      ["customer"]=>
+      string(22) "WC_Customer_Data_Store"
+      ["customer-download"]=>
+      string(31) "WC_Customer_Download_Data_Store"
+      ["customer-download-log"]=>
+      string(35) "WC_Customer_Download_Log_Data_Store"
+      ["customer-session"]=>
+      string(30) "WC_Customer_Data_Store_Session"
+      ["order"]=>
+      string(23) "WC_Order_Data_Store_CPT"
+      ["order-refund"]=>
+      string(30) "WC_Order_Refund_Data_Store_CPT"
+      ["order-item"]=>
+      string(24) "WC_Order_Item_Data_Store"
+      ["order-item-coupon"]=>
+      string(31) "WC_Order_Item_Coupon_Data_Store"
+      ["order-item-fee"]=>
+      string(28) "WC_Order_Item_Fee_Data_Store"
+      ["order-item-product"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-shipping"]=>
+      string(33) "WC_Order_Item_Shipping_Data_Store"
+      ["order-item-tax"]=>
+      string(28) "WC_Order_Item_Tax_Data_Store"
+      ["payment-token"]=>
+      string(27) "WC_Payment_Token_Data_Store"
+      ["product"]=>
+      string(25) "WC_Product_Data_Store_CPT"
+      ["product-grouped"]=>
+      string(33) "WC_Product_Grouped_Data_Store_CPT"
+      ["product-variable"]=>
+      string(34) "WC_Product_Variable_Data_Store_CPT"
+      ["product-variation"]=>
+      string(35) "WC_Product_Variation_Data_Store_CPT"
+      ["shipping-zone"]=>
+      string(27) "WC_Shipping_Zone_Data_Store"
+      ["webhook"]=>
+      string(21) "WC_Webhook_Data_Store"
+      ["order-item-line_item_removed"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-line_item_switched"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-coupon_pending_switch"]=>
+      string(31) "WC_Order_Item_Coupon_Data_Store"
+      ["order-item-fee_pending_switch"]=>
+      string(28) "WC_Order_Item_Fee_Data_Store"
+      ["subscription"]=>
+      string(31) "WCS_Subscription_Data_Store_CPT"
+      ["product-variable-subscription"]=>
+      string(35) "WCS_Product_Variable_Data_Store_CPT"
+      ["product-subscription_variation"]=>
+      string(35) "WC_Product_Variation_Data_Store_CPT"
+      ["order-item-line_item_pending_switch"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["product-bundle"]=>
+      string(32) "WC_Product_Bundle_Data_Store_CPT"
+      ["report-revenue-stats"]=>
+      string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+      ["report-orders"]=>
+      string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+      ["report-orders-stats"]=>
+      string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+      ["report-products"]=>
+      string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+      ["report-variations"]=>
+      string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+      ["report-products-stats"]=>
+      string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+      ["report-categories"]=>
+      string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+      ["report-taxes"]=>
+      string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+      ["report-taxes-stats"]=>
+      string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+      ["report-coupons"]=>
+      string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+      ["report-coupons-stats"]=>
+      string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+      ["report-downloads"]=>
+      string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+      ["report-downloads-stats"]=>
+      string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+      ["admin-note"]=>
+      string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+      ["report-customers"]=>
+      string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+      ["report-customers-stats"]=>
+      string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+      ["report-stock-stats"]=>
+      string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+    }
+    ["current_class_name":"WC_Data_Store":private]=>
+    string(23) "WC_Order_Data_Store_CPT"
+    ["object_type":"WC_Data_Store":private]=>
+    string(5) "order"
+  }
+  ["meta_data":protected]=>
+  array(4) {
+    [0]=>
+    object(WC_Meta_Data)#2629 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(13) "is_vat_exempt"
+        ["value"]=>
+        string(2) "no"
+        ["id"]=>
+        int(22167)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(13) "is_vat_exempt"
+        ["value"]=>
+        string(2) "no"
+        ["id"]=>
+        int(22167)
+      }
+    }
+    [1]=>
+    object(WC_Meta_Data)#2628 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(23) "_wssp_shipping_interval"
+        ["value"]=>
+        string(1) "2"
+        ["id"]=>
+        int(22168)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(23) "_wssp_shipping_interval"
+        ["value"]=>
+        string(1) "2"
+        ["id"]=>
+        int(22168)
+      }
+    }
+    [2]=>
+    object(WC_Meta_Data)#2627 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(21) "_wssp_shipping_status"
+        ["value"]=>
+        string(1) "1"
+        ["id"]=>
+        int(22169)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(21) "_wssp_shipping_status"
+        ["value"]=>
+        string(1) "1"
+        ["id"]=>
+        int(22169)
+      }
+    }
+    [3]=>
+    object(WC_Meta_Data)#2613 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(21) "_subscription_renewal"
+        ["value"]=>
+        int(4365)
+        ["id"]=>
+        int(22185)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(21) "_subscription_renewal"
+        ["value"]=>
+        int(4365)
+        ["id"]=>
+        int(22185)
+      }
+    }
+  }
+}
+================================================<br></pre>

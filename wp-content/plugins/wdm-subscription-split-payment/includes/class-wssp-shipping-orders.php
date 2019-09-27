@@ -16,6 +16,7 @@ class WSSP_Shipping_Orders {
 	public static function init() {
 		add_action( 'woocommerce_checkout_subscription_created', __CLASS__ . '::on_subscription_creation', 10, 3 );
 		add_action( 'woocommerce_order_status_processing', __CLASS__ . '::on_processing_status_subscription_order' );
+		add_filter( 'wcs_renewal_order_created', __CLASS__ . '::add_shipping_to_renewal_orders', 100, 2 );
 	}
 
 	/**
@@ -87,5 +88,25 @@ class WSSP_Shipping_Orders {
 		$next_shipping_date         = $next_shipping_date->add( $shipping_interval_duration );
 
 		return $next_shipping_date;
+	}
+
+
+	public static function add_shipping_to_renewal_orders( $order, $subscription ) {
+		$shipping_status = (int) $subscription->get_meta( '_wssp_shipping_status' );
+
+		if ( 0 !== $shipping_status ) {
+			$shipping_items = $order->get_shipping_methods();
+			foreach ( $shipping_items as $key => $shipping_item ) {
+				$shipping_id = $shipping_item->get_id();
+				$order->remove_item( $shipping_id );
+			}
+
+			$shipping_total = $order->calculate_shipping();
+
+			$total = $order->calculate_totals();
+			$order->save();
+		}
+
+		return $order;
 	}
 }
