@@ -1,7 +1,7 @@
 <?php
 /**
  * WSSP Shipping Fields
- * 
+ *
  * @category    Class
  * @since       1.0
  */
@@ -19,7 +19,7 @@ class WSSP_Shipping_Fields {
 
 		// for variable subscription
 		add_action( 'woocommerce_product_after_variable_attributes', __CLASS__ . '::variable_subscription_shipping_fields', 12, 3 );
-		add_action( 'woocommerce_save_product_variation', __CLASS__ . '::save_product_variation', 20, 2 );	
+		add_action( 'woocommerce_save_product_variation', __CLASS__ . '::save_product_variation', 20, 2 );
 	}
 
 	public static function subscription_shipping_interval_fields() {
