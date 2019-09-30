@@ -17,6 +17,7 @@ class WSSP_Shipping_Orders {
 		add_action( 'woocommerce_checkout_subscription_created', __CLASS__ . '::on_subscription_creation', 10, 3 );
 		add_action( 'woocommerce_order_status_processing', __CLASS__ . '::on_processing_status_subscription_order' );
 		add_filter( 'wcs_renewal_order_created', __CLASS__ . '::add_shipping_to_renewal_orders', 100, 2 );
+		add_action( 'add_meta_boxes', __CLASS__ . '::change_meta_box', 35 );
 	}
 
 	/**
@@ -33,7 +34,7 @@ class WSSP_Shipping_Orders {
 			$subscription->add_meta_data( '_wssp_shipping_interval', $shipping_interval );
 			$subscription->add_meta_data( '_wssp_shipping_status', 0 );
 			$order->add_meta_data( '_wssp_shipping_status_order', 0 );
-
+			wcs_set_objects_property( $order, 'wssp_order_type', __( 'Installment Order', 'wdm-subscription-split-payment' ) );
 			break;
 		}
 
@@ -95,6 +96,8 @@ class WSSP_Shipping_Orders {
 		$shipping_status = (int) $subscription->get_meta( '_wssp_shipping_status' );
 
 		if ( 0 !== $shipping_status ) {
+			wcs_set_objects_property( $order, 'wssp_order_type', __( 'Payment Order', 'wdm-subscription-split-payment' ));
+
 			$shipping_items = $order->get_shipping_methods();
 			foreach ( $shipping_items as $key => $shipping_item ) {
 				$shipping_id = $shipping_item->get_id();
@@ -105,8 +108,141 @@ class WSSP_Shipping_Orders {
 
 			$total = $order->calculate_totals();
 			$order->save();
+		} else {
+			wcs_set_objects_property( $order, 'wssp_order_type', __( 'Installment Order', 'wdm-subscription-split-payment' ) );
 		}
 
 		return $order;
+	}
+
+
+	public static function change_meta_box() {
+		global $post_ID;
+
+		remove_meta_box( 'subscription_renewal_orders', 'shop_subscription', 'normal' );
+
+		add_meta_box( 'subscription_renewal_orders', __( 'Related Orders', 'woocommerce-subscriptions' ), 'WSSP_Shipping_Orders::output', 'shop_subscription', 'normal', 'low' );
+
+		// Only display the meta box if an order relates to a subscription
+		if ( 'shop_order' === get_post_type( $post_ID ) && wcs_order_contains_subscription( $post_ID, 'any' ) ) {
+			add_meta_box( 'subscription_renewal_orders', __( 'Related Orders', 'woocommerce-subscriptions' ), 'WSSP_Shipping_Orders::output', 'shop_order', 'normal', 'low' );
+		}
+	}
+
+
+	/**
+	 * Output the metabox
+	 */
+	public static function output( $post ) {
+
+		if ( wcs_is_subscription( $post->ID ) ) {
+			$subscription = wcs_get_subscription( $post->ID );
+			$order        = ( false == $subscription->get_parent_id() ) ? $subscription : $subscription->get_parent();
+		} else {
+			$order = wc_get_order( $post->ID );
+		}
+
+		add_action( 'woocommerce_subscriptions_related_orders_meta_box_rows', 'WSSP_Shipping_Orders' . '::output_rows', 10 );
+
+		include_once WSSP_PLUGIN_PATH . '/templates/admin/html-related-orders-table.php';
+
+		do_action( 'woocommerce_subscriptions_related_orders_meta_box', $order, $post );
+	}
+
+
+	/**
+	 * Displays the renewal orders in the Related Orders meta box.
+	 *
+	 * @param object $post A WordPress post
+	 * @since 2.0
+	 */
+	public static function output_rows( $post ) {
+		$orders_to_display      = array();
+		$subscriptions          = array();
+		$initial_subscriptions  = array();
+		$orders_by_type         = array();
+		$unknown_orders         = array(); // Orders which couldn't be loaded.
+
+		// If this is a subscriptions screen,
+		if ( wcs_is_subscription( $post->ID ) ) {
+			$this_subscription = wcs_get_subscription( $post->ID );
+			$subscriptions[]   = $this_subscription;
+
+			// Resubscribed subscriptions and orders.
+			$initial_subscriptions         = wcs_get_subscriptions_for_resubscribe_order( $this_subscription );
+			$orders_by_type['resubscribe'] = WCS_Related_Order_Store::instance()->get_related_order_ids( $this_subscription, 'resubscribe' );
+		} else {
+			$subscriptions         = wcs_get_subscriptions_for_order( $post->ID, array( 'order_type' => array( 'parent', 'renewal' ) ) );
+			$initial_subscriptions = wcs_get_subscriptions_for_order( $post->ID, array( 'order_type' => array( 'resubscribe' ) ) );
+		}
+
+		foreach ( $subscriptions as $subscription ) {
+			// If we're on a single subscription or renewal order's page, display the parent orders
+			if ( 1 == count( $subscriptions ) && $subscription->get_parent_id() ) {
+				$orders_by_type['parent'][] = $subscription->get_parent_id();
+			}
+
+			// Finally, display the renewal orders
+			$orders_by_type['renewal'] = $subscription->get_related_orders( 'ids', 'renewal' );
+
+			// Build the array of subscriptions and orders to display.
+			$subscription->update_meta_data( '_relationship', _x( 'Subscription', 'relation to order', 'woocommerce-subscriptions' ) );
+			$orders_to_display[] = $subscription;
+		}
+
+		foreach ( $initial_subscriptions as $subscription ) {
+			$subscription->update_meta_data( '_relationship', _x( 'Initial Subscription', 'relation to order', 'woocommerce-subscriptions' ) );
+			$orders_to_display[] = $subscription;
+		}
+
+		// Assign all order and subscription relationships and filter out non-objects.
+		foreach ( $orders_by_type as $order_type => $orders ) {
+			foreach ( $orders as $order_id ) {
+				$order = wc_get_order( $order_id );
+
+				switch ( $order_type ) {
+					case 'renewal':
+						$relation = _x( 'Renewal Order', 'relation to order', 'woocommerce-subscriptions' );
+						break;
+					case 'parent':
+						$relation = _x( 'Parent Order', 'relation to order', 'woocommerce-subscriptions' );
+						break;
+					case 'resubscribe':
+						$relation = wcs_is_subscription( $order ) ? _x( 'Resubscribed Subscription', 'relation to order', 'woocommerce-subscriptions' ) : _x( 'Resubscribe Order', 'relation to order', 'woocommerce-subscriptions' );
+						break;
+					default:
+						$relation = _x( 'Unknown Order Type', 'relation to order', 'woocommerce-subscriptions' );
+						break;
+				}
+
+				if ( $order ) {
+					$order->update_meta_data( '_relationship', $relation );
+					$orders_to_display[] = $order;
+				} else {
+					$unknown_orders[] = array(
+						'order_id' => $order_id,
+						'relation' => $relation,
+					);
+				}
+			}
+		}
+
+		$orders_to_display = apply_filters( 'woocommerce_subscriptions_admin_related_orders_to_display', $orders_to_display, $subscriptions, $post );
+
+		foreach ( $orders_to_display as $order ) {
+			// Skip the order being viewed.
+			if ( $order->get_id() === (int) $post->ID ) {
+				continue;
+			}
+
+			include( WSSP_PLUGIN_PATH . '/templates/admin/html-related-orders-row.php' );
+		}
+
+		foreach ( $unknown_orders as $order_and_relationship ) {
+			$order_id     = $order_and_relationship['order_id'];
+			$relationship = $order_and_relationship['relation'];
+
+			include( WSSP_PLUGIN_PATH . '/templates/admin/html-unknown-related-orders-row.php' );
+		}
 	}
 }
