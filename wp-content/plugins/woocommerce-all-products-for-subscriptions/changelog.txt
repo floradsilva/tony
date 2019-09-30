@@ -1,0 +1,128 @@
+*** WooCommerce All Products For Subscriptions ***
+
+2019.08.20 - version 2.3.2
+* Dev - Introduce 'wcsatt-initialize' event for initializing the single-product form script via third-party code.
+* Tweak - Change method of enqueueing script to prevent issues with product forms rendered using shortcodes.
+* Tweak - Revert default way of rendering susbcription plan options for variable products.
+
+2019.08.02 - version 2.3.1
+* Feature - Added support for 'WooCommerce Name Your Price'.
+* Feature - Enable/disable switching for products with Subscription Plans via 'WooCommerce > Settings > Subscriptions' (WCS 2.6+ only).
+* Fix - When 'One-Off Selling' is disabled and only a single subscription plan has been added to a product, the active plan might be "lost" in the cart after updating cart quantities.
+* Fix - If subscription plans are added to a product after it has been ordered, then no plan is pre-selected in the cart when ordering again.
+
+2019.06.26 - version 2.3.0
+* Fix - Added support for 'WooCommerce Product Add-Ons'.
+* Fix - Plan discounts for Composites that contain Bundles not taking Component quantity into account.
+
+2019.05.30 - version 2.2.5
+* Feature - Added support for the WooCommerce Importer/Exporter.
+* Fix - Subscription options missing on variable product pages when variation data is fetched via ajax.
+* Tweak - Added 'wcsatt_is_switch_request_for_product' filter.
+
+2019.05.08 - version 2.2.4
+* Tweak - Minify CSS.
+
+2019.05.08 - version 2.2.3
+* Fix - Broken empty state styles under WP 5.2+.
+
+2019.04.11 - version 2.2.2
+* Fix - Fatal error when activating the extension with WooCommerce inactive.
+* Fix - Plan discounts for Composites that contain Bundles are new calculated correctly in the single-product page.
+
+2019.03.30 - version 2.2.1
+* Tweak - Plugin headers.
+
+2019.03.26 - version 2.2.0
+* Important - Changed plugin name to 'WooCommerce All Products for Subscriptions. File structure, classes and hooks were left intact for backwards compatibility.
+* Important - Changed text domain to 'woocommerce-all-products-for-subscriptions.
+* Feature - NUX improvements.
+* Tweak - 'Product Data > Subscriptions' and 'WooCommerce > Settings > Subscriptions' design tweaks.
+
+2019.02.05 - version 2.1.5
+* Important - Modified 'wcsatt_restore_subscription_scheme_from_subscription_args' filter params.
+* Fix - Child Bundle/Composite cart item prices not aggregated when: 1) choosing the one-off option; and 2) the container product has a blank base/static price.
+* Fix - Fatal error when adding carts to subscriptions under WC 3.5+.
+
+2018.11.01 - version 2.1.4
+* Fix - Unable to add products without subscription schemes to existing subscriptions, due to a regression in 2.1.3. Sorted.
+
+2018.11.01 - version 2.1.3
+* Fix - When trying to add a product with subscription schemes to an existing subscription, the matching subscriptions list in single-product pages did not always refresh correctly when the chosen scheme changed. The period of the active scheme had to change to trigger a refresh. This is now fixed.
+
+2018.10.25 - version 2.1.2
+* Fix - Ensure the add-to-cart form action is cleared only when switching. Resolves an issue with External product links not functioning as expected.
+* Fix - Only load matching subscriptions in the cart page when ticking "Add this cart to an existing subscription?". Resolves performance issues in the cart page on sites with lots of active subscriptions.
+* Fix - Default variable product subscription scheme not pre-selected in chosen variation details.
+* Fix - Preserve variation details when adding to subscription. Affected variations with "free" attribute values.
+* Fix - Failure to re-subscribe to subscriptions containing subscription-schemed products added via flows other than the regular/checkout one, e.g. manually or via the REST API.
+
+2018.06.07 - version 2.1.1
+* Fix - Bundled product subscription schemes not inherited from parent product correctly if the schemes tied to both have identical billing schedules.
+* Fix - Wrong repository name in .pot file.
+* Fix - Edge case issues with saving newly created schemes after changing the product type.
+* Fix - When adding a new scheme to a Variable product, some Price fields appear mislabelled.
+* Fix - When choosing a variation with susbcription schemes, its price string is always replaced by the subscription scheme options. Unless all variations have the same price, this behavior leaves the user wondering what the variation price might be.
+* Tweak - Do not default global cart-level scheme options to non-empty set.
+
+2018.05.03 - version 2.1.0
+* Feature - Added synchronization options to subscription schemes.
+* Feature - Introduced subscription switching for Simple and Variable products with subscription schemes. Bundles and Composites can't be switched just yet :)
+* Feature - It's now possible to add products with subscription schemes and "subscription scheme-less" products to existing subscriptions. When viewing a product with subscription schemes, customers can load a list of active subscriptions matching the billing schedule of the chosen subscription scheme, and add the viewed product to one of them. Notes: 1) Feature must enabled under 'WooCommerce > Settings > Subscriptions > Add to Subscription > Products'. 2) Prorated subscription schemes are not supported.
+* Feature - It's now possible to add entire carts with subscription options to existing subscriptions. When viewing a cart with subscription options, customers can load a list of active subscriptions matching the billing schedule of the chosen subscription option, and add the contents of their cart to an active subscription. Notes: 1) Feature must enabled under 'WooCommerce > Settings > Subscriptions > Add to Subscription > Carts'. 2) Prorated subscription schemes are not supported.
+* Fix - Streamlined management of Bundles and Composites in subscriptions. It is no longer possible to remove individual child/container line items - removals are delegated to the container item.
+* Fix - UX: When choosing a new variation SATT remembers the chosen subscription option, as it should.
+* Tweak - Template tweaks for consistency, styling flexibility and more freedom to change things using filters.
+* Tweak - Define the selected subscription scheme when adding a product to the cart using an 'add-to-cart' query string.
+* Tweak - Improved support for Product Bundles and Composite Products.
+* Tweak - Hide 'Force subscription', 'Default to', and 'Subscription prompt' fields until there's at least 1 subscription scheme.
+
+2017.11.02 - version 2.0.1
+* Fix - Custom single-product subscription scheme selection prompt not saving/displaying correctly.
+
+2017.08.15 - version 2.0.0
+* Important - WooCommerce 2.6 support dropped! WooCommerce Subscribe All The Things requires WooCommerce 3.0+ and WooCommerce Subscriptions 2.1+.
+* Fix - Added WooCommerce 3.0 support.
+* Dev - Introduced Product API for managing the subscription state of product objects and getting product prices and subscription parameters associated with specific subscription schemes. Important: Price filter callbacks required to implement subscription price overrides and discounts are now "always-on". Refer to the 'WCS_ATT_Product_API' class for details.
+* Dev - Introduced 'WCS_ATT_Scheme' class for getting/setting subscription scheme data.
+* Dev - Added basic set of unit tests.
+* Tweak - Streamlined the UI of the 'Product Data > Subscriptions' tab panel.
+* Tweak - Modified file names for consistency with the WooCommerce file/class naming conventions.
+* Tweak - Change the add-to-cart button text and behavior depending on the available subscription schemes.
+
+2017.01.20 - version 1.1.2
+* Fix - Template overriding issues due to incorrect 'wc_get_template' arguments.
+* Fix - Escape subscription option description html.
+* Fix - Subscription options styling issues in 'Product Data > Subscriptions' and 'Settings > Subscriptions' with WooCommerce Subscriptions 2.1+.
+* Fix - Bundled item subscription plan prices are incorrect when the plan of the bundle price is defined using the 'Override product' method.
+* Fix - Switching the active cart subscription option breaks Update Cart button functionality in WC 2.6.
+
+2016.10.28 - version 1.1.1
+* Fix - Resubscribing to products that have been subscription-enabled using SATT.
+* Fix - Product Bundles v5.0.0 and Composite Products v3.7.0 support.
+* Fix - Inconsistent visibility of the One-Time Shipping option and SATT-enabled products.
+
+2016.06.07 - version 1.1.0
+* Important - Template files modified and re-organized under '/cart' and '/single-product' directories. Please update any overridden SATT template files in your tree.
+* Fix - Wrong/static prices in the single-product template of Bundles and Composites when Per-Item Pricing is enabled. Totals next to SATT options are now properly updated to a) reflect changes in the configuration of a Bundle/Composite and b) include price discounts/overrides associated with each option.
+* Fix - Bundles/Composites with a single subscription option and the "Force Subscription" option enabled now treated and presented as permanent Subscription products. Price strings of a) the products themselves and b) all contained items now include any price overrides defined in the singular subscription option. Product price strings include subscription details.
+* Tweak - In-cart subscription switching feature not available for Bundles/Composites when Per-Item Pricing is enabled.
+* Tweak - Subscription options attached to MnM type products have no effect when Per-Item Pricing is enabled. MnM products unsupported when Per-Item Pricing is active.
+* Feature - Added support for Variable products. SATT options can now be added to Variable products at product (not variation!) level.
+* Tweak - Styles and general usability of admin "Subscriptions" panel.
+* Tweak -  Refactored the 'WCS_ATT_Schemes' and added a separate 'WCS_ATT_Scheme_Prices' class in order to separate all functions associated with price overrides.
+
+2016.03.28 - version 1.0.3
+* Feature - Ability to override product prices from subscription options.
+* Feature - Subscribe to cart feature.
+* Fix - Subscriptions admin tab: Refresh subscription length options when changing subscription period.
+
+2015.11.27 - version 1.0.2
+* Fix - Minified scripts not in repo.
+* Fix - "Function return value in write context" error.
+
+2015.11.14 - version 1.0.1
+* Fix - WC missing notice in place of the Subs v2.0+ missing notice. Hush!
+
+2015.10.24 - version 1.0.0
+* Initial version.
