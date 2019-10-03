@@ -30,14 +30,23 @@ class WSSP_Shipping_Orders {
 		foreach ( $items as $key => $item ) {
 			$product = $item->get_product();
 
-			$shipping_interval = $product->get_meta( '_subscription_shipping_interval' );
+			$shipping_interval       = $product->get_meta( '_subscription_shipping_interval' );
+			
 
 			$subscription->add_meta_data( '_wssp_shipping_interval', $shipping_interval );
 			$subscription->add_meta_data( '_wssp_shipping_status', 0 );
+
 			$order->add_meta_data( '_wssp_shipping_status_order', 0 );
 			wcs_set_objects_property( $order, 'wssp_order_type', 'installment' );
 			break;
 		}
+
+		$wssp_subscription_total = $order->get_subtotal() * $shipping_interval;
+		$wssp_total_paid         = $order->get_subtotal();
+
+		wcs_set_objects_property( $subscription, 'wssp_subscription_total', $wssp_subscription_total );
+		wcs_set_objects_property( $subscription, 'wssp_total_paid', '0' );
+		wcs_set_objects_property( $subscription, 'wssp_balance', $wssp_subscription_total );
 
 		$subscription->save();
 		$order->save();
@@ -61,8 +70,11 @@ class WSSP_Shipping_Orders {
 			$subscription_period          = $subscription->get_billing_period();
 			$subscription_period_interval = $subscription->get_billing_interval();
 
-			$shipping_interval = $subscription->get_meta( '_wssp_shipping_interval' );
-			$shipping_status   = (int) $subscription->get_meta( '_wssp_shipping_status' );
+			$shipping_interval       = $subscription->get_meta( '_wssp_shipping_interval' );
+			$shipping_status         = (int) $subscription->get_meta( '_wssp_shipping_status' );
+			$wssp_subscription_total = wcs_get_objects_property( $subscription, 'wssp_subscription_total' );
+			$wssp_total_paid         = wcs_get_objects_property( $subscription, 'wssp_total_paid' );
+			$wssp_balance            = wcs_get_objects_property( $subscription, 'wssp_balance' );
 
 			if ( 0 !== $shipping_status ) {
 				$order->update_status( 'completed', __( 'No Shipping Required.', 'wdm-subscription-split-payment' ) );
@@ -75,6 +87,9 @@ class WSSP_Shipping_Orders {
 			if ( $order_shipping_status ) {
 				return;
 			}
+
+			wcs_set_objects_property( $subscription, 'wssp_total_paid', $wssp_total_paid + $order->get_subtotal() );
+			wcs_set_objects_property( $subscription, 'wssp_balance', $wssp_balance - $order->get_subtotal() );
 
 			$subscription->update_meta_data( '_wssp_shipping_status', $shipping_status );
 			$subscription->save();
@@ -97,7 +112,8 @@ class WSSP_Shipping_Orders {
 		$shipping_status = (int) $subscription->get_meta( '_wssp_shipping_status' );
 
 		if ( 0 !== $shipping_status ) {
-			wcs_set_objects_property( $order, 'wssp_order_type', 'payment_order' );
+			
+			wcs_set_objects_property( $order, 'wssp_order_type', 'payment' );
 
 			$shipping_items = $order->get_shipping_methods();
 			foreach ( $shipping_items as $key => $shipping_item ) {
@@ -110,6 +126,11 @@ class WSSP_Shipping_Orders {
 			$total = $order->calculate_totals();
 			$order->save();
 		} else {
+			$wssp_subscription_total = wcs_get_objects_property( $subscription, 'wssp_subscription_total' );
+
+			wcs_set_objects_property( $subscription, 'wssp_total_paid', '0' );
+			wcs_set_objects_property( $subscription, 'wssp_balance', $wssp_subscription_total );
+
 			wcs_set_objects_property( $order, 'wssp_order_type', 'installment' );
 		}
 
@@ -253,17 +274,51 @@ class WSSP_Shipping_Orders {
 	 */
 	public static function add_subscription_details_to_orders( $item_id, $item, $product ) {
 		$order = $item->get_order();
+		$subscriptions = wcs_get_subscriptions_for_order( $order, array( 'order_type' => 'any' ) );
 
-		$wssp_order_type = wcs_get_objects_property( $order, 'wssp_order_type' );
+		foreach ( $subscriptions as $key => $value ) {
+			$subscription = $value;
+			break;
+		}
 
-		if ( 'installment' === $wssp_order_type ) {
-			echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Order Type:', 'wdm-subscription-split-payment' ) . '</strong> ';
-			echo esc_html__('Installment Order', 'wdm-subscription-split-payment' );
+		if ( $subscription ) {
+			$wssp_order_type         = wcs_get_objects_property( $order, 'wssp_order_type' );
+			$wssp_subscription_total = wcs_get_objects_property( $subscription, 'wssp_subscription_total' );
+			$wssp_total_paid         = wcs_get_objects_property( $subscription, 'wssp_total_paid' );
+			$wssp_balance            = wcs_get_objects_property( $subscription, 'wssp_balance' );
+
+			$subscription_period          = $subscription->get_billing_period();
+			$subscription_period_interval = $subscription->get_billing_interval();
+
+			$shipping_interval = $subscription->get_meta( '_wssp_shipping_interval' );
+			$shipping_status   = (int) $subscription->get_meta( '_wssp_shipping_status' );
+
+			echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Total Number of Installments:', 'wdm-subscription-split-payment' ) . '</strong> ';
+			echo $shipping_interval;
 			echo '</div>';
-		} elseif ( 'payment' === $wssp_order_type ) {
-			echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Order Type:', 'wdm-subscription-split-payment' ) . '</strong> ';
-			echo esc_html__('Payment Order', 'wdm-subscription-split-payment' );
+
+			echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Installment Number:', 'wdm-subscription-split-payment' ) . '</strong> ';
+			echo $shipping_status + 1;
 			echo '</div>';
+			
+
+			if ( isset( $wssp_subscription_total ) ) {
+				echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Total Product Price:', 'wdm-subscription-split-payment' ) . '</strong> ';
+				echo wc_price( $wssp_subscription_total, array( 'currency' => $order->get_currency() ) );
+				echo '</div>';
+			}
+
+			if ( isset( $wssp_total_paid ) ) {
+				echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Total Amount Paid:', 'wdm-subscription-split-payment' ) . '</strong> ';
+				echo wc_price( $wssp_total_paid, array( 'currency' => $order->get_currency() ) );
+				echo '</div>';
+			}
+
+			if ( isset( $wssp_balance ) ) {
+				echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Balance Amount:', 'wdm-subscription-split-payment' ) . '</strong> ';
+				echo wc_price( $wssp_balance, array( 'currency' => $order->get_currency() ) );
+				echo '</div>';
+			}
 		}
 	}
 }

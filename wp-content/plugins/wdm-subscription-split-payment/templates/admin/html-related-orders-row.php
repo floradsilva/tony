@@ -51,9 +51,9 @@ $order_post = wcs_get_objects_property( $order, 'post' );
 			$wssp_order_type = wcs_get_objects_property( $order, 'wssp_order_type' );
 
 		if ( 'installment' === $wssp_order_type ) {
-			echo __( 'Installment Order', 'wdm-subscription-split-payment' );
+			echo __( 'Installment', 'wdm-subscription-split-payment' );
 		} elseif ( 'payment' === $wssp_order_type ) {
-			echo __( 'Payment Order', 'wdm-subscription-split-payment' );
+			echo __( 'Payment', 'wdm-subscription-split-payment' );
 		}
 		?>
 	</td>
