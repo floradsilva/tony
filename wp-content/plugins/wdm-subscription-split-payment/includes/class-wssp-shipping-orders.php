@@ -18,6 +18,7 @@ class WSSP_Shipping_Orders {
 		add_action( 'woocommerce_order_status_processing', __CLASS__ . '::on_processing_status_subscription_order' );
 		add_filter( 'wcs_renewal_order_created', __CLASS__ . '::add_shipping_to_renewal_orders', 100, 2 );
 		add_action( 'add_meta_boxes', __CLASS__ . '::change_meta_box', 35 );
+		add_action( 'woocommerce_after_order_itemmeta', __CLASS__ . '::add_subscription_details_to_orders', 10, 3 );
 	}
 
 	/**
@@ -34,7 +35,7 @@ class WSSP_Shipping_Orders {
 			$subscription->add_meta_data( '_wssp_shipping_interval', $shipping_interval );
 			$subscription->add_meta_data( '_wssp_shipping_status', 0 );
 			$order->add_meta_data( '_wssp_shipping_status_order', 0 );
-			wcs_set_objects_property( $order, 'wssp_order_type', __( 'Installment Order', 'wdm-subscription-split-payment' ) );
+			wcs_set_objects_property( $order, 'wssp_order_type', 'installment' );
 			break;
 		}
 
@@ -96,7 +97,7 @@ class WSSP_Shipping_Orders {
 		$shipping_status = (int) $subscription->get_meta( '_wssp_shipping_status' );
 
 		if ( 0 !== $shipping_status ) {
-			wcs_set_objects_property( $order, 'wssp_order_type', __( 'Payment Order', 'wdm-subscription-split-payment' ));
+			wcs_set_objects_property( $order, 'wssp_order_type', 'payment_order' );
 
 			$shipping_items = $order->get_shipping_methods();
 			foreach ( $shipping_items as $key => $shipping_item ) {
@@ -109,7 +110,7 @@ class WSSP_Shipping_Orders {
 			$total = $order->calculate_totals();
 			$order->save();
 		} else {
-			wcs_set_objects_property( $order, 'wssp_order_type', __( 'Installment Order', 'wdm-subscription-split-payment' ) );
+			wcs_set_objects_property( $order, 'wssp_order_type', 'installment' );
 		}
 
 		return $order;
@@ -157,11 +158,11 @@ class WSSP_Shipping_Orders {
 	 * @since 2.0
 	 */
 	public static function output_rows( $post ) {
-		$orders_to_display      = array();
-		$subscriptions          = array();
-		$initial_subscriptions  = array();
-		$orders_by_type         = array();
-		$unknown_orders         = array(); // Orders which couldn't be loaded.
+		$orders_to_display     = array();
+		$subscriptions         = array();
+		$initial_subscriptions = array();
+		$orders_by_type        = array();
+		$unknown_orders        = array(); // Orders which couldn't be loaded.
 
 		// If this is a subscriptions screen,
 		if ( wcs_is_subscription( $post->ID ) ) {
@@ -235,14 +236,34 @@ class WSSP_Shipping_Orders {
 				continue;
 			}
 
-			include( WSSP_PLUGIN_PATH . '/templates/admin/html-related-orders-row.php' );
+			include WSSP_PLUGIN_PATH . '/templates/admin/html-related-orders-row.php';
 		}
 
 		foreach ( $unknown_orders as $order_and_relationship ) {
 			$order_id     = $order_and_relationship['order_id'];
 			$relationship = $order_and_relationship['relation'];
 
-			include( WSSP_PLUGIN_PATH . '/templates/admin/html-unknown-related-orders-row.php' );
+			include WSSP_PLUGIN_PATH . '/templates/admin/html-unknown-related-orders-row.php';
+		}
+	}
+
+
+	/**
+	 * Display Product Info.
+	 */
+	public static function add_subscription_details_to_orders( $item_id, $item, $product ) {
+		$order = $item->get_order();
+
+		$wssp_order_type = wcs_get_objects_property( $order, 'wssp_order_type' );
+
+		if ( 'installment' === $wssp_order_type ) {
+			echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Order Type:', 'wdm-subscription-split-payment' ) . '</strong> ';
+			echo esc_html__('Installment Order', 'wdm-subscription-split-payment' );
+			echo '</div>';
+		} elseif ( 'payment' === $wssp_order_type ) {
+			echo '<div class="wc-order-item-sku"><strong>' . esc_html__( 'Order Type:', 'wdm-subscription-split-payment' ) . '</strong> ';
+			echo esc_html__('Payment Order', 'wdm-subscription-split-payment' );
+			echo '</div>';
 		}
 	}
 }

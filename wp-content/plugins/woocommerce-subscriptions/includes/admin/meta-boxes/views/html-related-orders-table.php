@@ -18,6 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<th><?php esc_html_e( 'Relationship', 'woocommerce-subscriptions' ); ?></th>
 				<th><?php esc_html_e( 'Date', 'woocommerce-subscriptions' ); ?></th>
 				<th><?php esc_html_e( 'Status', 'woocommerce-subscriptions' ); ?></th>
+				<th><?php echo esc_html_x( 'Type', 'table heading', 'woocommerce-subscriptions' ); ?></th>
 				<th><?php echo esc_html_x( 'Total', 'table heading', 'woocommerce-subscriptions' ); ?></th>
 			</tr>
 		</thead>
