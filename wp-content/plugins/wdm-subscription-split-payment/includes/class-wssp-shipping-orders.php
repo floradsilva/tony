@@ -26,6 +26,19 @@ class WSSP_Shipping_Orders {
         // Add column that indicates whether an order is installment or payment order
 		add_filter( 'manage_edit-shop_order_columns', __CLASS__ . '::add_order_type_column' );
         add_action( 'manage_shop_order_posts_custom_column', __CLASS__ . '::add_order_type_column_content', 10, 1 );
+    
+        add_filter( 'wc_get_template', __CLASS__ . '::replace_templates', 10, 5 );
+    }
+
+
+    public static function replace_templates($template, $template_name, $args, $template_path, $default_path ) {
+        if ( 'myaccount/subscription-totals-table.php' === $template_name ) {
+            $template = WSSP_PLUGIN_PATH . '/templates/public/subscription-totals-table.php';
+        } elseif ( 'myaccount/related-orders.php' === $template_name ) {
+            $template = WSSP_PLUGIN_PATH . '/templates/public/related-orders.php';
+        }
+
+        return $template;
     }
 
 
@@ -310,15 +323,9 @@ class WSSP_Shipping_Orders {
 
             if ( wcs_is_subscription( $order_id ) ) {
                 $wssp_subscription_total = wcs_get_objects_property( $order, 'wssp_subscription_total' );
-                $subscription_period          = $order->get_billing_period();
-                $subscription_period_interval = $order->get_billing_interval();
-    
                 $shipping_interval = $order->get_meta( '_wssp_shipping_interval' );
             } else {
                 $wssp_subscription_total = wcs_get_objects_property( $subscription, 'wssp_subscription_total' );
-                $subscription_period          = $subscription->get_billing_period();
-                $subscription_period_interval = $subscription->get_billing_interval();
-    
                 $shipping_interval = $subscription->get_meta( '_wssp_shipping_interval' );
             }
             
@@ -356,7 +363,7 @@ class WSSP_Shipping_Orders {
                     </tr>
                 <?php endif; ?>
 
-                <?php if ( isset( $wssp_total_paid ) ) :?>
+                <?php if ( ( ! wcs_is_subscription( $order_id ) ) && ( isset( $wssp_total_paid ) ) ) :?>
                     <tr>
                         <td class="label"><?php esc_html_e( 'Total Amount Paid', 'wdm-subscription-split-payment' ); ?>:</td>
                         <td width="1%"></td>
@@ -366,7 +373,7 @@ class WSSP_Shipping_Orders {
                     </tr>
                 <?php endif; ?>
 
-                <?php if ( isset( $wssp_balance ) ) :?>
+                <?php if ( ( ! wcs_is_subscription( $order_id ) ) && ( isset( $wssp_balance ) ) ) :?>
                     <tr>
                         <td class="label"><?php esc_html_e( 'Balance Amount', 'wdm-subscription-split-payment' ); ?>:</td>
                         <td width="1%"></td>
@@ -380,7 +387,7 @@ class WSSP_Shipping_Orders {
     }
 
 
-        /**
+    /**
     * Add a column to the WooCommerce -> Orders admin screen to indicate whether an order is a Regular Order, Shipping Order, Payment Order.
     *
     * @param array $columns The current list of columns
