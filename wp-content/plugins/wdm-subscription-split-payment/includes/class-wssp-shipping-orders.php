@@ -19,7 +19,21 @@ class WSSP_Shipping_Orders {
         add_filter( 'wcs_renewal_order_created', __CLASS__ . '::add_shipping_to_renewal_orders', 100, 2 );
         add_action( 'add_meta_boxes', __CLASS__ . '::change_meta_box', 35 );
         add_action( 'woocommerce_admin_order_totals_after_refunded', __CLASS__ . '::add_subscription_details_to_orders' );
+
+        add_action( 'plugins_loaded', __CLASS__ . '::my_plugin_override' );
+
+        
+        // Add column that indicates whether an order is installment or payment order
+		add_filter( 'manage_edit-shop_order_columns', __CLASS__ . '::add_order_type_column' );
+        add_action( 'manage_shop_order_posts_custom_column', __CLASS__ . '::add_order_type_column_content', 10, 1 );
     }
+
+
+    public static function my_plugin_override() {
+        remove_filter( 'manage_edit-shop_order_columns', array( 'WC_Subscriptions_Order', 'add_contains_subscription_column' ), 10 );
+        remove_action( 'manage_shop_order_posts_custom_column', array( 'WC_Subscriptions_Order', 'add_contains_subscription_column_content' ), 10);
+    }
+
 
     /**
      * Tasks to do when subscription is created.
@@ -362,6 +376,49 @@ class WSSP_Shipping_Orders {
                     </tr>
                 <?php endif; ?>
             <?php
+        }
+    }
+
+
+        /**
+    * Add a column to the WooCommerce -> Orders admin screen to indicate whether an order is a Regular Order, Shipping Order, Payment Order.
+    *
+    * @param array $columns The current list of columns
+    * @since 2.1
+    */
+    public static function add_order_type_column( $columns ) {
+        print_r( $columns );
+
+        $column_header = esc_attr__( 'Type', 'wdm-subscription-split-payment' );
+
+        $new_columns = wcs_array_insert_after( 'shipping_address', $columns, 'type', $column_header );
+
+        return $new_columns;
+    }
+
+    /**
+    * Add column content to the WooCommerce -> Orders admin screen to indicate whether an
+    * order is a Regular Order, Installment Order, Payment Order, Renewal Order.
+    *
+    * @param string $column The string of the current column
+    * @since 2.1
+    */
+    public static function add_order_type_column_content( $column ) {
+        global $post;
+        $order = wc_get_order( $post );
+
+        if ( $order ) {
+            $order_type = wcs_get_objects_property( $order, 'wssp_order_type' );
+
+            if ( 'type' === $column ) {
+                if ( 'payment' === $order_type ) {
+                    echo esc_attr__( 'Payment', 'wdm-subscription-split-payment' );
+                } elseif ( 'installment' === $order_type ) {
+                    echo esc_attr__( 'Installment', 'wdm-subscription-split-payment' );
+                } else {
+                    echo esc_attr__( '', 'wdm-subscription-split-payment' );
+                }
+            }
         }
     }
 }
