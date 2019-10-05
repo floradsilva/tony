@@ -104,12 +104,5 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <td><?php echo wc_price( $wssp_subscription_total, array( 'currency' => $subscription->get_currency() ) ); ?></td>
             </tr>
         <?php endif; ?>
-
-        <?php foreach ( $totals as $key => $total ) : ?>
-			<tr>
-				<th scope="row" <?php echo ( $allow_item_removal ) ? 'colspan="2"' : ''; ?>><?php echo esc_html( $total['label'] ); ?></th>
-				<td><?php echo wp_kses_post( $total['value'] ); ?></td>
-			</tr>
-        <?php endforeach; ?>
 	</tfoot>
 </table>

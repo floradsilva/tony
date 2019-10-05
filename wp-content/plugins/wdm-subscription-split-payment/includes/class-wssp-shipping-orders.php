@@ -28,7 +28,69 @@ class WSSP_Shipping_Orders {
         add_action( 'manage_shop_order_posts_custom_column', __CLASS__ . '::add_order_type_column_content', 10, 1 );
     
         add_filter( 'wc_get_template', __CLASS__ . '::replace_templates', 10, 5 );
+
+        add_action( 'woocommerce_order_details_after_order_table', __CLASS__ . '::add_order_details_to_display', 10, 1 );
     }
+
+
+
+    public static function add_order_details_to_display($order ) {
+        $subscriptions = wcs_get_subscriptions_for_order( $order, array( 'order_type' => 'any' ) );
+        $subscription = false;
+
+        foreach ( $subscriptions as $key => $value ) {
+            $subscription = $value;
+            break;
+        }
+
+        if ( $subscription ) {
+
+            $wssp_subscription_total = wcs_get_objects_property( $subscription, 'wssp_subscription_total' );
+            $shipping_interval       = $subscription->get_meta( '_wssp_shipping_interval' );
+            $wssp_total_paid         = wcs_get_objects_property( $order, 'wssp_total_paid' );
+            $wssp_balance            = wcs_get_objects_property( $order, 'wssp_balance' );
+            $shipping_status         = (int) $order->get_meta( '_wssp_shipping_status' );
+            ?>
+        
+            <table class="woocommerce-table woocommerce-table--order-details shop_table order_details">
+                <tfoot>
+                    <tr>
+                        <th scope="row"><?php echo esc_html_e( 'Total Number of Installments', 'wdm-subscription-split-payment' ); ?></th>
+                        <td><?php echo $shipping_interval; ?></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><?php echo esc_html_e( 'Installment Number', 'wdm-subscription-split-payment' ); ?></th>
+                        <td><?php echo '#' . ($shipping_status + 1); ?></td>
+                    </tr>
+
+
+                    <?php if ( isset( $wssp_subscription_total ) ) :?>
+                        <tr>
+                            <th scope="row"><?php echo esc_html_e( 'Total Product Price', 'wdm-subscription-split-payment' ); ?></th>
+                            <td><?php echo wc_price( $wssp_subscription_total, array( 'currency' => $order->get_currency() ) );  ?></td>
+                        </tr>
+                    <?php endif; ?>
+
+                    <?php if ( isset( $wssp_total_paid ) ) :?>
+                        <tr>
+                            <th scope="row"><?php echo esc_html_e( 'Total Amount Paid', 'wdm-subscription-split-payment' ); ?></th>
+                            <td><?php echo wc_price( $wssp_total_paid, array( 'currency' => $order->get_currency() ) );  ?></td>
+                        </tr>
+                    <?php endif; ?>
+
+                    <?php if ( isset( $wssp_balance ) ) :?>
+                        <tr>
+                            <th scope="row"><?php echo esc_html_e( 'Balance Amount', 'wdm-subscription-split-payment' ); ?></th>
+                            <td><?php echo wc_price( $wssp_balance, array( 'currency' => $order->get_currency() ) );  ?></td>
+                        </tr>
+                    <?php endif; ?>
+                    
+                </tfoot>
+            </table> <?php
+        }
+    }
+
 
 
     public static function replace_templates($template, $template_name, $args, $template_path, $default_path ) {
